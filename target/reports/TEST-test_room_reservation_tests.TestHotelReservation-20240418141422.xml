@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="test_room_reservation_tests.TestHotelReservation-20240418141422" tests="6" file="test_room_reservation_tests.py" time="0.067" timestamp="2024-04-18T14:14:22" failures="0" errors="6" skipped="0">
+	<testcase classname="test_room_reservation_tests.TestHotelReservation" name="test_duplicated_id_reservation_tests" time="0.001" timestamp="2024-04-18T14:14:22">
+		<error type="TypeError" message="_validate() missing 1 required positional argument: 'attr_value'"><![CDATA[Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 593, in run
+    self._callTestMethod(testMethod)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 550, in _callTestMethod
+    method()
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/unittest/python/test_room_reservation_tests.py", line 98, in test_duplicated_id_reservation_tests
+    mngr.room_reservation(credit_card=credit_card_number,
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_manager.py", line 170, in room_reservation
+    phone_number = PhoneNumber._validate(phone_number)
+TypeError: _validate() missing 1 required positional argument: 'attr_value'
+]]></error>
+	</testcase>
+	<testcase classname="test_room_reservation_tests.TestHotelReservation" name="test_duplicated_reservation_tests" time="0.002" timestamp="2024-04-18T14:14:22">
+		<error type="TypeError" message="_validate() missing 1 required positional argument: 'attr_value'"><![CDATA[Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 593, in run
+    self._callTestMethod(testMethod)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 550, in _callTestMethod
+    method()
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/.venv/lib/python3.9/site-packages/freezegun/api.py", line 827, in wrapper
+    result = func(*args, **kwargs)
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/unittest/python/test_room_reservation_tests.py", line 52, in test_duplicated_reservation_tests
+    mngr.room_reservation(credit_card=credit_card_number,
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_manager.py", line 170, in room_reservation
+    phone_number = PhoneNumber._validate(phone_number)
+TypeError: _validate() missing 1 required positional argument: 'attr_value'
+]]></error>
+	</testcase>
+	<testcase classname="test_room_reservation_tests.TestHotelReservation" name="test_parametrized_cases_tests [TC1VALID]" time="0.000" timestamp="0001-01-01T00:00:00">
+		<error type="TypeError" message="_validate() missing 1 required positional argument: 'attr_value'"><![CDATA[Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 499, in subTest
+    yield
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/unittest/python/test_room_reservation_tests.py", line 163, in test_parametrized_cases_tests
+    valor = mngr.room_reservation(credit_card=credit_card_number,
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_manager.py", line 170, in room_reservation
+    phone_number = PhoneNumber._validate(phone_number)
+TypeError: _validate() missing 1 required positional argument: 'attr_value'
+]]></error>
+	</testcase>
+	<testcase classname="test_room_reservation_tests.TestHotelReservation" name="test_parametrized_cases_tests [TC2VALID]" time="0.000" timestamp="0001-01-01T00:00:00">
+		<error type="TypeError" message="_validate() missing 1 required positional argument: 'attr_value'"><![CDATA[Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 499, in subTest
+    yield
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/unittest/python/test_room_reservation_tests.py", line 163, in test_parametrized_cases_tests
+    valor = mngr.room_reservation(credit_card=credit_card_number,
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_manager.py", line 170, in room_reservation
+    phone_number = PhoneNumber._validate(phone_number)
+TypeError: _validate() missing 1 required positional argument: 'attr_value'
+]]></error>
+	</testcase>
+	<testcase classname="test_room_reservation_tests.TestHotelReservation" name="test_parametrized_cases_tests [TC3VALID]" time="0.000" timestamp="0001-01-01T00:00:00">
+		<error type="TypeError" message="_validate() missing 1 required positional argument: 'attr_value'"><![CDATA[Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 499, in subTest
+    yield
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/unittest/python/test_room_reservation_tests.py", line 163, in test_parametrized_cases_tests
+    valor = mngr.room_reservation(credit_card=credit_card_number,
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_manager.py", line 170, in room_reservation
+    phone_number = PhoneNumber._validate(phone_number)
+TypeError: _validate() missing 1 required positional argument: 'attr_value'
+]]></error>
+	</testcase>
+	<testcase classname="test_room_reservation_tests.TestHotelReservation" name="test_parametrized_cases_tests [TC4VALID]" time="0.063" timestamp="2024-04-18T14:14:22">
+		<error type="TypeError" message="_validate() missing 1 required positional argument: 'attr_value'"><![CDATA[Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 499, in subTest
+    yield
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/unittest/python/test_room_reservation_tests.py", line 163, in test_parametrized_cases_tests
+    valor = mngr.room_reservation(credit_card=credit_card_number,
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_manager.py", line 170, in room_reservation
+    phone_number = PhoneNumber._validate(phone_number)
+TypeError: _validate() missing 1 required positional argument: 'attr_value'
+]]></error>
+	</testcase>
+</testsuite>

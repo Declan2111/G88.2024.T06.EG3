@@ -1,0 +1,21 @@
+Name                                        Stmts   Miss Branch BrPart  Cover
+-----------------------------------------------------------------------------
+attributes/__init__.py                          0      0      0      0   100%
+attributes/attribute.py                        19      2      2      0    90%
+attributes/attribute_arrival_date.py           11      0      0      0   100%
+attributes/attribute_card_num.py               22      0      6      0   100%
+attributes/attribute_id.py                     11     11      0      0     0%
+attributes/attribute_localizer.py              15     15      2      0     0%
+attributes/attribute_name.py                    0      0      0      0   100%
+attributes/attribute_num_days.py               13      0      2      0   100%
+attributes/attribute_phone_num.py              10      0      0      0   100%
+attributes/attribute_room_type.py              10      0      0      0   100%
+attributes/attribute_roomkey.py                14     14      2      0     0%
+uc3m_travel/__init__.py                         4      0      0      0   100%
+uc3m_travel/hotel_management_config.py          3      0      0      0   100%
+uc3m_travel/hotel_management_exception.py      10      1      0      0    90%
+uc3m_travel/hotel_manager.py                  217     55     66      3    72%
+uc3m_travel/hotel_reservation.py               32      3      0      0    91%
+uc3m_travel/hotel_stay.py                      38      7      0      0    82%
+-----------------------------------------------------------------------------
+TOTAL                                         429    108     80      3    73%

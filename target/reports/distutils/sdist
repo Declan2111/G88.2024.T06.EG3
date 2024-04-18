@@ -1,0 +1,44 @@
+running clean
+'build/temp.macosx-10.9-universal2-cpython-39' does not exist -- can't clean it
+'build/lib' does not exist -- can't clean it
+'build/bdist.macosx-10.9-universal2' does not exist -- can't clean it
+'build/scripts-3.9' does not exist -- can't clean it
+running sdist
+running egg_info
+creating EG2.egg-info
+writing EG2.egg-info/PKG-INFO
+writing dependency_links to EG2.egg-info/dependency_links.txt
+writing namespace_packages to EG2.egg-info/namespace_packages.txt
+writing top-level names to EG2.egg-info/top_level.txt
+writing manifest file 'EG2.egg-info/SOURCES.txt'
+reading manifest file 'EG2.egg-info/SOURCES.txt'
+writing manifest file 'EG2.egg-info/SOURCES.txt'
+warning: sdist: standard file not found: should have one of README, README.rst, README.txt, README.md
+
+running check
+creating EG2-1.0.dev0
+creating EG2-1.0.dev0/EG2.egg-info
+creating EG2-1.0.dev0/uc3m_travel
+copying files to EG2-1.0.dev0...
+copying setup.py -> EG2-1.0.dev0
+copying EG2.egg-info/PKG-INFO -> EG2-1.0.dev0/EG2.egg-info
+copying EG2.egg-info/SOURCES.txt -> EG2-1.0.dev0/EG2.egg-info
+copying EG2.egg-info/dependency_links.txt -> EG2-1.0.dev0/EG2.egg-info
+copying EG2.egg-info/namespace_packages.txt -> EG2-1.0.dev0/EG2.egg-info
+copying EG2.egg-info/top_level.txt -> EG2-1.0.dev0/EG2.egg-info
+copying EG2.egg-info/zip-safe -> EG2-1.0.dev0/EG2.egg-info
+copying uc3m_travel/__init__.py -> EG2-1.0.dev0/uc3m_travel
+copying uc3m_travel/hotel_management_config.py -> EG2-1.0.dev0/uc3m_travel
+copying uc3m_travel/hotel_management_exception.py -> EG2-1.0.dev0/uc3m_travel
+copying uc3m_travel/hotel_manager.py -> EG2-1.0.dev0/uc3m_travel
+copying uc3m_travel/hotel_reservation.py -> EG2-1.0.dev0/uc3m_travel
+copying uc3m_travel/hotel_stay.py -> EG2-1.0.dev0/uc3m_travel
+copying EG2.egg-info/SOURCES.txt -> EG2-1.0.dev0/EG2.egg-info
+Reading configuration from EG2-1.0.dev0/setup.cfg
+Adding new section [egg_info] to EG2-1.0.dev0/setup.cfg
+Setting egg_info.tag_build to '' in EG2-1.0.dev0/setup.cfg
+Setting egg_info.tag_date to 0 in EG2-1.0.dev0/setup.cfg
+Writing EG2-1.0.dev0/setup.cfg
+creating dist
+Creating tar archive
+removing 'EG2-1.0.dev0' (and everything under it)
