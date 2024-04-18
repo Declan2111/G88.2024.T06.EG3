@@ -1,8 +1,8 @@
 running clean
-'build/temp.macosx-10.9-universal2-cpython-39' does not exist -- can't clean it
+'build/temp.macosx-10.9-universal2-cpython-310' does not exist -- can't clean it
 'build/lib' does not exist -- can't clean it
 'build/bdist.macosx-10.9-universal2' does not exist -- can't clean it
-'build/scripts-3.9' does not exist -- can't clean it
+'build/scripts-3.10' does not exist -- can't clean it
 running sdist
 running egg_info
 creating EG2.egg-info
@@ -18,6 +18,7 @@ warning: sdist: standard file not found: should have one of README, README.rst, 
 running check
 creating EG2-1.0.dev0
 creating EG2-1.0.dev0/EG2.egg-info
+creating EG2-1.0.dev0/attributes
 creating EG2-1.0.dev0/uc3m_travel
 copying files to EG2-1.0.dev0...
 copying setup.py -> EG2-1.0.dev0
@@ -27,6 +28,17 @@ copying EG2.egg-info/dependency_links.txt -> EG2-1.0.dev0/EG2.egg-info
 copying EG2.egg-info/namespace_packages.txt -> EG2-1.0.dev0/EG2.egg-info
 copying EG2.egg-info/top_level.txt -> EG2-1.0.dev0/EG2.egg-info
 copying EG2.egg-info/zip-safe -> EG2-1.0.dev0/EG2.egg-info
+copying attributes/__init__.py -> EG2-1.0.dev0/attributes
+copying attributes/attribute.py -> EG2-1.0.dev0/attributes
+copying attributes/attribute_arrival_date.py -> EG2-1.0.dev0/attributes
+copying attributes/attribute_card_num.py -> EG2-1.0.dev0/attributes
+copying attributes/attribute_id.py -> EG2-1.0.dev0/attributes
+copying attributes/attribute_localizer.py -> EG2-1.0.dev0/attributes
+copying attributes/attribute_name.py -> EG2-1.0.dev0/attributes
+copying attributes/attribute_num_days.py -> EG2-1.0.dev0/attributes
+copying attributes/attribute_phone_num.py -> EG2-1.0.dev0/attributes
+copying attributes/attribute_room_type.py -> EG2-1.0.dev0/attributes
+copying attributes/attribute_roomkey.py -> EG2-1.0.dev0/attributes
 copying uc3m_travel/__init__.py -> EG2-1.0.dev0/uc3m_travel
 copying uc3m_travel/hotel_management_config.py -> EG2-1.0.dev0/uc3m_travel
 copying uc3m_travel/hotel_management_exception.py -> EG2-1.0.dev0/uc3m_travel

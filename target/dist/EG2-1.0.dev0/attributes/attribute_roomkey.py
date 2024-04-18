@@ -14,8 +14,5 @@ class RoomKey(Attribute):
         self._attr_value = self.validate(attr_value)
 
     def validate(self, attr_value):
-        super()._validate(attr_value)
-        r = r'^[a-fA-F0-9]{64}$'
-        myregex = re.compile(r)
-        if not myregex.fullmatch(attr_value):
-            raise HotelManagementException("Invalid room key format")
+        return super()._validate(attr_value)
+

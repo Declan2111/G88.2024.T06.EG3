@@ -12,9 +12,4 @@ class Localizer(Attribute):
         self._attr_value = self._validate(attr_value)
 
     def _validate(self, attr_value):
-        super()._validate(attr_value)
-        r = r'^[a-fA-F0-9]{32}$'
-        myregex = re.compile(r)
-        if not myregex.fullmatch(attr_value):
-            raise HotelManagementException("Invalid localizer")
-        return attr_value
+        return super()._validate(attr_value)
