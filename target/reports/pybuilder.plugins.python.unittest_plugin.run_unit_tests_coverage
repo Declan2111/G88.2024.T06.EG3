@@ -12,15 +12,15 @@ attributes/attribute_phone_num.py              10      0      0      0   100%
 attributes/attribute_room_type.py              10      0      0      0   100%
 attributes/attribute_roomkey.py                10      0      0      0   100%
 storage/__init__.py                             0      0      0      0   100%
-storage/checkout_json_store.py                  0      0      0      0   100%
-storage/json_store.py                          34     16      6      1    48%
-storage/reservation_json_store.py              16      4      2      0    67%
-storage/stay_json_store.py                      0      0      0      0   100%
+storage/checkout_json_store.py                 20     20      2      0     0%
+storage/json_store.py                          36      8     10      1    80%
+storage/reservation_json_store.py              20      4      2      0    73%
+storage/stay_json_store.py                     15      0      0      0   100%
 uc3m_travel/__init__.py                         4      0      0      0   100%
 uc3m_travel/hotel_management_config.py          3      0      0      0   100%
 uc3m_travel/hotel_management_exception.py      10      1      0      0    90%
-uc3m_travel/hotel_manager.py                  172     17     44      3    89%
+uc3m_travel/hotel_manager.py                  173     16     48      3    90%
 uc3m_travel/hotel_reservation.py               39      3      0      0    92%
 uc3m_travel/hotel_stay.py                      41      7      0      0    83%
 -----------------------------------------------------------------------------
-TOTAL                                         447     49     64      4    88%
+TOTAL                                         489     60     74      4    88%

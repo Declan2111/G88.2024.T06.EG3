@@ -20,10 +20,12 @@ from attributes.attribute_name import NameSur
 
 from storage.reservation_json_store import ReservationJsonStore
 
+from storage.stay_json_store import StayJsonStore
 
 
 class HotelManager:
     """Class with all the methods for managing reservations and stays"""
+
     def __init__(self):
         pass
 
@@ -51,13 +53,13 @@ class HotelManager:
 
     # pylint: disable=too-many-arguments
     def room_reservation(self,
-                         credit_card:str,
-                         name_surname:str,
-                         id_card:str,
-                         phone_number:str,
-                         room_type:str,
+                         credit_card: str,
+                         name_surname: str,
+                         id_card: str,
+                         phone_number: str,
+                         room_type: str,
                          arrival_date: str,
-                         num_days:int)->str:
+                         num_days: int) -> str:
         """manges the hotel reservation: creates a reservation and saves it into a json file"""
         arrival_date, credit_card, num_days, phone_number, room_type = self.validate_data_room_res(arrival_date,
                                                                                                    credit_card, id_card,
@@ -77,22 +79,33 @@ class HotelManager:
         # escribo el fichero Json con todos los datos
         file_store = JSON_FILES_PATH + "store_reservation.json"
 
-        #leo los datos del fichero si existe , y si no existe creo una lista vacia
+        # leo los datos del fichero si existe , y si no existe creo una lista vacia
 
-        #data_list = self.generate_key_list(file_store)
-        data_list = ReservationJsonStore().load_list_from_file()
-        
-        #compruebo que esta reserva no esta en la lista
-        for item in data_list:
-            if my_reservation.localizer == item["_HotelReservation__localizer"]:
-                raise HotelManagementException ("Reservation already exists")
-            if my_reservation.id_card == item["_HotelReservation__id_card"]:
-                raise HotelManagementException("This ID card has another reservation")
-        #añado los datos de mi reserva a la lista , a lo que hubiera
+        # data_list = self.generate_key_list(file_store)
+        json_store_res = ReservationJsonStore()
+        data_list = json_store_res.load_list_from_file()
+
+        if json_store_res.find_item("_HotelReservation__localizer", my_reservation.localizer):
+            raise HotelManagementException("Reservation already exists")
+
+        if json_store_res.find_item("_HotelReservation__id_card", my_reservation.id_card):
+            raise HotelManagementException("This ID card has another reservation")
         data_list.append(my_reservation.__dict__)
 
-        #escribo la lista en el fichero
-        self.dump_or_NF(file_store, data_list)
+        # compruebo que esta reserva no esta en la lista
+        # for item in data_list:
+        #     if my_reservation.localizer == item["_HotelReservation__localizer"]:
+        #         raise HotelManagementException("Reservation already exists")
+        #     if my_reservation.id_card == item["_HotelReservation__id_card"]:
+        #         raise HotelManagementException("This ID card has another reservation")
+        # añado los datos de mi reserva a la lista , a lo que hubiera
+
+
+
+
+        # escribo la lista en el fichero
+        # self.dump_or_NF(file_store, data_list)
+        json_store_res.save_list_to_file()
 
         return my_reservation.localizer
 
@@ -102,7 +115,7 @@ class HotelManager:
         self.regex_match(id_card, r)
         validate_room = RoomType(room_type)
         room_type = validate_room._validate(room_type)
-        #r = r"^(?=^.{10,50}$)([a-zA-Z]+(\s[a-zA-Z]+)+)$"
+        # r = r"^(?=^.{10,50}$)([a-zA-Z]+(\s[a-zA-Z]+)+)$"
         # myregex = re.compile(r)
         # regex_matches = myregex.fullmatch(name_surname)
         # if not regex_matches:
@@ -128,7 +141,7 @@ class HotelManager:
         if not valid_id._validate(id_card):
             raise HotelManagementException("Invalid IdCard letter")
 
-    def guest_arrival(self, file_input:str)->str:
+    def guest_arrival(self, file_input: str) -> str:
         """manages the arrival of a guest with a reservation"""
         my_id_card, my_localizer = self.validate_data_guest_arr(file_input)
 
@@ -138,22 +151,30 @@ class HotelManager:
         my_checkin = HotelStay(idcard=my_id_card, numdays=int(reservation_days),
                                localizer=my_localizer, roomtype=reservation_room_type)
 
-        #Ahora lo guardo en el almacen nuevo de checkin
+        # Ahora lo guardo en el almacen nuevo de checkin
         # escribo el fichero Json con todos los datos
         file_store = JSON_FILES_PATH + "store_check_in.json"
 
         # leo los datos del fichero si existe , y si no existe creo una lista vacia
-        room_key_list = self.generate_key_list(file_store)
+        # room_key_list = self.generate_key_list(file_store)
+
+        stay_json_store = StayJsonStore()
+        room_key_list = stay_json_store.load_list_from_file()
 
         # comprobar que no he hecho otro ckeckin antes
-        for item in room_key_list:
-            if my_checkin.room_key == item["_HotelStay__room_key"]:
-                raise HotelManagementException ("ckeckin  ya realizado")
+        # for item in room_key_list:
+        #     if my_checkin.room_key == item["_HotelStay__room_key"]:
+        #         raise HotelManagementException("ckeckin  ya realizado")
+        if stay_json_store.find_item("_HotelStay__room_key", my_checkin.room_key):
+            raise HotelManagementException("ckeckin  ya realizado")
 
-        #añado los datos de mi reserva a la lista , a lo que hubiera
         room_key_list.append(my_checkin.__dict__)
 
-        self.dump_or_NF(file_store, room_key_list)
+        # añado los datos de mi reserva a la lista , a lo que hubiera
+        
+
+        # self.dump_or_NF(file_store, room_key_list)
+        stay_json_store.save_list_to_file()
 
         return my_checkin.room_key
 
@@ -231,7 +252,6 @@ class HotelManager:
             raise HotelManagementException("JSON Decode Error - Wrong JSON Format") from ex
         return input_list
 
-
     def dump_or_NF(self, file_store, room_key_list):
         try:
             with open(file_store, "w", encoding="utf-8", newline="") as file:
@@ -239,7 +259,7 @@ class HotelManager:
         except FileNotFoundError as ex:
             raise HotelManagementException("Wrong file  or file path") from ex
 
-    def guest_checkout(self, room_key:str)->bool:
+    def guest_checkout(self, room_key: str) -> bool:
         """manages the checkout of a guest"""
         self.check_departure_data_valid(room_key)
 
@@ -250,7 +270,7 @@ class HotelManager:
             if checkout["room_key"] == room_key:
                 raise HotelManagementException("Guest is already out")
 
-        room_checkout={"room_key":  room_key, "checkout_time":datetime.timestamp(datetime.utcnow())}
+        room_checkout = {"room_key": room_key, "checkout_time": datetime.timestamp(datetime.utcnow())}
 
         room_key_list.append(room_checkout)
 

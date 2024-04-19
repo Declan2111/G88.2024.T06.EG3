@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="test_guest_arrival_tests.TestHotelReservation-20240419202136" tests="3" file="test_guest_arrival_tests.py" time="0.020" timestamp="2024-04-19T20:21:36" failures="0" errors="3" skipped="0">
+	<testcase classname="test_guest_arrival_tests.TestHotelReservation" name="test_case_valid_reservation_invalid_arrival_date" time="0.007" timestamp="2024-04-19T20:21:36">
+		<error type="HotelManagementException" message="JSON Decode Error - Wrong JSON Format"><![CDATA[Traceback (most recent call last):
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/main/python/storage/json_store.py", line 32, in load_list_from_file
+    _data_list = json.load(file)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 587, in run
+    self._callSetUp()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 546, in _callSetUp
+    self.setUp()
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/unittest/python/test_guest_arrival_tests.py", line 37, in setUp
+    localizer = hotel_mngr.room_reservation(credit_card="5105105105105100",
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_manager.py", line 96, in room_reservation
+    ReservationJsonStore().save_list_to_file()
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/main/python/storage/reservation_json_store.py", line 30, in save_list_to_file
+    return super().save_list_to_file()
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/main/python/storage/json_store.py", line 25, in save_list_to_file
+    json.dump(self.load_list_from_file(), file, indent=2)
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/main/python/storage/reservation_json_store.py", line 27, in load_list_from_file
+    return super().load_list_from_file()
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/main/python/storage/json_store.py", line 36, in load_list_from_file
+    raise HotelManagementException("JSON Decode Error - Wrong JSON Format") from ex
+uc3m_travel.hotel_management_exception.HotelManagementException: JSON Decode Error - Wrong JSON Format
+]]></error>
+	</testcase>
+	<testcase classname="test_guest_arrival_tests.TestHotelReservation" name="test_get_reservation_data_manipulated_tests" time="0.007" timestamp="2024-04-19T20:21:36">
+		<error type="HotelManagementException" message="JSON Decode Error - Wrong JSON Format"><![CDATA[Traceback (most recent call last):
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/main/python/storage/json_store.py", line 32, in load_list_from_file
+    _data_list = json.load(file)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 587, in run
+    self._callSetUp()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 546, in _callSetUp
+    self.setUp()
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/unittest/python/test_guest_arrival_tests.py", line 37, in setUp
+    localizer = hotel_mngr.room_reservation(credit_card="5105105105105100",
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_manager.py", line 96, in room_reservation
+    ReservationJsonStore().save_list_to_file()
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/main/python/storage/reservation_json_store.py", line 30, in save_list_to_file
+    return super().save_list_to_file()
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/main/python/storage/json_store.py", line 25, in save_list_to_file
+    json.dump(self.load_list_from_file(), file, indent=2)
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/main/python/storage/reservation_json_store.py", line 27, in load_list_from_file
+    return super().load_list_from_file()
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/main/python/storage/json_store.py", line 36, in load_list_from_file
+    raise HotelManagementException("JSON Decode Error - Wrong JSON Format") from ex
+uc3m_travel.hotel_management_exception.HotelManagementException: JSON Decode Error - Wrong JSON Format
+]]></error>
+	</testcase>
+	<testcase classname="test_guest_arrival_tests.TestHotelReservation" name="test_parametrized_cases_tests" time="0.006" timestamp="2024-04-19T20:21:36">
+		<error type="HotelManagementException" message="JSON Decode Error - Wrong JSON Format"><![CDATA[Traceback (most recent call last):
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/main/python/storage/json_store.py", line 32, in load_list_from_file
+    _data_list = json.load(file)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 587, in run
+    self._callSetUp()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 546, in _callSetUp
+    self.setUp()
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/unittest/python/test_guest_arrival_tests.py", line 37, in setUp
+    localizer = hotel_mngr.room_reservation(credit_card="5105105105105100",
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_manager.py", line 96, in room_reservation
+    ReservationJsonStore().save_list_to_file()
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/main/python/storage/reservation_json_store.py", line 30, in save_list_to_file
+    return super().save_list_to_file()
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/main/python/storage/json_store.py", line 25, in save_list_to_file
+    json.dump(self.load_list_from_file(), file, indent=2)
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/main/python/storage/reservation_json_store.py", line 27, in load_list_from_file
+    return super().load_list_from_file()
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/main/python/storage/json_store.py", line 36, in load_list_from_file
+    raise HotelManagementException("JSON Decode Error - Wrong JSON Format") from ex
+uc3m_travel.hotel_management_exception.HotelManagementException: JSON Decode Error - Wrong JSON Format
+]]></error>
+	</testcase>
+</testsuite>

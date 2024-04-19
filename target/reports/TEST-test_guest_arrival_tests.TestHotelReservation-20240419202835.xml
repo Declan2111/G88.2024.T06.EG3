@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="test_guest_arrival_tests.TestHotelReservation-20240419202835" tests="4" file="test_guest_arrival_tests.py" time="0.118" timestamp="2024-04-19T20:28:35" failures="2" errors="1" skipped="0">
+	<testcase classname="test_guest_arrival_tests.TestHotelReservation" name="test_get_reservation_data_manipulated_tests" time="0.005" timestamp="2024-04-19T20:28:35"/>
+	<testcase classname="test_guest_arrival_tests.TestHotelReservation" name="test_case_valid_reservation_invalid_arrival_date" time="0.005" timestamp="2024-04-19T20:28:35">
+		<failure type="AssertionError" message="'Error: localizer not found' != 'Error: today is not reservation date'
+- Error: localizer not found
++ Error: today is not reservation date
+"><![CDATA[Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 591, in run
+    self._callTestMethod(testMethod)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 549, in _callTestMethod
+    method()
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/venv/lib/python3.10/site-packages/freezegun/api.py", line 827, in wrapper
+    result = func(*args, **kwargs)
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/unittest/python/test_guest_arrival_tests.py", line 75, in test_case_valid_reservation_invalid_arrival_date
+    self.assertEqual(c_m.exception.message, "Error: today is not reservation date")
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 845, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 1226, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 675, in fail
+    raise self.failureException(msg)
+AssertionError: 'Error: localizer not found' != 'Error: today is not reservation date'
+- Error: localizer not found
++ Error: today is not reservation date
+
+]]></failure>
+	</testcase>
+	<testcase classname="test_guest_arrival_tests.TestHotelReservation" name="test_parametrized_cases_tests [RF2 53INVALID]" time="0.109" timestamp="2024-04-19T20:28:35">
+		<failure type="AssertionError" message="'Error: localizer not found' != 'Error: Localizer is not correct for this IdCard'
+- Error: localizer not found
++ Error: Localizer is not correct for this IdCard
+"><![CDATA[Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 498, in subTest
+    yield
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/unittest/python/test_guest_arrival_tests.py", line 124, in test_parametrized_cases_tests
+    self.assertEqual(c_m.exception.message, result)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 845, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 1226, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 675, in fail
+    raise self.failureException(msg)
+AssertionError: 'Error: localizer not found' != 'Error: Localizer is not correct for this IdCard'
+- Error: localizer not found
++ Error: Localizer is not correct for this IdCard
+
+]]></failure>
+	</testcase>
+	<testcase classname="test_guest_arrival_tests.TestHotelReservation" name="test_parametrized_cases_tests [RF2 1VALID]" time="0.000" timestamp="0001-01-01T00:00:00">
+		<error type="HotelManagementException" message="Error: localizer not found"><![CDATA[Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 498, in subTest
+    yield
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/unittest/python/test_guest_arrival_tests.py", line 102, in test_parametrized_cases_tests
+    valor = mngr.guest_arrival(test_file)
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_manager.py", line 136, in guest_arrival
+    reservation_days, reservation_room_type = self.check_file_manip(my_id_card, my_localizer)
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_manager.py", line 179, in check_file_manip
+    raise HotelManagementException("Error: localizer not found")
+uc3m_travel.hotel_management_exception.HotelManagementException: Error: localizer not found
+]]></error>
+	</testcase>
+</testsuite>
