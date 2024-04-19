@@ -2,6 +2,11 @@
 from datetime import datetime
 import hashlib
 
+from attributes.attribute_id import IDNum
+from attributes.attribute_localizer import Localizer
+from attributes.attribute_room_type import RoomType
+
+
 class HotelStay():
     """Class for representing hotel stays"""
     def __init__(self,
@@ -11,9 +16,9 @@ class HotelStay():
                  roomtype:str):
         """constructor for HotelStay objects"""
         self.__alg = "SHA-256"
-        self.__type = roomtype
-        self.__idcard = idcard
-        self.__localizer = localizer
+        self.__type = RoomType(roomtype).value
+        self.__idcard = IDNum(idcard).value
+        self.__localizer = Localizer(localizer).value
         justnow = datetime.utcnow()
         self.__arrival = datetime.timestamp(justnow)
         #timestamp is represented in seconds.miliseconds

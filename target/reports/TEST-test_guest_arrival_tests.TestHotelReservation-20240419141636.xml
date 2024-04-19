@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="test_guest_arrival_tests.TestHotelReservation-20240419141636" tests="3" file="test_guest_arrival_tests.py" time="0.010" timestamp="2024-04-19T14:16:36" failures="3" errors="0" skipped="0">
+	<testcase classname="test_guest_arrival_tests.TestHotelReservation" name="test_case_valid_reservation_invalid_arrival_date" time="0.004" timestamp="2024-04-19T14:16:36">
+		<failure type="AssertionError" message="'94c533b8959b8207652d093447963b61' != '450a53be9b39944e62e7164ca5f5aadf'
+- 94c533b8959b8207652d093447963b61
++ 450a53be9b39944e62e7164ca5f5aadf
+"><![CDATA[Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 589, in run
+    self._callSetUp()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 547, in _callSetUp
+    self.setUp()
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/unittest/python/test_guest_arrival_tests.py", line 44, in setUp
+    self.assertEqual(localizer, "450a53be9b39944e62e7164ca5f5aadf")
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 831, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 1211, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 670, in fail
+    raise self.failureException(msg)
+AssertionError: '94c533b8959b8207652d093447963b61' != '450a53be9b39944e62e7164ca5f5aadf'
+- 94c533b8959b8207652d093447963b61
++ 450a53be9b39944e62e7164ca5f5aadf
+
+]]></failure>
+	</testcase>
+	<testcase classname="test_guest_arrival_tests.TestHotelReservation" name="test_get_reservation_data_manipulated_tests" time="0.003" timestamp="2024-04-19T14:16:36">
+		<failure type="AssertionError" message="'94c533b8959b8207652d093447963b61' != '450a53be9b39944e62e7164ca5f5aadf'
+- 94c533b8959b8207652d093447963b61
++ 450a53be9b39944e62e7164ca5f5aadf
+"><![CDATA[Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 589, in run
+    self._callSetUp()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 547, in _callSetUp
+    self.setUp()
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/unittest/python/test_guest_arrival_tests.py", line 44, in setUp
+    self.assertEqual(localizer, "450a53be9b39944e62e7164ca5f5aadf")
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 831, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 1211, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 670, in fail
+    raise self.failureException(msg)
+AssertionError: '94c533b8959b8207652d093447963b61' != '450a53be9b39944e62e7164ca5f5aadf'
+- 94c533b8959b8207652d093447963b61
++ 450a53be9b39944e62e7164ca5f5aadf
+
+]]></failure>
+	</testcase>
+	<testcase classname="test_guest_arrival_tests.TestHotelReservation" name="test_parametrized_cases_tests" time="0.003" timestamp="2024-04-19T14:16:36">
+		<failure type="AssertionError" message="'94c533b8959b8207652d093447963b61' != '450a53be9b39944e62e7164ca5f5aadf'
+- 94c533b8959b8207652d093447963b61
++ 450a53be9b39944e62e7164ca5f5aadf
+"><![CDATA[Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 589, in run
+    self._callSetUp()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 547, in _callSetUp
+    self.setUp()
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/unittest/python/test_guest_arrival_tests.py", line 44, in setUp
+    self.assertEqual(localizer, "450a53be9b39944e62e7164ca5f5aadf")
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 831, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 1211, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 670, in fail
+    raise self.failureException(msg)
+AssertionError: '94c533b8959b8207652d093447963b61' != '450a53be9b39944e62e7164ca5f5aadf'
+- 94c533b8959b8207652d093447963b61
++ 450a53be9b39944e62e7164ca5f5aadf
+
+]]></failure>
+	</testcase>
+</testsuite>

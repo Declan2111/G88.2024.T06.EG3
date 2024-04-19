@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="test_guest_arrival_tests.TestHotelReservation-20240419150020" tests="3" file="test_guest_arrival_tests.py" time="0.011" timestamp="2024-04-19T15:00:20" failures="0" errors="3" skipped="0">
+	<testcase classname="test_guest_arrival_tests.TestHotelReservation" name="test_case_valid_reservation_invalid_arrival_date" time="0.004" timestamp="2024-04-19T15:00:20">
+		<error type="HotelManagementException" message="Invalid name format"><![CDATA[Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 589, in run
+    self._callSetUp()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 547, in _callSetUp
+    self.setUp()
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/unittest/python/test_guest_arrival_tests.py", line 37, in setUp
+    localizer = hotel_mngr.room_reservation(credit_card="5105105105105100",
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_manager.py", line 59, in room_reservation
+    arrival_date, credit_card, num_days, phone_number, room_type = self.validate_data_room_res(arrival_date,
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_manager.py", line 108, in validate_data_room_res
+    valid_name._validate(room_type)
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/main/python/attributes/attribute_name.py", line 12, in _validate
+    return super()._validate(attr_value)
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/main/python/attributes/attribute.py", line 17, in _validate
+    raise HotelManagementException(self._error_message)
+uc3m_travel.hotel_management_exception.HotelManagementException: Invalid name format
+]]></error>
+	</testcase>
+	<testcase classname="test_guest_arrival_tests.TestHotelReservation" name="test_get_reservation_data_manipulated_tests" time="0.003" timestamp="2024-04-19T15:00:20">
+		<error type="HotelManagementException" message="Invalid name format"><![CDATA[Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 589, in run
+    self._callSetUp()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 547, in _callSetUp
+    self.setUp()
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/unittest/python/test_guest_arrival_tests.py", line 37, in setUp
+    localizer = hotel_mngr.room_reservation(credit_card="5105105105105100",
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_manager.py", line 59, in room_reservation
+    arrival_date, credit_card, num_days, phone_number, room_type = self.validate_data_room_res(arrival_date,
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_manager.py", line 108, in validate_data_room_res
+    valid_name._validate(room_type)
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/main/python/attributes/attribute_name.py", line 12, in _validate
+    return super()._validate(attr_value)
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/main/python/attributes/attribute.py", line 17, in _validate
+    raise HotelManagementException(self._error_message)
+uc3m_travel.hotel_management_exception.HotelManagementException: Invalid name format
+]]></error>
+	</testcase>
+	<testcase classname="test_guest_arrival_tests.TestHotelReservation" name="test_parametrized_cases_tests" time="0.003" timestamp="2024-04-19T15:00:20">
+		<error type="HotelManagementException" message="Invalid name format"><![CDATA[Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 589, in run
+    self._callSetUp()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 547, in _callSetUp
+    self.setUp()
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/unittest/python/test_guest_arrival_tests.py", line 37, in setUp
+    localizer = hotel_mngr.room_reservation(credit_card="5105105105105100",
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_manager.py", line 59, in room_reservation
+    arrival_date, credit_card, num_days, phone_number, room_type = self.validate_data_room_res(arrival_date,
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_manager.py", line 108, in validate_data_room_res
+    valid_name._validate(room_type)
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/main/python/attributes/attribute_name.py", line 12, in _validate
+    return super()._validate(attr_value)
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/main/python/attributes/attribute.py", line 17, in _validate
+    raise HotelManagementException(self._error_message)
+uc3m_travel.hotel_management_exception.HotelManagementException: Invalid name format
+]]></error>
+	</testcase>
+</testsuite>

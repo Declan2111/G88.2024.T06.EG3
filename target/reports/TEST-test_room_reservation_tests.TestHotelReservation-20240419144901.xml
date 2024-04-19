@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="test_room_reservation_tests.TestHotelReservation-20240419144901" tests="16" file="test_room_reservation_tests.py" time="0.090" timestamp="2024-04-19T14:49:01" failures="9" errors="5" skipped="0">
+	<testcase classname="test_room_reservation_tests.TestHotelReservation" name="test_duplicated_id_reservation_tests" time="0.001" timestamp="2024-04-19T14:49:01"/>
+	<testcase classname="test_room_reservation_tests.TestHotelReservation" name="test_duplicated_reservation_tests" time="0.003" timestamp="2024-04-19T14:49:01"/>
+	<testcase classname="test_room_reservation_tests.TestHotelReservation" name="test_parametrized_cases_tests [TC5INVALID]" time="0.000" timestamp="0001-01-01T00:00:00">
+		<failure type="AssertionError" message="'This ID card has another reservation' != 'Invalid credit card number (not luhn)'
+- This ID card has another reservation
++ Invalid credit card number (not luhn)
+"><![CDATA[Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 499, in subTest
+    yield
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/unittest/python/test_room_reservation_tests.py", line 206, in test_parametrized_cases_tests
+    self.assertEqual(c_m.exception.message, result)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 831, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 1211, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 670, in fail
+    raise self.failureException(msg)
+AssertionError: 'This ID card has another reservation' != 'Invalid credit card number (not luhn)'
+- This ID card has another reservation
++ Invalid credit card number (not luhn)
+
+]]></failure>
+	</testcase>
+	<testcase classname="test_room_reservation_tests.TestHotelReservation" name="test_parametrized_cases_tests [TC6INVALID]" time="0.000" timestamp="0001-01-01T00:00:00">
+		<failure type="AssertionError" message="'This ID card has another reservation' != 'Invalid credit card format'
+- This ID card has another reservation
++ Invalid credit card format
+"><![CDATA[Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 499, in subTest
+    yield
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/unittest/python/test_room_reservation_tests.py", line 206, in test_parametrized_cases_tests
+    self.assertEqual(c_m.exception.message, result)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 831, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 1211, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 670, in fail
+    raise self.failureException(msg)
+AssertionError: 'This ID card has another reservation' != 'Invalid credit card format'
+- This ID card has another reservation
++ Invalid credit card format
+
+]]></failure>
+	</testcase>
+	<testcase classname="test_room_reservation_tests.TestHotelReservation" name="test_parametrized_cases_tests [TC7INVALID]" time="0.000" timestamp="0001-01-01T00:00:00">
+		<failure type="AssertionError" message="'This ID card has another reservation' != 'Invalid credit card format'
+- This ID card has another reservation
++ Invalid credit card format
+"><![CDATA[Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 499, in subTest
+    yield
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/unittest/python/test_room_reservation_tests.py", line 206, in test_parametrized_cases_tests
+    self.assertEqual(c_m.exception.message, result)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 831, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 1211, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 670, in fail
+    raise self.failureException(msg)
+AssertionError: 'This ID card has another reservation' != 'Invalid credit card format'
+- This ID card has another reservation
++ Invalid credit card format
+
+]]></failure>
+	</testcase>
+	<testcase classname="test_room_reservation_tests.TestHotelReservation" name="test_parametrized_cases_tests [TC8INVALID]" time="0.000" timestamp="0001-01-01T00:00:00">
+		<failure type="AssertionError" message="'This ID card has another reservation' != 'Invalid credit card format'
+- This ID card has another reservation
++ Invalid credit card format
+"><![CDATA[Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 499, in subTest
+    yield
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/unittest/python/test_room_reservation_tests.py", line 206, in test_parametrized_cases_tests
+    self.assertEqual(c_m.exception.message, result)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 831, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 1211, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 670, in fail
+    raise self.failureException(msg)
+AssertionError: 'This ID card has another reservation' != 'Invalid credit card format'
+- This ID card has another reservation
++ Invalid credit card format
+
+]]></failure>
+	</testcase>
+	<testcase classname="test_room_reservation_tests.TestHotelReservation" name="test_parametrized_cases_tests [TC9INVALID]" time="0.000" timestamp="0001-01-01T00:00:00">
+		<failure type="AssertionError" message="HotelManagementException not raised"><![CDATA[Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 499, in subTest
+    yield
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/unittest/python/test_room_reservation_tests.py", line 199, in test_parametrized_cases_tests
+    mngr.room_reservation(credit_card=credit_card_number,
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 226, in __exit__
+    self._raiseFailure("{} not raised".format(exc_name))
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 163, in _raiseFailure
+    raise self.test_case.failureException(msg)
+AssertionError: HotelManagementException not raised
+]]></failure>
+	</testcase>
+	<testcase classname="test_room_reservation_tests.TestHotelReservation" name="test_parametrized_cases_tests [TC15INVALID]" time="0.000" timestamp="0001-01-01T00:00:00">
+		<failure type="AssertionError" message="'This ID card has another reservation' != 'Invalid name format'
+- This ID card has another reservation
++ Invalid name format
+"><![CDATA[Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 499, in subTest
+    yield
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/unittest/python/test_room_reservation_tests.py", line 206, in test_parametrized_cases_tests
+    self.assertEqual(c_m.exception.message, result)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 831, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 1211, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 670, in fail
+    raise self.failureException(msg)
+AssertionError: 'This ID card has another reservation' != 'Invalid name format'
+- This ID card has another reservation
++ Invalid name format
+
+]]></failure>
+	</testcase>
+	<testcase classname="test_room_reservation_tests.TestHotelReservation" name="test_parametrized_cases_tests [TC16INVALID]" time="0.000" timestamp="0001-01-01T00:00:00">
+		<failure type="AssertionError" message="'This ID card has another reservation' != 'Invalid name format'
+- This ID card has another reservation
++ Invalid name format
+"><![CDATA[Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 499, in subTest
+    yield
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/unittest/python/test_room_reservation_tests.py", line 206, in test_parametrized_cases_tests
+    self.assertEqual(c_m.exception.message, result)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 831, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 1211, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 670, in fail
+    raise self.failureException(msg)
+AssertionError: 'This ID card has another reservation' != 'Invalid name format'
+- This ID card has another reservation
++ Invalid name format
+
+]]></failure>
+	</testcase>
+	<testcase classname="test_room_reservation_tests.TestHotelReservation" name="test_parametrized_cases_tests [TC17INVALID]" time="0.000" timestamp="0001-01-01T00:00:00">
+		<failure type="AssertionError" message="'This ID card has another reservation' != 'Invalid name format'
+- This ID card has another reservation
++ Invalid name format
+"><![CDATA[Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 499, in subTest
+    yield
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/unittest/python/test_room_reservation_tests.py", line 206, in test_parametrized_cases_tests
+    self.assertEqual(c_m.exception.message, result)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 831, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 1211, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 670, in fail
+    raise self.failureException(msg)
+AssertionError: 'This ID card has another reservation' != 'Invalid name format'
+- This ID card has another reservation
++ Invalid name format
+
+]]></failure>
+	</testcase>
+	<testcase classname="test_room_reservation_tests.TestHotelReservation" name="test_parametrized_cases_tests [TC18INVALID]" time="0.086" timestamp="2024-04-19T14:49:01">
+		<failure type="AssertionError" message="'This ID card has another reservation' != 'Invalid name format'
+- This ID card has another reservation
++ Invalid name format
+"><![CDATA[Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 499, in subTest
+    yield
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/unittest/python/test_room_reservation_tests.py", line 206, in test_parametrized_cases_tests
+    self.assertEqual(c_m.exception.message, result)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 831, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 1211, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 670, in fail
+    raise self.failureException(msg)
+AssertionError: 'This ID card has another reservation' != 'Invalid name format'
+- This ID card has another reservation
++ Invalid name format
+
+]]></failure>
+	</testcase>
+	<testcase classname="test_room_reservation_tests.TestHotelReservation" name="test_parametrized_cases_tests [TC10INVALID]" time="0.000" timestamp="0001-01-01T00:00:00">
+		<error type="AttributeError" message="'IDNum' object has no attribute '_error_message'"><![CDATA[Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 499, in subTest
+    yield
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/unittest/python/test_room_reservation_tests.py", line 199, in test_parametrized_cases_tests
+    mngr.room_reservation(credit_card=credit_card_number,
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_manager.py", line 65, in room_reservation
+    my_reservation = HotelReservation(id_card=id_card,
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_reservation.py", line 27, in __init__
+    self.__id_card = IDNum(id_card).value
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/main/python/attributes/attribute_id.py", line 11, in __init__
+    self._attr_value = self._validate(attr_value)
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/main/python/attributes/attribute_id.py", line 15, in _validate
+    super()._validate(attr_value)
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/main/python/attributes/attribute.py", line 17, in _validate
+    raise HotelManagementException(self._error_message)
+AttributeError: 'IDNum' object has no attribute '_error_message'
+]]></error>
+	</testcase>
+	<testcase classname="test_room_reservation_tests.TestHotelReservation" name="test_parametrized_cases_tests [TC11INVALID]" time="0.000" timestamp="0001-01-01T00:00:00">
+		<error type="AttributeError" message="'IDNum' object has no attribute '_error_message'"><![CDATA[Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 499, in subTest
+    yield
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/unittest/python/test_room_reservation_tests.py", line 199, in test_parametrized_cases_tests
+    mngr.room_reservation(credit_card=credit_card_number,
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_manager.py", line 65, in room_reservation
+    my_reservation = HotelReservation(id_card=id_card,
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_reservation.py", line 27, in __init__
+    self.__id_card = IDNum(id_card).value
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/main/python/attributes/attribute_id.py", line 11, in __init__
+    self._attr_value = self._validate(attr_value)
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/main/python/attributes/attribute_id.py", line 15, in _validate
+    super()._validate(attr_value)
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/main/python/attributes/attribute.py", line 17, in _validate
+    raise HotelManagementException(self._error_message)
+AttributeError: 'IDNum' object has no attribute '_error_message'
+]]></error>
+	</testcase>
+	<testcase classname="test_room_reservation_tests.TestHotelReservation" name="test_parametrized_cases_tests [TC12INVALID]" time="0.000" timestamp="0001-01-01T00:00:00">
+		<error type="AttributeError" message="'IDNum' object has no attribute '_error_message'"><![CDATA[Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 499, in subTest
+    yield
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/unittest/python/test_room_reservation_tests.py", line 199, in test_parametrized_cases_tests
+    mngr.room_reservation(credit_card=credit_card_number,
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_manager.py", line 65, in room_reservation
+    my_reservation = HotelReservation(id_card=id_card,
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_reservation.py", line 27, in __init__
+    self.__id_card = IDNum(id_card).value
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/main/python/attributes/attribute_id.py", line 11, in __init__
+    self._attr_value = self._validate(attr_value)
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/main/python/attributes/attribute_id.py", line 15, in _validate
+    super()._validate(attr_value)
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/main/python/attributes/attribute.py", line 17, in _validate
+    raise HotelManagementException(self._error_message)
+AttributeError: 'IDNum' object has no attribute '_error_message'
+]]></error>
+	</testcase>
+	<testcase classname="test_room_reservation_tests.TestHotelReservation" name="test_parametrized_cases_tests [TC13INVALID]" time="0.000" timestamp="0001-01-01T00:00:00">
+		<error type="AttributeError" message="'IDNum' object has no attribute '_error_message'"><![CDATA[Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 499, in subTest
+    yield
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/unittest/python/test_room_reservation_tests.py", line 199, in test_parametrized_cases_tests
+    mngr.room_reservation(credit_card=credit_card_number,
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_manager.py", line 65, in room_reservation
+    my_reservation = HotelReservation(id_card=id_card,
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_reservation.py", line 27, in __init__
+    self.__id_card = IDNum(id_card).value
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/main/python/attributes/attribute_id.py", line 11, in __init__
+    self._attr_value = self._validate(attr_value)
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/main/python/attributes/attribute_id.py", line 15, in _validate
+    super()._validate(attr_value)
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/main/python/attributes/attribute.py", line 17, in _validate
+    raise HotelManagementException(self._error_message)
+AttributeError: 'IDNum' object has no attribute '_error_message'
+]]></error>
+	</testcase>
+	<testcase classname="test_room_reservation_tests.TestHotelReservation" name="test_parametrized_cases_tests [TC14INVALID]" time="0.000" timestamp="0001-01-01T00:00:00">
+		<error type="AttributeError" message="'IDNum' object has no attribute '_error_message'"><![CDATA[Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 499, in subTest
+    yield
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/unittest/python/test_room_reservation_tests.py", line 199, in test_parametrized_cases_tests
+    mngr.room_reservation(credit_card=credit_card_number,
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_manager.py", line 65, in room_reservation
+    my_reservation = HotelReservation(id_card=id_card,
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_reservation.py", line 27, in __init__
+    self.__id_card = IDNum(id_card).value
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/main/python/attributes/attribute_id.py", line 11, in __init__
+    self._attr_value = self._validate(attr_value)
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/main/python/attributes/attribute_id.py", line 15, in _validate
+    super()._validate(attr_value)
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/main/python/attributes/attribute.py", line 17, in _validate
+    raise HotelManagementException(self._error_message)
+AttributeError: 'IDNum' object has no attribute '_error_message'
+]]></error>
+	</testcase>
+</testsuite>

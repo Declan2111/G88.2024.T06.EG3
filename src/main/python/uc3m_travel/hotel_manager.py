@@ -7,22 +7,19 @@ from uc3m_travel.hotel_reservation import HotelReservation
 from uc3m_travel.hotel_stay import HotelStay
 from uc3m_travel.hotel_management_config import JSON_FILES_PATH
 from freezegun import freeze_time
-
 from attributes.attribute_card_num import CardNum
-
 from attributes.attribute_room_type import RoomType
-
 from attributes.attribute_arrival_date import ArrivalDate
-
 from attributes.attribute_phone_num import PhoneNumber
-
 from attributes.attribute_num_days import NumDays
-
 from attributes.attribute_id import IDNum
-
 from attributes.attribute_localizer import Localizer
-
 from attributes.attribute_roomkey import RoomKey
+
+from attributes.attribute_name import NameSur
+
+from storage.reservation_json_store import ReservationJsonStore
+
 
 
 class HotelManager:
@@ -62,7 +59,6 @@ class HotelManager:
                          arrival_date: str,
                          num_days:int)->str:
         """manges the hotel reservation: creates a reservation and saves it into a json file"""
-
         arrival_date, credit_card, num_days, phone_number, room_type = self.validate_data_room_res(arrival_date,
                                                                                                    credit_card, id_card,
                                                                                                    name_surname,
@@ -83,8 +79,8 @@ class HotelManager:
 
         #leo los datos del fichero si existe , y si no existe creo una lista vacia
 
-
-        data_list = self.generate_key_list(file_store)
+        #data_list = self.generate_key_list(file_store)
+        data_list = ReservationJsonStore().load_list_from_file()
 
         #compruebo que esta reserva no esta en la lista
         for item in data_list:
@@ -106,11 +102,13 @@ class HotelManager:
         self.regex_match(id_card, r)
         validate_room = RoomType(room_type)
         room_type = validate_room._validate(room_type)
-        r = r"^(?=^.{10,50}$)([a-zA-Z]+(\s[a-zA-Z]+)+)$"
-        myregex = re.compile(r)
-        regex_matches = myregex.fullmatch(name_surname)
-        if not regex_matches:
-            raise HotelManagementException("Invalid name format")
+        #r = r"^(?=^.{10,50}$)([a-zA-Z]+(\s[a-zA-Z]+)+)$"
+        # myregex = re.compile(r)
+        # regex_matches = myregex.fullmatch(name_surname)
+        # if not regex_matches:
+        #     raise HotelManagementException("Invalid name format")
+        valid_name = NameSur(name_surname)
+        name_surname = valid_name._validate(name_surname)
         card_num = CardNum(credit_card)
         credit_card = card_num._validate(credit_card)
         validate_arrival = ArrivalDate(arrival_date)

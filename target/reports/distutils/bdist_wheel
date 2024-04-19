@@ -1,8 +1,8 @@
 running clean
-'build/temp.macosx-10.9-universal2-cpython-310' does not exist -- can't clean it
+'build/temp.macosx-10.9-universal2-cpython-39' does not exist -- can't clean it
 'build/lib' does not exist -- can't clean it
 'build/bdist.macosx-10.9-universal2' does not exist -- can't clean it
-'build/scripts-3.10' does not exist -- can't clean it
+'build/scripts-3.9' does not exist -- can't clean it
 running bdist_wheel
 running build
 running build_py
@@ -20,6 +20,12 @@ copying attributes/attribute_card_num.py -> build/lib/attributes
 copying attributes/attribute_room_type.py -> build/lib/attributes
 copying attributes/attribute_num_days.py -> build/lib/attributes
 copying attributes/attribute_id.py -> build/lib/attributes
+creating build/lib/storage
+copying storage/checkout_json_store.py -> build/lib/storage
+copying storage/json_store.py -> build/lib/storage
+copying storage/reservation_json_store.py -> build/lib/storage
+copying storage/__init__.py -> build/lib/storage
+copying storage/stay_json_store.py -> build/lib/storage
 creating build/lib/uc3m_travel
 copying uc3m_travel/hotel_management_exception.py -> build/lib/uc3m_travel
 copying uc3m_travel/__init__.py -> build/lib/uc3m_travel
@@ -27,7 +33,7 @@ copying uc3m_travel/hotel_management_config.py -> build/lib/uc3m_travel
 copying uc3m_travel/hotel_manager.py -> build/lib/uc3m_travel
 copying uc3m_travel/hotel_stay.py -> build/lib/uc3m_travel
 copying uc3m_travel/hotel_reservation.py -> build/lib/uc3m_travel
-/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/.pybuilder/plugins/cpython-3.10.8.final.0/lib/python3.10/site-packages/setuptools/_distutils/cmd.py:66: SetuptoolsDeprecationWarning: setup.py install is deprecated.
+/Users/a19787/PycharmProjects/G88.2024.T06.EG3/.pybuilder/plugins/cpython-3.9.6.final.0/lib/python3.9/site-packages/setuptools/_distutils/cmd.py:66: SetuptoolsDeprecationWarning: setup.py install is deprecated.
 !!
 
         ********************************************************************************
@@ -45,6 +51,12 @@ running install
 running install_lib
 creating build/bdist.macosx-10.9-universal2
 creating build/bdist.macosx-10.9-universal2/wheel
+creating build/bdist.macosx-10.9-universal2/wheel/storage
+copying build/lib/storage/checkout_json_store.py -> build/bdist.macosx-10.9-universal2/wheel/storage
+copying build/lib/storage/json_store.py -> build/bdist.macosx-10.9-universal2/wheel/storage
+copying build/lib/storage/reservation_json_store.py -> build/bdist.macosx-10.9-universal2/wheel/storage
+copying build/lib/storage/__init__.py -> build/bdist.macosx-10.9-universal2/wheel/storage
+copying build/lib/storage/stay_json_store.py -> build/bdist.macosx-10.9-universal2/wheel/storage
 creating build/bdist.macosx-10.9-universal2/wheel/attributes
 copying build/lib/attributes/attribute_name.py -> build/bdist.macosx-10.9-universal2/wheel/attributes
 copying build/lib/attributes/attribute_arrival_date.py -> build/bdist.macosx-10.9-universal2/wheel/attributes
@@ -72,13 +84,13 @@ writing namespace_packages to EG2.egg-info/namespace_packages.txt
 writing top-level names to EG2.egg-info/top_level.txt
 reading manifest file 'EG2.egg-info/SOURCES.txt'
 writing manifest file 'EG2.egg-info/SOURCES.txt'
-Copying EG2.egg-info to build/bdist.macosx-10.9-universal2/wheel/EG2-1.0.dev0-py3.10.egg-info
-Copying PKG-INFO to build/bdist.macosx-10.9-universal2/wheel/EG2-1.0.dev0-py3.10.egg-info/PKG-INFO
-Copying zip-safe to build/bdist.macosx-10.9-universal2/wheel/EG2-1.0.dev0-py3.10.egg-info/zip-safe
-Copying namespace_packages.txt to build/bdist.macosx-10.9-universal2/wheel/EG2-1.0.dev0-py3.10.egg-info/namespace_packages.txt
-Copying SOURCES.txt to build/bdist.macosx-10.9-universal2/wheel/EG2-1.0.dev0-py3.10.egg-info/SOURCES.txt
-Copying top_level.txt to build/bdist.macosx-10.9-universal2/wheel/EG2-1.0.dev0-py3.10.egg-info/top_level.txt
-Copying dependency_links.txt to build/bdist.macosx-10.9-universal2/wheel/EG2-1.0.dev0-py3.10.egg-info/dependency_links.txt
+Copying EG2.egg-info to build/bdist.macosx-10.9-universal2/wheel/EG2-1.0.dev0-py3.9.egg-info
+Copying PKG-INFO to build/bdist.macosx-10.9-universal2/wheel/EG2-1.0.dev0-py3.9.egg-info/PKG-INFO
+Copying zip-safe to build/bdist.macosx-10.9-universal2/wheel/EG2-1.0.dev0-py3.9.egg-info/zip-safe
+Copying namespace_packages.txt to build/bdist.macosx-10.9-universal2/wheel/EG2-1.0.dev0-py3.9.egg-info/namespace_packages.txt
+Copying SOURCES.txt to build/bdist.macosx-10.9-universal2/wheel/EG2-1.0.dev0-py3.9.egg-info/SOURCES.txt
+Copying top_level.txt to build/bdist.macosx-10.9-universal2/wheel/EG2-1.0.dev0-py3.9.egg-info/top_level.txt
+Copying dependency_links.txt to build/bdist.macosx-10.9-universal2/wheel/EG2-1.0.dev0-py3.9.egg-info/dependency_links.txt
 running install_scripts
 creating build/bdist.macosx-10.9-universal2/wheel/EG2-1.0.dev0.dist-info/WHEEL
 creating 'dist/EG2-1.0.dev0-py3-none-any.whl' and adding 'build/bdist.macosx-10.9-universal2/wheel' to it
@@ -93,6 +105,11 @@ adding 'attributes/attribute_num_days.py'
 adding 'attributes/attribute_phone_num.py'
 adding 'attributes/attribute_room_type.py'
 adding 'attributes/attribute_roomkey.py'
+adding 'storage/__init__.py'
+adding 'storage/checkout_json_store.py'
+adding 'storage/json_store.py'
+adding 'storage/reservation_json_store.py'
+adding 'storage/stay_json_store.py'
 adding 'uc3m_travel/__init__.py'
 adding 'uc3m_travel/hotel_management_config.py'
 adding 'uc3m_travel/hotel_management_exception.py'

@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="test_room_reservation_tests.TestHotelReservation-20240419150517" tests="33" file="test_room_reservation_tests.py" time="0.083" timestamp="2024-04-19T15:05:18" failures="0" errors="33" skipped="0">
+	<testcase classname="test_room_reservation_tests.TestHotelReservation" name="test_duplicated_id_reservation_tests" time="0.001" timestamp="2024-04-19T15:05:17">
+		<error type="AttributeError" message="'HotelManager' object has no attribute 'validate_data_room_res'"><![CDATA[Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 593, in run
+    self._callTestMethod(testMethod)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 550, in _callTestMethod
+    method()
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/unittest/python/test_room_reservation_tests.py", line 98, in test_duplicated_id_reservation_tests
+    mngr.room_reservation(credit_card=credit_card_number,
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_manager.py", line 59, in room_reservation
+    arrival_date, credit_card, num_days, phone_number, room_type = self.validate_data_room_res(arrival_date,
+AttributeError: 'HotelManager' object has no attribute 'validate_data_room_res'
+]]></error>
+	</testcase>
+	<testcase classname="test_room_reservation_tests.TestHotelReservation" name="test_duplicated_reservation_tests" time="0.002" timestamp="2024-04-19T15:05:17">
+		<error type="AttributeError" message="'HotelManager' object has no attribute 'validate_data_room_res'"><![CDATA[Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 593, in run
+    self._callTestMethod(testMethod)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 550, in _callTestMethod
+    method()
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/.venv/lib/python3.9/site-packages/freezegun/api.py", line 827, in wrapper
+    result = func(*args, **kwargs)
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/unittest/python/test_room_reservation_tests.py", line 52, in test_duplicated_reservation_tests
+    mngr.room_reservation(credit_card=credit_card_number,
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_manager.py", line 59, in room_reservation
+    arrival_date, credit_card, num_days, phone_number, room_type = self.validate_data_room_res(arrival_date,
+AttributeError: 'HotelManager' object has no attribute 'validate_data_room_res'
+]]></error>
+	</testcase>
+	<testcase classname="test_room_reservation_tests.TestHotelReservation" name="test_parametrized_cases_tests [TC1VALID]" time="0.000" timestamp="0001-01-01T00:00:00">
+		<error type="AttributeError" message="'HotelManager' object has no attribute 'validate_data_room_res'"><![CDATA[Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 499, in subTest
+    yield
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/unittest/python/test_room_reservation_tests.py", line 163, in test_parametrized_cases_tests
+    valor = mngr.room_reservation(credit_card=credit_card_number,
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_manager.py", line 59, in room_reservation
+    arrival_date, credit_card, num_days, phone_number, room_type = self.validate_data_room_res(arrival_date,
+AttributeError: 'HotelManager' object has no attribute 'validate_data_room_res'
+]]></error>
+	</testcase>
+	<testcase classname="test_room_reservation_tests.TestHotelReservation" name="test_parametrized_cases_tests [TC2VALID]" time="0.000" timestamp="0001-01-01T00:00:00">
+		<error type="AttributeError" message="'HotelManager' object has no attribute 'validate_data_room_res'"><![CDATA[Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 499, in subTest
+    yield
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/unittest/python/test_room_reservation_tests.py", line 163, in test_parametrized_cases_tests
+    valor = mngr.room_reservation(credit_card=credit_card_number,
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_manager.py", line 59, in room_reservation
+    arrival_date, credit_card, num_days, phone_number, room_type = self.validate_data_room_res(arrival_date,
+AttributeError: 'HotelManager' object has no attribute 'validate_data_room_res'
+]]></error>
+	</testcase>
+	<testcase classname="test_room_reservation_tests.TestHotelReservation" name="test_parametrized_cases_tests [TC3VALID]" time="0.000" timestamp="0001-01-01T00:00:00">
+		<error type="AttributeError" message="'HotelManager' object has no attribute 'validate_data_room_res'"><![CDATA[Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 499, in subTest
+    yield
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/unittest/python/test_room_reservation_tests.py", line 163, in test_parametrized_cases_tests
+    valor = mngr.room_reservation(credit_card=credit_card_number,
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_manager.py", line 59, in room_reservation
+    arrival_date, credit_card, num_days, phone_number, room_type = self.validate_data_room_res(arrival_date,
+AttributeError: 'HotelManager' object has no attribute 'validate_data_room_res'
+]]></error>
+	</testcase>
+	<testcase classname="test_room_reservation_tests.TestHotelReservation" name="test_parametrized_cases_tests [TC4VALID]" time="0.000" timestamp="0001-01-01T00:00:00">
+		<error type="AttributeError" message="'HotelManager' object has no attribute 'validate_data_room_res'"><![CDATA[Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 499, in subTest
+    yield
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/unittest/python/test_room_reservation_tests.py", line 163, in test_parametrized_cases_tests
+    valor = mngr.room_reservation(credit_card=credit_card_number,
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_manager.py", line 59, in room_reservation
+    arrival_date, credit_card, num_days, phone_number, room_type = self.validate_data_room_res(arrival_date,
+AttributeError: 'HotelManager' object has no attribute 'validate_data_room_res'
+]]></error>
+	</testcase>
+	<testcase classname="test_room_reservation_tests.TestHotelReservation" name="test_parametrized_cases_tests [TC5INVALID]" time="0.000" timestamp="0001-01-01T00:00:00">
+		<error type="AttributeError" message="'HotelManager' object has no attribute 'validate_data_room_res'"><![CDATA[Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 499, in subTest
+    yield
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/unittest/python/test_room_reservation_tests.py", line 199, in test_parametrized_cases_tests
+    mngr.room_reservation(credit_card=credit_card_number,
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_manager.py", line 59, in room_reservation
+    arrival_date, credit_card, num_days, phone_number, room_type = self.validate_data_room_res(arrival_date,
+AttributeError: 'HotelManager' object has no attribute 'validate_data_room_res'
+]]></error>
+	</testcase>
+	<testcase classname="test_room_reservation_tests.TestHotelReservation" name="test_parametrized_cases_tests [TC6INVALID]" time="0.000" timestamp="0001-01-01T00:00:00">
+		<error type="AttributeError" message="'HotelManager' object has no attribute 'validate_data_room_res'"><![CDATA[Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 499, in subTest
+    yield
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/unittest/python/test_room_reservation_tests.py", line 199, in test_parametrized_cases_tests
+    mngr.room_reservation(credit_card=credit_card_number,
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_manager.py", line 59, in room_reservation
+    arrival_date, credit_card, num_days, phone_number, room_type = self.validate_data_room_res(arrival_date,
+AttributeError: 'HotelManager' object has no attribute 'validate_data_room_res'
+]]></error>
+	</testcase>
+	<testcase classname="test_room_reservation_tests.TestHotelReservation" name="test_parametrized_cases_tests [TC7INVALID]" time="0.000" timestamp="0001-01-01T00:00:00">
+		<error type="AttributeError" message="'HotelManager' object has no attribute 'validate_data_room_res'"><![CDATA[Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 499, in subTest
+    yield
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/unittest/python/test_room_reservation_tests.py", line 199, in test_parametrized_cases_tests
+    mngr.room_reservation(credit_card=credit_card_number,
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_manager.py", line 59, in room_reservation
+    arrival_date, credit_card, num_days, phone_number, room_type = self.validate_data_room_res(arrival_date,
+AttributeError: 'HotelManager' object has no attribute 'validate_data_room_res'
+]]></error>
+	</testcase>
+	<testcase classname="test_room_reservation_tests.TestHotelReservation" name="test_parametrized_cases_tests [TC8INVALID]" time="0.000" timestamp="0001-01-01T00:00:00">
+		<error type="AttributeError" message="'HotelManager' object has no attribute 'validate_data_room_res'"><![CDATA[Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 499, in subTest
+    yield
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/unittest/python/test_room_reservation_tests.py", line 199, in test_parametrized_cases_tests
+    mngr.room_reservation(credit_card=credit_card_number,
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_manager.py", line 59, in room_reservation
+    arrival_date, credit_card, num_days, phone_number, room_type = self.validate_data_room_res(arrival_date,
+AttributeError: 'HotelManager' object has no attribute 'validate_data_room_res'
+]]></error>
+	</testcase>
+	<testcase classname="test_room_reservation_tests.TestHotelReservation" name="test_parametrized_cases_tests [TC9INVALID]" time="0.000" timestamp="0001-01-01T00:00:00">
+		<error type="AttributeError" message="'HotelManager' object has no attribute 'validate_data_room_res'"><![CDATA[Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 499, in subTest
+    yield
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/unittest/python/test_room_reservation_tests.py", line 199, in test_parametrized_cases_tests
+    mngr.room_reservation(credit_card=credit_card_number,
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_manager.py", line 59, in room_reservation
+    arrival_date, credit_card, num_days, phone_number, room_type = self.validate_data_room_res(arrival_date,
+AttributeError: 'HotelManager' object has no attribute 'validate_data_room_res'
+]]></error>
+	</testcase>
+	<testcase classname="test_room_reservation_tests.TestHotelReservation" name="test_parametrized_cases_tests [TC10INVALID]" time="0.000" timestamp="0001-01-01T00:00:00">
+		<error type="AttributeError" message="'HotelManager' object has no attribute 'validate_data_room_res'"><![CDATA[Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 499, in subTest
+    yield
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/unittest/python/test_room_reservation_tests.py", line 199, in test_parametrized_cases_tests
+    mngr.room_reservation(credit_card=credit_card_number,
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_manager.py", line 59, in room_reservation
+    arrival_date, credit_card, num_days, phone_number, room_type = self.validate_data_room_res(arrival_date,
+AttributeError: 'HotelManager' object has no attribute 'validate_data_room_res'
+]]></error>
+	</testcase>
+	<testcase classname="test_room_reservation_tests.TestHotelReservation" name="test_parametrized_cases_tests [TC11INVALID]" time="0.000" timestamp="0001-01-01T00:00:00">
+		<error type="AttributeError" message="'HotelManager' object has no attribute 'validate_data_room_res'"><![CDATA[Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 499, in subTest
+    yield
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/unittest/python/test_room_reservation_tests.py", line 199, in test_parametrized_cases_tests
+    mngr.room_reservation(credit_card=credit_card_number,
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_manager.py", line 59, in room_reservation
+    arrival_date, credit_card, num_days, phone_number, room_type = self.validate_data_room_res(arrival_date,
+AttributeError: 'HotelManager' object has no attribute 'validate_data_room_res'
+]]></error>
+	</testcase>
+	<testcase classname="test_room_reservation_tests.TestHotelReservation" name="test_parametrized_cases_tests [TC12INVALID]" time="0.000" timestamp="0001-01-01T00:00:00">
+		<error type="AttributeError" message="'HotelManager' object has no attribute 'validate_data_room_res'"><![CDATA[Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 499, in subTest
+    yield
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/unittest/python/test_room_reservation_tests.py", line 199, in test_parametrized_cases_tests
+    mngr.room_reservation(credit_card=credit_card_number,
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_manager.py", line 59, in room_reservation
+    arrival_date, credit_card, num_days, phone_number, room_type = self.validate_data_room_res(arrival_date,
+AttributeError: 'HotelManager' object has no attribute 'validate_data_room_res'
+]]></error>
+	</testcase>
+	<testcase classname="test_room_reservation_tests.TestHotelReservation" name="test_parametrized_cases_tests [TC13INVALID]" time="0.000" timestamp="0001-01-01T00:00:00">
+		<error type="AttributeError" message="'HotelManager' object has no attribute 'validate_data_room_res'"><![CDATA[Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 499, in subTest
+    yield
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/unittest/python/test_room_reservation_tests.py", line 199, in test_parametrized_cases_tests
+    mngr.room_reservation(credit_card=credit_card_number,
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_manager.py", line 59, in room_reservation
+    arrival_date, credit_card, num_days, phone_number, room_type = self.validate_data_room_res(arrival_date,
+AttributeError: 'HotelManager' object has no attribute 'validate_data_room_res'
+]]></error>
+	</testcase>
+	<testcase classname="test_room_reservation_tests.TestHotelReservation" name="test_parametrized_cases_tests [TC14INVALID]" time="0.000" timestamp="0001-01-01T00:00:00">
+		<error type="AttributeError" message="'HotelManager' object has no attribute 'validate_data_room_res'"><![CDATA[Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 499, in subTest
+    yield
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/unittest/python/test_room_reservation_tests.py", line 199, in test_parametrized_cases_tests
+    mngr.room_reservation(credit_card=credit_card_number,
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_manager.py", line 59, in room_reservation
+    arrival_date, credit_card, num_days, phone_number, room_type = self.validate_data_room_res(arrival_date,
+AttributeError: 'HotelManager' object has no attribute 'validate_data_room_res'
+]]></error>
+	</testcase>
+	<testcase classname="test_room_reservation_tests.TestHotelReservation" name="test_parametrized_cases_tests [TC15INVALID]" time="0.000" timestamp="0001-01-01T00:00:00">
+		<error type="AttributeError" message="'HotelManager' object has no attribute 'validate_data_room_res'"><![CDATA[Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 499, in subTest
+    yield
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/unittest/python/test_room_reservation_tests.py", line 199, in test_parametrized_cases_tests
+    mngr.room_reservation(credit_card=credit_card_number,
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_manager.py", line 59, in room_reservation
+    arrival_date, credit_card, num_days, phone_number, room_type = self.validate_data_room_res(arrival_date,
+AttributeError: 'HotelManager' object has no attribute 'validate_data_room_res'
+]]></error>
+	</testcase>
+	<testcase classname="test_room_reservation_tests.TestHotelReservation" name="test_parametrized_cases_tests [TC16INVALID]" time="0.000" timestamp="0001-01-01T00:00:00">
+		<error type="AttributeError" message="'HotelManager' object has no attribute 'validate_data_room_res'"><![CDATA[Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 499, in subTest
+    yield
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/unittest/python/test_room_reservation_tests.py", line 199, in test_parametrized_cases_tests
+    mngr.room_reservation(credit_card=credit_card_number,
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_manager.py", line 59, in room_reservation
+    arrival_date, credit_card, num_days, phone_number, room_type = self.validate_data_room_res(arrival_date,
+AttributeError: 'HotelManager' object has no attribute 'validate_data_room_res'
+]]></error>
+	</testcase>
+	<testcase classname="test_room_reservation_tests.TestHotelReservation" name="test_parametrized_cases_tests [TC17INVALID]" time="0.000" timestamp="0001-01-01T00:00:00">
+		<error type="AttributeError" message="'HotelManager' object has no attribute 'validate_data_room_res'"><![CDATA[Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 499, in subTest
+    yield
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/unittest/python/test_room_reservation_tests.py", line 199, in test_parametrized_cases_tests
+    mngr.room_reservation(credit_card=credit_card_number,
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_manager.py", line 59, in room_reservation
+    arrival_date, credit_card, num_days, phone_number, room_type = self.validate_data_room_res(arrival_date,
+AttributeError: 'HotelManager' object has no attribute 'validate_data_room_res'
+]]></error>
+	</testcase>
+	<testcase classname="test_room_reservation_tests.TestHotelReservation" name="test_parametrized_cases_tests [TC18INVALID]" time="0.000" timestamp="0001-01-01T00:00:00">
+		<error type="AttributeError" message="'HotelManager' object has no attribute 'validate_data_room_res'"><![CDATA[Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 499, in subTest
+    yield
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/unittest/python/test_room_reservation_tests.py", line 199, in test_parametrized_cases_tests
+    mngr.room_reservation(credit_card=credit_card_number,
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_manager.py", line 59, in room_reservation
+    arrival_date, credit_card, num_days, phone_number, room_type = self.validate_data_room_res(arrival_date,
+AttributeError: 'HotelManager' object has no attribute 'validate_data_room_res'
+]]></error>
+	</testcase>
+	<testcase classname="test_room_reservation_tests.TestHotelReservation" name="test_parametrized_cases_tests [TC19INVALID]" time="0.000" timestamp="0001-01-01T00:00:00">
+		<error type="AttributeError" message="'HotelManager' object has no attribute 'validate_data_room_res'"><![CDATA[Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 499, in subTest
+    yield
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/unittest/python/test_room_reservation_tests.py", line 199, in test_parametrized_cases_tests
+    mngr.room_reservation(credit_card=credit_card_number,
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_manager.py", line 59, in room_reservation
+    arrival_date, credit_card, num_days, phone_number, room_type = self.validate_data_room_res(arrival_date,
+AttributeError: 'HotelManager' object has no attribute 'validate_data_room_res'
+]]></error>
+	</testcase>
+	<testcase classname="test_room_reservation_tests.TestHotelReservation" name="test_parametrized_cases_tests [TC20INVALID]" time="0.000" timestamp="0001-01-01T00:00:00">
+		<error type="AttributeError" message="'HotelManager' object has no attribute 'validate_data_room_res'"><![CDATA[Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 499, in subTest
+    yield
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/unittest/python/test_room_reservation_tests.py", line 199, in test_parametrized_cases_tests
+    mngr.room_reservation(credit_card=credit_card_number,
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_manager.py", line 59, in room_reservation
+    arrival_date, credit_card, num_days, phone_number, room_type = self.validate_data_room_res(arrival_date,
+AttributeError: 'HotelManager' object has no attribute 'validate_data_room_res'
+]]></error>
+	</testcase>
+	<testcase classname="test_room_reservation_tests.TestHotelReservation" name="test_parametrized_cases_tests [TC21INVALID]" time="0.000" timestamp="0001-01-01T00:00:00">
+		<error type="AttributeError" message="'HotelManager' object has no attribute 'validate_data_room_res'"><![CDATA[Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 499, in subTest
+    yield
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/unittest/python/test_room_reservation_tests.py", line 199, in test_parametrized_cases_tests
+    mngr.room_reservation(credit_card=credit_card_number,
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_manager.py", line 59, in room_reservation
+    arrival_date, credit_card, num_days, phone_number, room_type = self.validate_data_room_res(arrival_date,
+AttributeError: 'HotelManager' object has no attribute 'validate_data_room_res'
+]]></error>
+	</testcase>
+	<testcase classname="test_room_reservation_tests.TestHotelReservation" name="test_parametrized_cases_tests [TC22INVALID]" time="0.000" timestamp="0001-01-01T00:00:00">
+		<error type="AttributeError" message="'HotelManager' object has no attribute 'validate_data_room_res'"><![CDATA[Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 499, in subTest
+    yield
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/unittest/python/test_room_reservation_tests.py", line 199, in test_parametrized_cases_tests
+    mngr.room_reservation(credit_card=credit_card_number,
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_manager.py", line 59, in room_reservation
+    arrival_date, credit_card, num_days, phone_number, room_type = self.validate_data_room_res(arrival_date,
+AttributeError: 'HotelManager' object has no attribute 'validate_data_room_res'
+]]></error>
+	</testcase>
+	<testcase classname="test_room_reservation_tests.TestHotelReservation" name="test_parametrized_cases_tests [TC23INVALID]" time="0.000" timestamp="0001-01-01T00:00:00">
+		<error type="AttributeError" message="'HotelManager' object has no attribute 'validate_data_room_res'"><![CDATA[Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 499, in subTest
+    yield
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/unittest/python/test_room_reservation_tests.py", line 199, in test_parametrized_cases_tests
+    mngr.room_reservation(credit_card=credit_card_number,
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_manager.py", line 59, in room_reservation
+    arrival_date, credit_card, num_days, phone_number, room_type = self.validate_data_room_res(arrival_date,
+AttributeError: 'HotelManager' object has no attribute 'validate_data_room_res'
+]]></error>
+	</testcase>
+	<testcase classname="test_room_reservation_tests.TestHotelReservation" name="test_parametrized_cases_tests [TC24INVALID]" time="0.000" timestamp="0001-01-01T00:00:00">
+		<error type="AttributeError" message="'HotelManager' object has no attribute 'validate_data_room_res'"><![CDATA[Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 499, in subTest
+    yield
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/unittest/python/test_room_reservation_tests.py", line 199, in test_parametrized_cases_tests
+    mngr.room_reservation(credit_card=credit_card_number,
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_manager.py", line 59, in room_reservation
+    arrival_date, credit_card, num_days, phone_number, room_type = self.validate_data_room_res(arrival_date,
+AttributeError: 'HotelManager' object has no attribute 'validate_data_room_res'
+]]></error>
+	</testcase>
+	<testcase classname="test_room_reservation_tests.TestHotelReservation" name="test_parametrized_cases_tests [TC25INVALID]" time="0.000" timestamp="0001-01-01T00:00:00">
+		<error type="AttributeError" message="'HotelManager' object has no attribute 'validate_data_room_res'"><![CDATA[Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 499, in subTest
+    yield
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/unittest/python/test_room_reservation_tests.py", line 199, in test_parametrized_cases_tests
+    mngr.room_reservation(credit_card=credit_card_number,
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_manager.py", line 59, in room_reservation
+    arrival_date, credit_card, num_days, phone_number, room_type = self.validate_data_room_res(arrival_date,
+AttributeError: 'HotelManager' object has no attribute 'validate_data_room_res'
+]]></error>
+	</testcase>
+	<testcase classname="test_room_reservation_tests.TestHotelReservation" name="test_parametrized_cases_tests [TC26INVALID]" time="0.000" timestamp="0001-01-01T00:00:00">
+		<error type="AttributeError" message="'HotelManager' object has no attribute 'validate_data_room_res'"><![CDATA[Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 499, in subTest
+    yield
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/unittest/python/test_room_reservation_tests.py", line 199, in test_parametrized_cases_tests
+    mngr.room_reservation(credit_card=credit_card_number,
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_manager.py", line 59, in room_reservation
+    arrival_date, credit_card, num_days, phone_number, room_type = self.validate_data_room_res(arrival_date,
+AttributeError: 'HotelManager' object has no attribute 'validate_data_room_res'
+]]></error>
+	</testcase>
+	<testcase classname="test_room_reservation_tests.TestHotelReservation" name="test_parametrized_cases_tests [TC27INVALID]" time="0.000" timestamp="0001-01-01T00:00:00">
+		<error type="AttributeError" message="'HotelManager' object has no attribute 'validate_data_room_res'"><![CDATA[Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 499, in subTest
+    yield
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/unittest/python/test_room_reservation_tests.py", line 199, in test_parametrized_cases_tests
+    mngr.room_reservation(credit_card=credit_card_number,
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_manager.py", line 59, in room_reservation
+    arrival_date, credit_card, num_days, phone_number, room_type = self.validate_data_room_res(arrival_date,
+AttributeError: 'HotelManager' object has no attribute 'validate_data_room_res'
+]]></error>
+	</testcase>
+	<testcase classname="test_room_reservation_tests.TestHotelReservation" name="test_parametrized_cases_tests [TC28INVALID]" time="0.000" timestamp="0001-01-01T00:00:00">
+		<error type="AttributeError" message="'HotelManager' object has no attribute 'validate_data_room_res'"><![CDATA[Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 499, in subTest
+    yield
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/unittest/python/test_room_reservation_tests.py", line 199, in test_parametrized_cases_tests
+    mngr.room_reservation(credit_card=credit_card_number,
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_manager.py", line 59, in room_reservation
+    arrival_date, credit_card, num_days, phone_number, room_type = self.validate_data_room_res(arrival_date,
+AttributeError: 'HotelManager' object has no attribute 'validate_data_room_res'
+]]></error>
+	</testcase>
+	<testcase classname="test_room_reservation_tests.TestHotelReservation" name="test_parametrized_cases_tests [TC29INVALID]" time="0.000" timestamp="0001-01-01T00:00:00">
+		<error type="AttributeError" message="'HotelManager' object has no attribute 'validate_data_room_res'"><![CDATA[Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 499, in subTest
+    yield
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/unittest/python/test_room_reservation_tests.py", line 199, in test_parametrized_cases_tests
+    mngr.room_reservation(credit_card=credit_card_number,
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_manager.py", line 59, in room_reservation
+    arrival_date, credit_card, num_days, phone_number, room_type = self.validate_data_room_res(arrival_date,
+AttributeError: 'HotelManager' object has no attribute 'validate_data_room_res'
+]]></error>
+	</testcase>
+	<testcase classname="test_room_reservation_tests.TestHotelReservation" name="test_parametrized_cases_tests [TC30INVALID]" time="0.000" timestamp="0001-01-01T00:00:00">
+		<error type="AttributeError" message="'HotelManager' object has no attribute 'validate_data_room_res'"><![CDATA[Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 499, in subTest
+    yield
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/unittest/python/test_room_reservation_tests.py", line 199, in test_parametrized_cases_tests
+    mngr.room_reservation(credit_card=credit_card_number,
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_manager.py", line 59, in room_reservation
+    arrival_date, credit_card, num_days, phone_number, room_type = self.validate_data_room_res(arrival_date,
+AttributeError: 'HotelManager' object has no attribute 'validate_data_room_res'
+]]></error>
+	</testcase>
+	<testcase classname="test_room_reservation_tests.TestHotelReservation" name="test_parametrized_cases_tests [TC31INVALID]" time="0.079" timestamp="2024-04-19T15:05:18">
+		<error type="AttributeError" message="'HotelManager' object has no attribute 'validate_data_room_res'"><![CDATA[Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 499, in subTest
+    yield
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/unittest/python/test_room_reservation_tests.py", line 199, in test_parametrized_cases_tests
+    mngr.room_reservation(credit_card=credit_card_number,
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_manager.py", line 59, in room_reservation
+    arrival_date, credit_card, num_days, phone_number, room_type = self.validate_data_room_res(arrival_date,
+AttributeError: 'HotelManager' object has no attribute 'validate_data_room_res'
+]]></error>
+	</testcase>
+</testsuite>

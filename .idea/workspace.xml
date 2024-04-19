@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="cade60b6-95e5-423d-aac3-048b5741b3e2" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/python/attributes/attribute_id.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/python/attributes/attribute_id.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/uc3m_travel/hotel_manager.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/python/uc3m_travel/hotel_manager.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/uc3m_travel/hotel_stay.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/python/uc3m_travel/hotel_stay.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/EG2.coverage" beforeDir="false" afterPath="$PROJECT_DIR$/target/EG2.coverage" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/dist/EG2-1.0.dev0/EG2.egg-info/PKG-INFO" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/dist/EG2-1.0.dev0/EG2.egg-info/SOURCES.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/dist/EG2-1.0.dev0/EG2.egg-info/dependency_links.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/dist/EG2-1.0.dev0/EG2.egg-info/namespace_packages.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/dist/EG2-1.0.dev0/EG2.egg-info/top_level.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/dist/EG2-1.0.dev0/EG2.egg-info/zip-safe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/dist/EG2-1.0.dev0/attributes/attribute_id.py" beforeDir="false" afterPath="$PROJECT_DIR$/target/dist/EG2-1.0.dev0/attributes/attribute_id.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/dist/EG2-1.0.dev0/attributes/attribute_name.py" beforeDir="false" afterPath="$PROJECT_DIR$/target/dist/EG2-1.0.dev0/attributes/attribute_name.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/dist/EG2-1.0.dev0/build/lib/attributes/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/dist/EG2-1.0.dev0/build/lib/attributes/attribute.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/dist/EG2-1.0.dev0/build/lib/attributes/attribute_arrival_date.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/dist/EG2-1.0.dev0/build/lib/attributes/attribute_card_num.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/dist/EG2-1.0.dev0/build/lib/attributes/attribute_id.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/dist/EG2-1.0.dev0/build/lib/attributes/attribute_localizer.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/dist/EG2-1.0.dev0/build/lib/attributes/attribute_name.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/dist/EG2-1.0.dev0/build/lib/attributes/attribute_num_days.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/dist/EG2-1.0.dev0/build/lib/attributes/attribute_phone_num.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/dist/EG2-1.0.dev0/build/lib/attributes/attribute_room_type.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/dist/EG2-1.0.dev0/build/lib/attributes/attribute_roomkey.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/dist/EG2-1.0.dev0/build/lib/uc3m_travel/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/dist/EG2-1.0.dev0/build/lib/uc3m_travel/hotel_management_config.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/dist/EG2-1.0.dev0/build/lib/uc3m_travel/hotel_management_exception.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/dist/EG2-1.0.dev0/build/lib/uc3m_travel/hotel_manager.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/dist/EG2-1.0.dev0/build/lib/uc3m_travel/hotel_reservation.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/dist/EG2-1.0.dev0/build/lib/uc3m_travel/hotel_stay.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/dist/EG2-1.0.dev0/dist/EG2-1.0.dev0-py3-none-any.whl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/dist/EG2-1.0.dev0/dist/EG2-1.0.dev0.tar.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/dist/EG2-1.0.dev0/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/target/dist/EG2-1.0.dev0/setup.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/dist/EG2-1.0.dev0/uc3m_travel/hotel_manager.py" beforeDir="false" afterPath="$PROJECT_DIR$/target/dist/EG2-1.0.dev0/uc3m_travel/hotel_manager.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/dist/EG2-1.0.dev0/uc3m_travel/hotel_reservation.py" beforeDir="false" afterPath="$PROJECT_DIR$/target/dist/EG2-1.0.dev0/uc3m_travel/hotel_reservation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/dist/EG2-1.0.dev0/uc3m_travel/hotel_stay.py" beforeDir="false" afterPath="$PROJECT_DIR$/target/dist/EG2-1.0.dev0/uc3m_travel/hotel_stay.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/pybuilder.plugins.python.unittest_plugin.run_unit_tests.coverage" beforeDir="false" afterPath="$PROJECT_DIR$/target/pybuilder.plugins.python.unittest_plugin.run_unit_tests.coverage" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/reports/EG2_coverage" beforeDir="false" afterPath="$PROJECT_DIR$/target/reports/EG2_coverage" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/reports/EG2_coverage.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/reports/EG2_coverage.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/reports/EG2_coverage.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/reports/EG2_coverage.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/reports/distutils/bdist_wheel" beforeDir="false" afterPath="$PROJECT_DIR$/target/reports/distutils/bdist_wheel" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/reports/distutils/sdist" beforeDir="false" afterPath="$PROJECT_DIR$/target/reports/distutils/sdist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/reports/distutils/twine_check.log" beforeDir="false" afterPath="$PROJECT_DIR$/target/reports/distutils/twine_check.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/reports/pybuilder.plugins.python.unittest_plugin.run_unit_tests_coverage" beforeDir="false" afterPath="$PROJECT_DIR$/target/reports/pybuilder.plugins.python.unittest_plugin.run_unit_tests_coverage" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/reports/pybuilder.plugins.python.unittest_plugin.run_unit_tests_coverage.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/reports/pybuilder.plugins.python.unittest_plugin.run_unit_tests_coverage.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/reports/pybuilder.plugins.python.unittest_plugin.run_unit_tests_coverage.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/reports/pybuilder.plugins.python.unittest_plugin.run_unit_tests_coverage.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/reports/unittest" beforeDir="false" afterPath="$PROJECT_DIR$/target/reports/unittest" afterDir="false" />
+    </list>
+    <list id="5d8fc54a-a929-4bc8-b171-f7f6c180f705" name="Changes by ellaz-j" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/python/attributes/attribute_id.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/python/attributes/attribute_id.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/attributes/attribute_name.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/python/attributes/attribute_name.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/uc3m_travel/hotel_reservation.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/python/uc3m_travel/hotel_reservation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/uc3m_travel/hotel_stay.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/python/uc3m_travel/hotel_stay.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/src/main/python/attributes/attribute_id.py">
+      <ranges>
+        <range start1="9" end1="9" start2="9" end2="10" changelist="cade60b6-95e5-423d-aac3-048b5741b3e2" />
+        <range start1="10" end1="10" start2="11" end2="12" changelist="5d8fc54a-a929-4bc8-b171-f7f6c180f705" />
+        <range start1="12" end1="13" start2="14" end2="15" changelist="5d8fc54a-a929-4bc8-b171-f7f6c180f705" />
+        <range start1="19" end1="20" start2="21" end2="23" changelist="5d8fc54a-a929-4bc8-b171-f7f6c180f705" />
+      </ranges>
+    </file>
+    <file path="$PROJECT_DIR$/src/main/python/uc3m_travel/hotel_stay.py">
+      <ranges>
+        <range start1="4" end1="4" start2="4" end2="9" changelist="5d8fc54a-a929-4bc8-b171-f7f6c180f705" />
+        <range start1="13" end1="16" start2="18" end2="21" changelist="cade60b6-95e5-423d-aac3-048b5741b3e2" />
+      </ranges>
+    </file>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="2edqIonTlk2aRFxqSy6LRmcylvn" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/a19787/PycharmProjects/G88.2024.T06.EG3/docs/test_reports/commit 1&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/docs/test_reports/commit 1" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-5a2391486177-2887949eec09-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-233.13763.11" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="cade60b6-95e5-423d-aac3-048b5741b3e2" name="Changes" comment="" />
+      <created>1712244726053</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1712244726053</updated>
+      <workItem from="1712244727337" duration="82000" />
+      <workItem from="1712244811559" duration="600000" />
+      <workItem from="1713178155226" duration="27385000" />
+      <workItem from="1713527550715" duration="422000" />
+      <workItem from="1713527994290" duration="12000" />
+      <workItem from="1713528023199" duration="3185000" />
+      <workItem from="1713531549366" duration="4217000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
