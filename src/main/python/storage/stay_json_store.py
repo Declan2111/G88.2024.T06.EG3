@@ -24,3 +24,6 @@ class StayJsonStore(JsonStore):
 
     def find_item(self, key, value):
         return super().find_item(key, value)
+
+    def add_item(self, item):
+        super().add_item(item)

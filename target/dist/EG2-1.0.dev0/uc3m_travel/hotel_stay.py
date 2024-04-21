@@ -6,25 +6,39 @@ from attributes.attribute_id import IDNum
 from attributes.attribute_localizer import Localizer
 from attributes.attribute_room_type import RoomType
 
+from uc3m_travel import HotelReservation
+
+from uc3m_travel.hotel_management_exception import HotelManagementException
+
 
 class HotelStay():
     """Class for representing hotel stays"""
     def __init__(self,
                  idcard:str,
-                 localizer:str,
-                 numdays:int,
-                 roomtype:str):
+                 localizer:str
+                 #numdays:int,
+                 #roomtype:str
+                 ):
         """constructor for HotelStay objects"""
         self.__alg = "SHA-256"
-        self.__type = RoomType(roomtype).value
-        self.__idcard = IDNum(idcard).value
         self.__localizer = Localizer(localizer).value
+        self.__idcard = IDNum(idcard).value
+        reservation = HotelReservation.load_reservation_from_localizer(self.localizer)
+        if reservation.id_card != self.__idcard:
+            raise HotelManagementException("Error: Localizer is not correct for this IdCard")
+        self.__type = reservation.room_type
+        #self.__type = roomtype
         justnow = datetime.utcnow()
         self.__arrival = datetime.timestamp(justnow)
+        reservation_format = "%d/%m/%Y"
+        date_obj = datetime.strptime(reservation.arrival, reservation_format)
+        if date_obj.date() != datetime.date(datetime.utcnow()):
+            raise HotelManagementException("Error: today is not reservation date")
         #timestamp is represented in seconds.miliseconds
         #to add the number of days we must express num_days in seconds
-        self.__departure = self.__arrival + (numdays * 24 * 60 * 60)
+        self.__departure = self.__arrival + (reservation.num_days * 24 * 60 * 60)
         self.__room_key = hashlib.sha256(self.__signature_string().encode()).hexdigest()
+
 
     def __signature_string(self):
         """Composes the string to be used for generating the key for the room"""

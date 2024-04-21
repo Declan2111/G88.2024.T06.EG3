@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="test_guest_arrival_tests.TestHotelReservation-20240420204635" tests="5" file="test_guest_arrival_tests.py" time="0.129" timestamp="2024-04-20T20:46:36" failures="1" errors="4" skipped="0">
+	<testcase classname="test_guest_arrival_tests.TestHotelReservation" name="test_get_reservation_data_manipulated_tests" time="0.005" timestamp="2024-04-20T20:46:35">
+		<failure type="AssertionError" message="&quot;'450a53be9b39944e62e7164ca5f5aadf'&quot; != 'Error: reservation has been manipulated'
+- '450a53be9b39944e62e7164ca5f5aadf'
++ Error: reservation has been manipulated
+"><![CDATA[Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 593, in run
+    self._callTestMethod(testMethod)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 550, in _callTestMethod
+    method()
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/.venv/lib/python3.9/site-packages/freezegun/api.py", line 827, in wrapper
+    result = func(*args, **kwargs)
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/unittest/python/test_guest_arrival_tests.py", line 180, in test_get_reservation_data_manipulated_tests
+    self.assertEqual(exception_message, "Error: reservation has been manipulated")
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 831, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 1211, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 670, in fail
+    raise self.failureException(msg)
+AssertionError: "'450a53be9b39944e62e7164ca5f5aadf'" != 'Error: reservation has been manipulated'
+- '450a53be9b39944e62e7164ca5f5aadf'
++ Error: reservation has been manipulated
+
+]]></failure>
+	</testcase>
+	<testcase classname="test_guest_arrival_tests.TestHotelReservation" name="test_case_valid_reservation_invalid_arrival_date" time="0.006" timestamp="2024-04-20T20:46:35">
+		<error type="KeyError" message="'450a53be9b39944e62e7164ca5f5aadf'"><![CDATA[Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 593, in run
+    self._callTestMethod(testMethod)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 550, in _callTestMethod
+    method()
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/.venv/lib/python3.9/site-packages/freezegun/api.py", line 827, in wrapper
+    result = func(*args, **kwargs)
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/unittest/python/test_guest_arrival_tests.py", line 74, in test_case_valid_reservation_invalid_arrival_date
+    mngr.guest_arrival(test_file)
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_manager.py", line 154, in guest_arrival
+    my_checkin = HotelStay(my_id_card, my_localizer)
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_stay.py", line 26, in __init__
+    reservation = HotelReservation.load_reservation_from_localizer(self.localizer)
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_reservation.py", line 85, in load_reservation_from_localizer
+    reservation_info = reservation.find_item(Localizer(localizer).value, "_Hotel_Reservation__localizer")
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/main/python/storage/reservation_json_store.py", line 33, in find_item
+    return super().find_item(key, value)
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/main/python/storage/json_store.py", line 45, in find_item
+    if item[key] == value:
+KeyError: '450a53be9b39944e62e7164ca5f5aadf'
+]]></error>
+	</testcase>
+	<testcase classname="test_guest_arrival_tests.TestHotelReservation" name="test_parametrized_cases_tests [RF2 1VALID]" time="0.000" timestamp="0001-01-01T00:00:00">
+		<error type="KeyError" message="'450a53be9b39944e62e7164ca5f5aadf'"><![CDATA[Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 499, in subTest
+    yield
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/unittest/python/test_guest_arrival_tests.py", line 102, in test_parametrized_cases_tests
+    valor = mngr.guest_arrival(test_file)
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_manager.py", line 154, in guest_arrival
+    my_checkin = HotelStay(my_id_card, my_localizer)
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_stay.py", line 26, in __init__
+    reservation = HotelReservation.load_reservation_from_localizer(self.localizer)
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_reservation.py", line 85, in load_reservation_from_localizer
+    reservation_info = reservation.find_item(Localizer(localizer).value, "_Hotel_Reservation__localizer")
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/main/python/storage/reservation_json_store.py", line 33, in find_item
+    return super().find_item(key, value)
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/main/python/storage/json_store.py", line 45, in find_item
+    if item[key] == value:
+KeyError: '450a53be9b39944e62e7164ca5f5aadf'
+]]></error>
+	</testcase>
+	<testcase classname="test_guest_arrival_tests.TestHotelReservation" name="test_parametrized_cases_tests [RF2 2INVALID]" time="0.000" timestamp="0001-01-01T00:00:00">
+		<error type="KeyError" message="'9f7a126a9e2b69218c02cc2b94e3b753'"><![CDATA[Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 499, in subTest
+    yield
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/unittest/python/test_guest_arrival_tests.py", line 123, in test_parametrized_cases_tests
+    valor = mngr.guest_arrival(test_file)
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_manager.py", line 154, in guest_arrival
+    my_checkin = HotelStay(my_id_card, my_localizer)
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_stay.py", line 26, in __init__
+    reservation = HotelReservation.load_reservation_from_localizer(self.localizer)
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_reservation.py", line 85, in load_reservation_from_localizer
+    reservation_info = reservation.find_item(Localizer(localizer).value, "_Hotel_Reservation__localizer")
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/main/python/storage/reservation_json_store.py", line 33, in find_item
+    return super().find_item(key, value)
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/main/python/storage/json_store.py", line 45, in find_item
+    if item[key] == value:
+KeyError: '9f7a126a9e2b69218c02cc2b94e3b753'
+]]></error>
+	</testcase>
+	<testcase classname="test_guest_arrival_tests.TestHotelReservation" name="test_parametrized_cases_tests [RF2 53INVALID]" time="0.119" timestamp="2024-04-20T20:46:36">
+		<error type="KeyError" message="'450a53be9b39944e62e7164ca5f5aadf'"><![CDATA[Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 499, in subTest
+    yield
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/unittest/python/test_guest_arrival_tests.py", line 123, in test_parametrized_cases_tests
+    valor = mngr.guest_arrival(test_file)
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_manager.py", line 154, in guest_arrival
+    my_checkin = HotelStay(my_id_card, my_localizer)
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_stay.py", line 26, in __init__
+    reservation = HotelReservation.load_reservation_from_localizer(self.localizer)
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_reservation.py", line 85, in load_reservation_from_localizer
+    reservation_info = reservation.find_item(Localizer(localizer).value, "_Hotel_Reservation__localizer")
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/main/python/storage/reservation_json_store.py", line 33, in find_item
+    return super().find_item(key, value)
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/main/python/storage/json_store.py", line 45, in find_item
+    if item[key] == value:
+KeyError: '450a53be9b39944e62e7164ca5f5aadf'
+]]></error>
+	</testcase>
+</testsuite>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="test_guest_arrival_tests.TestHotelReservation-20240420205014" tests="5" file="test_guest_arrival_tests.py" time="0.125" timestamp="2024-04-20T20:50:14" failures="1" errors="4" skipped="0">
+	<testcase classname="test_guest_arrival_tests.TestHotelReservation" name="test_get_reservation_data_manipulated_tests" time="0.005" timestamp="2024-04-20T20:50:14">
+		<failure type="AssertionError" message="&quot;load_list_from_file() missing 1 required positional argument: 'self'&quot; != 'Error: reservation has been manipulated'
+- load_list_from_file() missing 1 required positional argument: 'self'
++ Error: reservation has been manipulated
+"><![CDATA[Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 593, in run
+    self._callTestMethod(testMethod)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 550, in _callTestMethod
+    method()
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/.venv/lib/python3.9/site-packages/freezegun/api.py", line 827, in wrapper
+    result = func(*args, **kwargs)
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/unittest/python/test_guest_arrival_tests.py", line 180, in test_get_reservation_data_manipulated_tests
+    self.assertEqual(exception_message, "Error: reservation has been manipulated")
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 831, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 1211, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 670, in fail
+    raise self.failureException(msg)
+AssertionError: "load_list_from_file() missing 1 required positional argument: 'self'" != 'Error: reservation has been manipulated'
+- load_list_from_file() missing 1 required positional argument: 'self'
++ Error: reservation has been manipulated
+
+]]></failure>
+	</testcase>
+	<testcase classname="test_guest_arrival_tests.TestHotelReservation" name="test_case_valid_reservation_invalid_arrival_date" time="0.005" timestamp="2024-04-20T20:50:14">
+		<error type="TypeError" message="load_list_from_file() missing 1 required positional argument: 'self'"><![CDATA[Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 593, in run
+    self._callTestMethod(testMethod)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 550, in _callTestMethod
+    method()
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/.venv/lib/python3.9/site-packages/freezegun/api.py", line 827, in wrapper
+    result = func(*args, **kwargs)
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/unittest/python/test_guest_arrival_tests.py", line 74, in test_case_valid_reservation_invalid_arrival_date
+    mngr.guest_arrival(test_file)
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_manager.py", line 153, in guest_arrival
+    ReservationJsonStore.load_list_from_file()
+TypeError: load_list_from_file() missing 1 required positional argument: 'self'
+]]></error>
+	</testcase>
+	<testcase classname="test_guest_arrival_tests.TestHotelReservation" name="test_parametrized_cases_tests [RF2 1VALID]" time="0.000" timestamp="0001-01-01T00:00:00">
+		<error type="TypeError" message="load_list_from_file() missing 1 required positional argument: 'self'"><![CDATA[Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 499, in subTest
+    yield
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/unittest/python/test_guest_arrival_tests.py", line 102, in test_parametrized_cases_tests
+    valor = mngr.guest_arrival(test_file)
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_manager.py", line 153, in guest_arrival
+    ReservationJsonStore.load_list_from_file()
+TypeError: load_list_from_file() missing 1 required positional argument: 'self'
+]]></error>
+	</testcase>
+	<testcase classname="test_guest_arrival_tests.TestHotelReservation" name="test_parametrized_cases_tests [RF2 2INVALID]" time="0.000" timestamp="0001-01-01T00:00:00">
+		<error type="TypeError" message="load_list_from_file() missing 1 required positional argument: 'self'"><![CDATA[Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 499, in subTest
+    yield
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/unittest/python/test_guest_arrival_tests.py", line 123, in test_parametrized_cases_tests
+    valor = mngr.guest_arrival(test_file)
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_manager.py", line 153, in guest_arrival
+    ReservationJsonStore.load_list_from_file()
+TypeError: load_list_from_file() missing 1 required positional argument: 'self'
+]]></error>
+	</testcase>
+	<testcase classname="test_guest_arrival_tests.TestHotelReservation" name="test_parametrized_cases_tests [RF2 53INVALID]" time="0.115" timestamp="2024-04-20T20:50:14">
+		<error type="TypeError" message="load_list_from_file() missing 1 required positional argument: 'self'"><![CDATA[Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 499, in subTest
+    yield
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/unittest/python/test_guest_arrival_tests.py", line 123, in test_parametrized_cases_tests
+    valor = mngr.guest_arrival(test_file)
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_manager.py", line 153, in guest_arrival
+    ReservationJsonStore.load_list_from_file()
+TypeError: load_list_from_file() missing 1 required positional argument: 'self'
+]]></error>
+	</testcase>
+</testsuite>

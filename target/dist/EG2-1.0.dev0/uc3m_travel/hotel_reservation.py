@@ -13,7 +13,12 @@ from attributes.attribute_phone_num import PhoneNumber
 from attributes.attribute_name import NameSur
 
 from attributes.attribute_card_num import CardNum
+from storage.reservation_json_store import ReservationJsonStore
 
+from attributes.attribute_localizer import Localizer
+
+from uc3m_travel.hotel_management_exception import HotelManagementException
+from freezegun import freeze_time
 
 class HotelReservation:
     """Class for representing hotel reservations"""
@@ -72,3 +77,43 @@ class HotelReservation:
     def localizer(self):
         """Returns the md5 signature"""
         return self.__localizer
+
+    @property
+    def room_type(self):
+        """Returns the room type"""
+        return self.__room_type
+
+    @property
+    def arrival(self):
+        """Returns the arrival date"""
+        return self.__arrival
+
+    @property
+    def num_days(self):
+        """Returns the number of days"""
+        return self.__num_days
+
+    @classmethod
+    def load_reservation_from_localizer(cls, localizer: str):
+        reservation = ReservationJsonStore()
+        #reservation.load_list_from_file()
+        reservation_info = reservation.find_item("_HotelReservation__localizer", Localizer(localizer).value)
+        print(reservation_info)
+        if reservation_info:
+            print(reservation_info)
+            reservation_date = datetime.fromtimestamp(
+                reservation_info["_HotelReservation__reservation_date"])
+        else:
+            raise HotelManagementException("Error: localizer not found")
+        with freeze_time(reservation_date):
+            new_reservation = cls(
+                credit_card_number=reservation_info["_HotelReservation__credit_card_number"],
+                id_card=reservation_info["_HotelReservation__id_card"],
+                num_days=reservation_info["_HotelReservation__num_days"],
+                room_type=reservation_info["_HotelReservation__room_type"],
+                arrival=reservation_info["_HotelReservation__arrival"],
+                name_surname=reservation_info["_HotelReservation__name_surname"],
+                phone_number=reservation_info["_HotelReservation__phone_number"])
+        if new_reservation.localizer != localizer:
+            raise HotelManagementException("Error: reservation has been manipulated")
+        return new_reservation

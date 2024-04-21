@@ -19,6 +19,9 @@ class JsonStore():
     #
     # def save_checkout(self, checkout_data):
 
+    def add_item(self, item):
+        self.data_list.append(item.__dict__)
+
     def save_list_to_file(self):
         try:
             with open(self._file_name, "w", encoding="utf-8", newline="") as file:
@@ -40,7 +43,7 @@ class JsonStore():
 
     def find_item(self, key, value):
         """finds an item in the store"""
-        #self.load_list_from_file()
+        self.load_list_from_file()
         for item in self.data_list:
             if item[key] == value:
                 return item
@@ -54,5 +57,3 @@ class JsonStore():
     @property
     def data_list(self):
         return self._data_list
-
-

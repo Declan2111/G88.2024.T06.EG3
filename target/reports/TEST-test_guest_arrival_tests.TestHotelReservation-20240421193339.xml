@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="test_guest_arrival_tests.TestHotelReservation-20240421193339" tests="3" file="test_guest_arrival_tests.py" time="0.127" timestamp="2024-04-21T19:33:40" failures="0" errors="2" skipped="0">
+	<testcase classname="test_guest_arrival_tests.TestHotelReservation" name="test_get_reservation_data_manipulated_tests" time="0.005" timestamp="2024-04-21T19:33:39"/>
+	<testcase classname="test_guest_arrival_tests.TestHotelReservation" name="test_case_valid_reservation_invalid_arrival_date" time="0.006" timestamp="2024-04-21T19:33:39">
+		<error type="AttributeError" message="'HotelReservation' object has no attribute 'arrival'"><![CDATA[Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 593, in run
+    self._callTestMethod(testMethod)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 550, in _callTestMethod
+    method()
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/.venv/lib/python3.9/site-packages/freezegun/api.py", line 827, in wrapper
+    result = func(*args, **kwargs)
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/unittest/python/test_guest_arrival_tests.py", line 74, in test_case_valid_reservation_invalid_arrival_date
+    mngr.guest_arrival(test_file)
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_manager.py", line 155, in guest_arrival
+    my_checkin = HotelStay(my_id_card, my_localizer)
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_stay.py", line 34, in __init__
+    date_obj = datetime.strptime(reservation.arrival, reservation_format)
+AttributeError: 'HotelReservation' object has no attribute 'arrival'
+]]></error>
+	</testcase>
+	<testcase classname="test_guest_arrival_tests.TestHotelReservation" name="test_parametrized_cases_tests [RF2 1VALID]" time="0.117" timestamp="2024-04-21T19:33:40">
+		<error type="AttributeError" message="'HotelReservation' object has no attribute 'arrival'"><![CDATA[Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 499, in subTest
+    yield
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/unittest/python/test_guest_arrival_tests.py", line 102, in test_parametrized_cases_tests
+    valor = mngr.guest_arrival(test_file)
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_manager.py", line 155, in guest_arrival
+    my_checkin = HotelStay(my_id_card, my_localizer)
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_stay.py", line 34, in __init__
+    date_obj = datetime.strptime(reservation.arrival, reservation_format)
+AttributeError: 'HotelReservation' object has no attribute 'arrival'
+]]></error>
+	</testcase>
+</testsuite>

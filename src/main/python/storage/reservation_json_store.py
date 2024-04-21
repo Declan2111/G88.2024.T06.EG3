@@ -18,10 +18,10 @@ class ReservationJsonStore(JsonStore):
 
     def add_item(self, item):
         reservation_found = self.find_item(
-            item.localizer, "_HotelReservation__localizer")
+            "_HotelReservation__localizer", item.localizer)
         if reservation_found:
             raise HotelManagementException("Reservation already exists")
-        return super().add_item(item)
+        super().add_item(item)
 
     def load_list_from_file(self):
         return super().load_list_from_file()
@@ -31,3 +31,7 @@ class ReservationJsonStore(JsonStore):
 
     def find_item(self, key, value):
         return super().find_item(key, value)
+
+    @property
+    def data_list(self):
+        return self._data_list

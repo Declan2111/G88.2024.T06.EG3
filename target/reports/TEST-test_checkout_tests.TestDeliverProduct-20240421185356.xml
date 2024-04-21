@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="test_checkout_tests.TestDeliverProduct-20240421185356" tests="7" file="test_checkout_tests.py" time="0.038" timestamp="2024-04-21T18:53:56" failures="0" errors="7" skipped="0">
+	<testcase classname="test_checkout_tests.TestDeliverProduct" name="test_already_checkout" time="0.017" timestamp="2024-04-21T18:53:56">
+		<error type="HotelManagementException" message="Error: localizer not found"><![CDATA[Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 589, in run
+    self._callSetUp()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 547, in _callSetUp
+    self.setUp()
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/.venv/lib/python3.9/site-packages/freezegun/api.py", line 827, in wrapper
+    result = func(*args, **kwargs)
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/unittest/python/test_checkout_tests.py", line 47, in setUp
+    my_manager.guest_arrival(file_test)
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_manager.py", line 148, in guest_arrival
+    reservation_days, reservation_room_type = self.check_file_manip(my_id_card, my_localizer)
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_manager.py", line 192, in check_file_manip
+    raise HotelManagementException("Error: localizer not found")
+uc3m_travel.hotel_management_exception.HotelManagementException: Error: localizer not found
+]]></error>
+	</testcase>
+	<testcase classname="test_checkout_tests.TestDeliverProduct" name="test_checkin_code_not_found_date_signature" time="0.004" timestamp="2024-04-21T18:53:56">
+		<error type="HotelManagementException" message="Error: localizer not found"><![CDATA[Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 589, in run
+    self._callSetUp()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 547, in _callSetUp
+    self.setUp()
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/.venv/lib/python3.9/site-packages/freezegun/api.py", line 827, in wrapper
+    result = func(*args, **kwargs)
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/unittest/python/test_checkout_tests.py", line 47, in setUp
+    my_manager.guest_arrival(file_test)
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_manager.py", line 148, in guest_arrival
+    reservation_days, reservation_room_type = self.check_file_manip(my_id_card, my_localizer)
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_manager.py", line 192, in check_file_manip
+    raise HotelManagementException("Error: localizer not found")
+uc3m_travel.hotel_management_exception.HotelManagementException: Error: localizer not found
+]]></error>
+	</testcase>
+	<testcase classname="test_checkout_tests.TestDeliverProduct" name="test_checkout_ok" time="0.003" timestamp="2024-04-21T18:53:56">
+		<error type="HotelManagementException" message="Error: localizer not found"><![CDATA[Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 589, in run
+    self._callSetUp()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 547, in _callSetUp
+    self.setUp()
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/.venv/lib/python3.9/site-packages/freezegun/api.py", line 827, in wrapper
+    result = func(*args, **kwargs)
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/unittest/python/test_checkout_tests.py", line 47, in setUp
+    my_manager.guest_arrival(file_test)
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_manager.py", line 148, in guest_arrival
+    reservation_days, reservation_room_type = self.check_file_manip(my_id_card, my_localizer)
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_manager.py", line 192, in check_file_manip
+    raise HotelManagementException("Error: localizer not found")
+uc3m_travel.hotel_management_exception.HotelManagementException: Error: localizer not found
+]]></error>
+	</testcase>
+	<testcase classname="test_checkout_tests.TestDeliverProduct" name="test_guest_checkout_bad_date_signature" time="0.004" timestamp="2024-04-21T18:53:56">
+		<error type="HotelManagementException" message="Error: localizer not found"><![CDATA[Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 589, in run
+    self._callSetUp()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 547, in _callSetUp
+    self.setUp()
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/.venv/lib/python3.9/site-packages/freezegun/api.py", line 827, in wrapper
+    result = func(*args, **kwargs)
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/unittest/python/test_checkout_tests.py", line 47, in setUp
+    my_manager.guest_arrival(file_test)
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_manager.py", line 148, in guest_arrival
+    reservation_days, reservation_room_type = self.check_file_manip(my_id_card, my_localizer)
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_manager.py", line 192, in check_file_manip
+    raise HotelManagementException("Error: localizer not found")
+uc3m_travel.hotel_management_exception.HotelManagementException: Error: localizer not found
+]]></error>
+	</testcase>
+	<testcase classname="test_checkout_tests.TestDeliverProduct" name="test_guest_checkout_no_date" time="0.003" timestamp="2024-04-21T18:53:56">
+		<error type="HotelManagementException" message="Error: localizer not found"><![CDATA[Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 589, in run
+    self._callSetUp()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 547, in _callSetUp
+    self.setUp()
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/.venv/lib/python3.9/site-packages/freezegun/api.py", line 827, in wrapper
+    result = func(*args, **kwargs)
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/unittest/python/test_checkout_tests.py", line 47, in setUp
+    my_manager.guest_arrival(file_test)
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_manager.py", line 148, in guest_arrival
+    reservation_days, reservation_room_type = self.check_file_manip(my_id_card, my_localizer)
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_manager.py", line 192, in check_file_manip
+    raise HotelManagementException("Error: localizer not found")
+uc3m_travel.hotel_management_exception.HotelManagementException: Error: localizer not found
+]]></error>
+	</testcase>
+	<testcase classname="test_checkout_tests.TestDeliverProduct" name="test_guest_checkout_no_store_check_in" time="0.003" timestamp="2024-04-21T18:53:56">
+		<error type="HotelManagementException" message="Error: localizer not found"><![CDATA[Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 589, in run
+    self._callSetUp()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 547, in _callSetUp
+    self.setUp()
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/.venv/lib/python3.9/site-packages/freezegun/api.py", line 827, in wrapper
+    result = func(*args, **kwargs)
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/unittest/python/test_checkout_tests.py", line 47, in setUp
+    my_manager.guest_arrival(file_test)
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_manager.py", line 148, in guest_arrival
+    reservation_days, reservation_room_type = self.check_file_manip(my_id_card, my_localizer)
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_manager.py", line 192, in check_file_manip
+    raise HotelManagementException("Error: localizer not found")
+uc3m_travel.hotel_management_exception.HotelManagementException: Error: localizer not found
+]]></error>
+	</testcase>
+	<testcase classname="test_checkout_tests.TestDeliverProduct" name="test_guest_checkout_store_check_in_is_empty" time="0.003" timestamp="2024-04-21T18:53:56">
+		<error type="HotelManagementException" message="Error: localizer not found"><![CDATA[Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 589, in run
+    self._callSetUp()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 547, in _callSetUp
+    self.setUp()
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/.venv/lib/python3.9/site-packages/freezegun/api.py", line 827, in wrapper
+    result = func(*args, **kwargs)
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/unittest/python/test_checkout_tests.py", line 47, in setUp
+    my_manager.guest_arrival(file_test)
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_manager.py", line 148, in guest_arrival
+    reservation_days, reservation_room_type = self.check_file_manip(my_id_card, my_localizer)
+  File "/Users/a19787/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_manager.py", line 192, in check_file_manip
+    raise HotelManagementException("Error: localizer not found")
+uc3m_travel.hotel_management_exception.HotelManagementException: Error: localizer not found
+]]></error>
+	</testcase>
+</testsuite>
