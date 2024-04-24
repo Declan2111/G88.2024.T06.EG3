@@ -98,9 +98,7 @@ class HotelReservation:
         reservation = ReservationJsonStore()
         #reservation.load_list_from_file()
         reservation_info = reservation.find_item("_HotelReservation__localizer", Localizer(localizer).value)
-        print(reservation_info)
         if reservation_info:
-            print(reservation_info)
             reservation_date = datetime.fromtimestamp(
                 reservation_info["_HotelReservation__reservation_date"])
         else:

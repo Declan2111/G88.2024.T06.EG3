@@ -1,5 +1,4 @@
-import json
-
+"""Child class reservation for the JSON store class"""
 from storage.json_store import JsonStore
 from uc3m_travel.hotel_management_config import JSON_FILES_PATH
 
@@ -23,14 +22,14 @@ class ReservationJsonStore(JsonStore):
             raise HotelManagementException("Reservation already exists")
         super().add_item(item)
 
-    def load_list_from_file(self):
-        return super().load_list_from_file()
-
-    def save_list_to_file(self):
-        return super().save_list_to_file()
-
-    def find_item(self, key, value):
-        return super().find_item(key, value)
+    # def load_list_from_file(self):
+    #     return super().load_list_from_file()
+    #
+    # def save_list_to_file(self):
+    #     return super().save_list_to_file()
+    #
+    # def find_item(self, key, value):
+    #     return super().find_item(key, value)
 
     @property
     def data_list(self):

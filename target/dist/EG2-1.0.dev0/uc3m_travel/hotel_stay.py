@@ -4,20 +4,22 @@ import hashlib
 
 from attributes.attribute_id import IDNum
 from attributes.attribute_localizer import Localizer
-from attributes.attribute_room_type import RoomType
-
 from uc3m_travel import HotelReservation
 
 from uc3m_travel.hotel_management_exception import HotelManagementException
 
+from storage.stay_json_store import StayJsonStore
 
-class HotelStay():
+from attributes.attribute_roomkey import RoomKey
+
+from storage.checkout_json_store import CheckoutJsonStore
+
+
+class HotelStay:
     """Class for representing hotel stays"""
     def __init__(self,
-                 idcard:str,
-                 localizer:str
-                 #numdays:int,
-                 #roomtype:str
+                 idcard: str,
+                 localizer: str
                  ):
         """constructor for HotelStay objects"""
         self.__alg = "SHA-256"
@@ -83,3 +85,29 @@ class HotelStay():
     def departure(self, value):
         """returns the value of the departure date"""
         self.__departure = value
+
+    @classmethod
+    def get_stay_from_room_key(cls, room_key: str):
+        """Creates an instance of the HotelStay class"""
+        stay = StayJsonStore()
+
+        stay_info = stay.find_item("_HotelStay__room_key", RoomKey(room_key).value)
+        if stay_info:
+            departure_date = datetime.fromtimestamp(
+                stay_info["_HotelStay__departure"])
+        else:
+            raise HotelManagementException("Error: room key not found")
+        today = datetime.utcnow().date()
+        if departure_date.date() != today:
+            raise HotelManagementException("Error: today is not the departure day")
+        return HotelStay
+
+
+    # def check_out(self):
+    #     json_checkout_store = CheckoutJsonStore()
+    #     if json_checkout_store.find_item("room_key", room_key):
+    #         raise HotelManagementException("Guest is already out")
+    #
+    #     room_checkout = {"room_key": room_key, "checkout_time": datetime.timestamp(datetime.utcnow())}
+    #     json_checkout_store.add_item(room_checkout)
+    #     json_checkout_store.save_list_to_file()

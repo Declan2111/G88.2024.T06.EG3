@@ -20,9 +20,11 @@ class JsonStore():
     # def save_checkout(self, checkout_data):
 
     def add_item(self, item):
+        """adds an item to a json file"""
         self.data_list.append(item.__dict__)
 
     def save_list_to_file(self):
+        """Saves the data to a file"""
         try:
             with open(self._file_name, "w", encoding="utf-8", newline="") as file:
                 json.dump(self.data_list, file, indent=2)
@@ -30,6 +32,7 @@ class JsonStore():
             raise HotelManagementException("Wrong file  or file path") from ex
 
     def load_list_from_file(self):
+        """Loads the data from a file"""
         try:
             with open(self._file_name, "r", encoding="utf-8", newline="") as file:
                 self._data_list = (json.load(file))

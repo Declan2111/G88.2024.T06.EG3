@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="test_checkout_tests.TestDeliverProduct-20240424234843" tests="7" file="test_checkout_tests.py" time="0.050" timestamp="2024-04-24T23:48:43" failures="0" errors="7" skipped="0">
+	<testcase classname="test_checkout_tests.TestDeliverProduct" name="test_already_checkout" time="0.018" timestamp="2024-04-24T23:48:43">
+		<error type="HotelManagementException" message="Error: store checkin not found"><![CDATA[Traceback (most recent call last):
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/main/python/storage/stay_json_store.py", line 21, in load_list_from_file
+    with open(self._file_name, "r", encoding="utf-8", newline="") as file:
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/../../../unittest/JSONFiles/store_check_in.json'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 587, in run
+    self._callSetUp()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 546, in _callSetUp
+    self.setUp()
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/venv/lib/python3.10/site-packages/freezegun/api.py", line 827, in wrapper
+    result = func(*args, **kwargs)
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/unittest/python/test_checkout_tests.py", line 47, in setUp
+    my_manager.guest_arrival(file_test)
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_manager.py", line 129, in guest_arrival
+    if stay_json_store.find_item("_HotelStay__room_key", my_checkin.room_key):
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/main/python/storage/stay_json_store.py", line 33, in find_item
+    return super().find_item(key, value)
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/main/python/storage/json_store.py", line 49, in find_item
+    self.load_list_from_file()
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/main/python/storage/stay_json_store.py", line 24, in load_list_from_file
+    raise HotelManagementException("Error: store checkin not found")
+uc3m_travel.hotel_management_exception.HotelManagementException: Error: store checkin not found
+]]></error>
+	</testcase>
+	<testcase classname="test_checkout_tests.TestDeliverProduct" name="test_checkin_code_not_found_date_signature" time="0.006" timestamp="2024-04-24T23:48:43">
+		<error type="HotelManagementException" message="Error: store checkin not found"><![CDATA[Traceback (most recent call last):
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/main/python/storage/stay_json_store.py", line 21, in load_list_from_file
+    with open(self._file_name, "r", encoding="utf-8", newline="") as file:
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/../../../unittest/JSONFiles/store_check_in.json'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 587, in run
+    self._callSetUp()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 546, in _callSetUp
+    self.setUp()
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/venv/lib/python3.10/site-packages/freezegun/api.py", line 827, in wrapper
+    result = func(*args, **kwargs)
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/unittest/python/test_checkout_tests.py", line 47, in setUp
+    my_manager.guest_arrival(file_test)
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_manager.py", line 129, in guest_arrival
+    if stay_json_store.find_item("_HotelStay__room_key", my_checkin.room_key):
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/main/python/storage/stay_json_store.py", line 33, in find_item
+    return super().find_item(key, value)
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/main/python/storage/json_store.py", line 49, in find_item
+    self.load_list_from_file()
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/main/python/storage/stay_json_store.py", line 24, in load_list_from_file
+    raise HotelManagementException("Error: store checkin not found")
+uc3m_travel.hotel_management_exception.HotelManagementException: Error: store checkin not found
+]]></error>
+	</testcase>
+	<testcase classname="test_checkout_tests.TestDeliverProduct" name="test_checkout_ok" time="0.005" timestamp="2024-04-24T23:48:43">
+		<error type="HotelManagementException" message="Error: store checkin not found"><![CDATA[Traceback (most recent call last):
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/main/python/storage/stay_json_store.py", line 21, in load_list_from_file
+    with open(self._file_name, "r", encoding="utf-8", newline="") as file:
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/../../../unittest/JSONFiles/store_check_in.json'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 587, in run
+    self._callSetUp()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 546, in _callSetUp
+    self.setUp()
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/venv/lib/python3.10/site-packages/freezegun/api.py", line 827, in wrapper
+    result = func(*args, **kwargs)
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/unittest/python/test_checkout_tests.py", line 47, in setUp
+    my_manager.guest_arrival(file_test)
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_manager.py", line 129, in guest_arrival
+    if stay_json_store.find_item("_HotelStay__room_key", my_checkin.room_key):
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/main/python/storage/stay_json_store.py", line 33, in find_item
+    return super().find_item(key, value)
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/main/python/storage/json_store.py", line 49, in find_item
+    self.load_list_from_file()
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/main/python/storage/stay_json_store.py", line 24, in load_list_from_file
+    raise HotelManagementException("Error: store checkin not found")
+uc3m_travel.hotel_management_exception.HotelManagementException: Error: store checkin not found
+]]></error>
+	</testcase>
+	<testcase classname="test_checkout_tests.TestDeliverProduct" name="test_guest_checkout_bad_date_signature" time="0.006" timestamp="2024-04-24T23:48:43">
+		<error type="HotelManagementException" message="Error: store checkin not found"><![CDATA[Traceback (most recent call last):
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/main/python/storage/stay_json_store.py", line 21, in load_list_from_file
+    with open(self._file_name, "r", encoding="utf-8", newline="") as file:
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/../../../unittest/JSONFiles/store_check_in.json'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 587, in run
+    self._callSetUp()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 546, in _callSetUp
+    self.setUp()
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/venv/lib/python3.10/site-packages/freezegun/api.py", line 827, in wrapper
+    result = func(*args, **kwargs)
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/unittest/python/test_checkout_tests.py", line 47, in setUp
+    my_manager.guest_arrival(file_test)
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_manager.py", line 129, in guest_arrival
+    if stay_json_store.find_item("_HotelStay__room_key", my_checkin.room_key):
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/main/python/storage/stay_json_store.py", line 33, in find_item
+    return super().find_item(key, value)
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/main/python/storage/json_store.py", line 49, in find_item
+    self.load_list_from_file()
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/main/python/storage/stay_json_store.py", line 24, in load_list_from_file
+    raise HotelManagementException("Error: store checkin not found")
+uc3m_travel.hotel_management_exception.HotelManagementException: Error: store checkin not found
+]]></error>
+	</testcase>
+	<testcase classname="test_checkout_tests.TestDeliverProduct" name="test_guest_checkout_no_date" time="0.005" timestamp="2024-04-24T23:48:43">
+		<error type="HotelManagementException" message="Error: store checkin not found"><![CDATA[Traceback (most recent call last):
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/main/python/storage/stay_json_store.py", line 21, in load_list_from_file
+    with open(self._file_name, "r", encoding="utf-8", newline="") as file:
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/../../../unittest/JSONFiles/store_check_in.json'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 587, in run
+    self._callSetUp()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 546, in _callSetUp
+    self.setUp()
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/venv/lib/python3.10/site-packages/freezegun/api.py", line 827, in wrapper
+    result = func(*args, **kwargs)
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/unittest/python/test_checkout_tests.py", line 47, in setUp
+    my_manager.guest_arrival(file_test)
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_manager.py", line 129, in guest_arrival
+    if stay_json_store.find_item("_HotelStay__room_key", my_checkin.room_key):
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/main/python/storage/stay_json_store.py", line 33, in find_item
+    return super().find_item(key, value)
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/main/python/storage/json_store.py", line 49, in find_item
+    self.load_list_from_file()
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/main/python/storage/stay_json_store.py", line 24, in load_list_from_file
+    raise HotelManagementException("Error: store checkin not found")
+uc3m_travel.hotel_management_exception.HotelManagementException: Error: store checkin not found
+]]></error>
+	</testcase>
+	<testcase classname="test_checkout_tests.TestDeliverProduct" name="test_guest_checkout_no_store_check_in" time="0.005" timestamp="2024-04-24T23:48:43">
+		<error type="HotelManagementException" message="Error: store checkin not found"><![CDATA[Traceback (most recent call last):
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/main/python/storage/stay_json_store.py", line 21, in load_list_from_file
+    with open(self._file_name, "r", encoding="utf-8", newline="") as file:
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/../../../unittest/JSONFiles/store_check_in.json'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 587, in run
+    self._callSetUp()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 546, in _callSetUp
+    self.setUp()
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/venv/lib/python3.10/site-packages/freezegun/api.py", line 827, in wrapper
+    result = func(*args, **kwargs)
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/unittest/python/test_checkout_tests.py", line 47, in setUp
+    my_manager.guest_arrival(file_test)
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_manager.py", line 129, in guest_arrival
+    if stay_json_store.find_item("_HotelStay__room_key", my_checkin.room_key):
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/main/python/storage/stay_json_store.py", line 33, in find_item
+    return super().find_item(key, value)
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/main/python/storage/json_store.py", line 49, in find_item
+    self.load_list_from_file()
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/main/python/storage/stay_json_store.py", line 24, in load_list_from_file
+    raise HotelManagementException("Error: store checkin not found")
+uc3m_travel.hotel_management_exception.HotelManagementException: Error: store checkin not found
+]]></error>
+	</testcase>
+	<testcase classname="test_checkout_tests.TestDeliverProduct" name="test_guest_checkout_store_check_in_is_empty" time="0.005" timestamp="2024-04-24T23:48:43">
+		<error type="HotelManagementException" message="Error: store checkin not found"><![CDATA[Traceback (most recent call last):
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/main/python/storage/stay_json_store.py", line 21, in load_list_from_file
+    with open(self._file_name, "r", encoding="utf-8", newline="") as file:
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/../../../unittest/JSONFiles/store_check_in.json'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 587, in run
+    self._callSetUp()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 546, in _callSetUp
+    self.setUp()
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/venv/lib/python3.10/site-packages/freezegun/api.py", line 827, in wrapper
+    result = func(*args, **kwargs)
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/unittest/python/test_checkout_tests.py", line 47, in setUp
+    my_manager.guest_arrival(file_test)
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_manager.py", line 129, in guest_arrival
+    if stay_json_store.find_item("_HotelStay__room_key", my_checkin.room_key):
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/main/python/storage/stay_json_store.py", line 33, in find_item
+    return super().find_item(key, value)
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/main/python/storage/json_store.py", line 49, in find_item
+    self.load_list_from_file()
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/main/python/storage/stay_json_store.py", line 24, in load_list_from_file
+    raise HotelManagementException("Error: store checkin not found")
+uc3m_travel.hotel_management_exception.HotelManagementException: Error: store checkin not found
+]]></error>
+	</testcase>
+</testsuite>
