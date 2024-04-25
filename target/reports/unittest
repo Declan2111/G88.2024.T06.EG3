@@ -1,10 +1,261 @@
 
 Running tests...
 ----------------------------------------------------------------------
-.............
+.EEEEEEEEEEEE
+======================================================================
+ERROR [0.012s]: test_checkin_code_not_found_date_signature (test_checkout_tests.TestDeliverProduct.test_checkin_code_not_found_date_signature)
+path: signature is not found in store_check_in
 ----------------------------------------------------------------------
-Ran 13 tests in 0.334s
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/unittest/case.py", line 58, in testPartExecutor
+    yield
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/unittest/case.py", line 630, in run
+    self._callSetUp()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/unittest/case.py", line 586, in _callSetUp
+    self.setUp()
+  File "/Users/natedamstra/PycharmProjects/G88.2024.T06.EG3/.venv/lib/python3.12/site-packages/freezegun/api.py", line 827, in wrapper
+    result = func(*args, **kwargs)
+    ^^^^^^^^^^^^^^^^^
+  File "/Users/natedamstra/PycharmProjects/G88.2024.T06.EG3/src/unittest/python/test_checkout_tests.py", line 38, in setUp
+    localizer = hotel_mngr.room_reservation(credit_card="5105105105105100",
+    ^^^^^^^^^^^^^^^^^
+  File "/Users/natedamstra/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_manager.py", line 42, in room_reservation
+    raise HotelManagementException("Reservation already exists")
+    ^^^^^^^^^^^^^^^^^
+uc3m_travel.hotel_management_exception.HotelManagementException: Reservation already exists
 
-OK
+======================================================================
+ERROR [0.007s]: test_checkout_ok (test_checkout_tests.TestDeliverProduct.test_checkout_ok)
+basic path , tracking_code is found , and date = today
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/unittest/case.py", line 58, in testPartExecutor
+    yield
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/unittest/case.py", line 630, in run
+    self._callSetUp()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/unittest/case.py", line 586, in _callSetUp
+    self.setUp()
+  File "/Users/natedamstra/PycharmProjects/G88.2024.T06.EG3/.venv/lib/python3.12/site-packages/freezegun/api.py", line 827, in wrapper
+    result = func(*args, **kwargs)
+    ^^^^^^^^^^^^^^^^^
+  File "/Users/natedamstra/PycharmProjects/G88.2024.T06.EG3/src/unittest/python/test_checkout_tests.py", line 38, in setUp
+    localizer = hotel_mngr.room_reservation(credit_card="5105105105105100",
+    ^^^^^^^^^^^^^^^^^
+  File "/Users/natedamstra/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_manager.py", line 42, in room_reservation
+    raise HotelManagementException("Reservation already exists")
+    ^^^^^^^^^^^^^^^^^
+uc3m_travel.hotel_management_exception.HotelManagementException: Reservation already exists
+
+======================================================================
+ERROR [0.007s]: test_guest_checkout_bad_date_signature (test_checkout_tests.TestDeliverProduct.test_guest_checkout_bad_date_signature)
+path signature is not valid format , only 63 chars
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/unittest/case.py", line 58, in testPartExecutor
+    yield
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/unittest/case.py", line 630, in run
+    self._callSetUp()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/unittest/case.py", line 586, in _callSetUp
+    self.setUp()
+  File "/Users/natedamstra/PycharmProjects/G88.2024.T06.EG3/.venv/lib/python3.12/site-packages/freezegun/api.py", line 827, in wrapper
+    result = func(*args, **kwargs)
+    ^^^^^^^^^^^^^^^^^
+  File "/Users/natedamstra/PycharmProjects/G88.2024.T06.EG3/src/unittest/python/test_checkout_tests.py", line 38, in setUp
+    localizer = hotel_mngr.room_reservation(credit_card="5105105105105100",
+    ^^^^^^^^^^^^^^^^^
+  File "/Users/natedamstra/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_manager.py", line 42, in room_reservation
+    raise HotelManagementException("Reservation already exists")
+    ^^^^^^^^^^^^^^^^^
+uc3m_travel.hotel_management_exception.HotelManagementException: Reservation already exists
+
+======================================================================
+ERROR [0.007s]: test_guest_checkout_no_date (test_checkout_tests.TestDeliverProduct.test_guest_checkout_no_date)
+path tracking_code is found , and date is not today
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/unittest/case.py", line 58, in testPartExecutor
+    yield
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/unittest/case.py", line 630, in run
+    self._callSetUp()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/unittest/case.py", line 586, in _callSetUp
+    self.setUp()
+  File "/Users/natedamstra/PycharmProjects/G88.2024.T06.EG3/.venv/lib/python3.12/site-packages/freezegun/api.py", line 827, in wrapper
+    result = func(*args, **kwargs)
+    ^^^^^^^^^^^^^^^^^
+  File "/Users/natedamstra/PycharmProjects/G88.2024.T06.EG3/src/unittest/python/test_checkout_tests.py", line 38, in setUp
+    localizer = hotel_mngr.room_reservation(credit_card="5105105105105100",
+    ^^^^^^^^^^^^^^^^^
+  File "/Users/natedamstra/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_manager.py", line 42, in room_reservation
+    raise HotelManagementException("Reservation already exists")
+    ^^^^^^^^^^^^^^^^^
+uc3m_travel.hotel_management_exception.HotelManagementException: Reservation already exists
+
+======================================================================
+ERROR [0.007s]: test_guest_checkout_no_store_check_in (test_checkout_tests.TestDeliverProduct.test_guest_checkout_no_store_check_in)
+path: store_check_in is not found, so remove shimpents_store.json
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/unittest/case.py", line 58, in testPartExecutor
+    yield
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/unittest/case.py", line 630, in run
+    self._callSetUp()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/unittest/case.py", line 586, in _callSetUp
+    self.setUp()
+  File "/Users/natedamstra/PycharmProjects/G88.2024.T06.EG3/.venv/lib/python3.12/site-packages/freezegun/api.py", line 827, in wrapper
+    result = func(*args, **kwargs)
+    ^^^^^^^^^^^^^^^^^
+  File "/Users/natedamstra/PycharmProjects/G88.2024.T06.EG3/src/unittest/python/test_checkout_tests.py", line 38, in setUp
+    localizer = hotel_mngr.room_reservation(credit_card="5105105105105100",
+    ^^^^^^^^^^^^^^^^^
+  File "/Users/natedamstra/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_manager.py", line 42, in room_reservation
+    raise HotelManagementException("Reservation already exists")
+    ^^^^^^^^^^^^^^^^^
+uc3m_travel.hotel_management_exception.HotelManagementException: Reservation already exists
+
+======================================================================
+ERROR [0.007s]: test_guest_checkout_store_check_in_is_empty (test_checkout_tests.TestDeliverProduct.test_guest_checkout_store_check_in_is_empty)
+for testing: store_check_in is empty
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/unittest/case.py", line 58, in testPartExecutor
+    yield
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/unittest/case.py", line 630, in run
+    self._callSetUp()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/unittest/case.py", line 586, in _callSetUp
+    self.setUp()
+  File "/Users/natedamstra/PycharmProjects/G88.2024.T06.EG3/.venv/lib/python3.12/site-packages/freezegun/api.py", line 827, in wrapper
+    result = func(*args, **kwargs)
+    ^^^^^^^^^^^^^^^^^
+  File "/Users/natedamstra/PycharmProjects/G88.2024.T06.EG3/src/unittest/python/test_checkout_tests.py", line 38, in setUp
+    localizer = hotel_mngr.room_reservation(credit_card="5105105105105100",
+    ^^^^^^^^^^^^^^^^^
+  File "/Users/natedamstra/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_manager.py", line 42, in room_reservation
+    raise HotelManagementException("Reservation already exists")
+    ^^^^^^^^^^^^^^^^^
+uc3m_travel.hotel_management_exception.HotelManagementException: Reservation already exists
+
+======================================================================
+ERROR [0.008s]: test_case_valid_reservation_invalid_arrival_date (test_guest_arrival_tests.TestHotelReservation.test_case_valid_reservation_invalid_arrival_date)
+Invalid arrival date
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/unittest/case.py", line 58, in testPartExecutor
+    yield
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/unittest/case.py", line 630, in run
+    self._callSetUp()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/unittest/case.py", line 586, in _callSetUp
+    self.setUp()
+  File "/Users/natedamstra/PycharmProjects/G88.2024.T06.EG3/src/unittest/python/test_guest_arrival_tests.py", line 37, in setUp
+    localizer = hotel_mngr.room_reservation(credit_card="5105105105105100",
+    ^^^^^^^^^^^^^^^^^
+  File "/Users/natedamstra/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_manager.py", line 42, in room_reservation
+    raise HotelManagementException("Reservation already exists")
+    ^^^^^^^^^^^^^^^^^
+uc3m_travel.hotel_management_exception.HotelManagementException: Reservation already exists
+
+======================================================================
+ERROR [0.007s]: test_get_reservation_data_manipulated_tests (test_guest_arrival_tests.TestHotelReservation.test_get_reservation_data_manipulated_tests)
+store_reservation_manipulated.json has a reservation manipulated with SUITE and 5 days
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/unittest/case.py", line 58, in testPartExecutor
+    yield
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/unittest/case.py", line 630, in run
+    self._callSetUp()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/unittest/case.py", line 586, in _callSetUp
+    self.setUp()
+  File "/Users/natedamstra/PycharmProjects/G88.2024.T06.EG3/src/unittest/python/test_guest_arrival_tests.py", line 37, in setUp
+    localizer = hotel_mngr.room_reservation(credit_card="5105105105105100",
+    ^^^^^^^^^^^^^^^^^
+  File "/Users/natedamstra/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_manager.py", line 42, in room_reservation
+    raise HotelManagementException("Reservation already exists")
+    ^^^^^^^^^^^^^^^^^
+uc3m_travel.hotel_management_exception.HotelManagementException: Reservation already exists
+
+======================================================================
+ERROR [0.008s]: test_parametrized_cases_tests (test_guest_arrival_tests.TestHotelReservation.test_parametrized_cases_tests)
+Parametrized cases read from testingCases_RF2.csv
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/unittest/case.py", line 58, in testPartExecutor
+    yield
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/unittest/case.py", line 630, in run
+    self._callSetUp()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/unittest/case.py", line 586, in _callSetUp
+    self.setUp()
+  File "/Users/natedamstra/PycharmProjects/G88.2024.T06.EG3/src/unittest/python/test_guest_arrival_tests.py", line 37, in setUp
+    localizer = hotel_mngr.room_reservation(credit_card="5105105105105100",
+    ^^^^^^^^^^^^^^^^^
+  File "/Users/natedamstra/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_manager.py", line 42, in room_reservation
+    raise HotelManagementException("Reservation already exists")
+    ^^^^^^^^^^^^^^^^^
+uc3m_travel.hotel_management_exception.HotelManagementException: Reservation already exists
+
+======================================================================
+ERROR [0.005s]: test_duplicated_id_reservation_tests (test_room_reservation_tests.TestHotelReservation.test_duplicated_id_reservation_tests)
+duplicated reservation (different data but same idcard)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/unittest/case.py", line 58, in testPartExecutor
+    yield
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/unittest/case.py", line 634, in run
+    self._callTestMethod(testMethod)
+    ^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/unittest/case.py", line 589, in _callTestMethod
+    if method() is not None:
+    ^^^^^^^^^^^^^^^^^
+  File "/Users/natedamstra/PycharmProjects/G88.2024.T06.EG3/src/unittest/python/test_room_reservation_tests.py", line 98, in test_duplicated_id_reservation_tests
+    mngr.room_reservation(credit_card=credit_card_number,
+    ^^^^^^^^^^^^^^^^^
+  File "/Users/natedamstra/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_manager.py", line 45, in room_reservation
+    raise HotelManagementException("This ID card has another reservation")
+    ^^^^^^^^^^^^^^^^^
+uc3m_travel.hotel_management_exception.HotelManagementException: This ID card has another reservation
+
+======================================================================
+ERROR [0.008s]: test_duplicated_reservation_tests (test_room_reservation_tests.TestHotelReservation.test_duplicated_reservation_tests)
+duplicated reservation test
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/unittest/case.py", line 58, in testPartExecutor
+    yield
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/unittest/case.py", line 634, in run
+    self._callTestMethod(testMethod)
+    ^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/unittest/case.py", line 589, in _callTestMethod
+    if method() is not None:
+    ^^^^^^^^^^^^^^^^^
+  File "/Users/natedamstra/PycharmProjects/G88.2024.T06.EG3/.venv/lib/python3.12/site-packages/freezegun/api.py", line 827, in wrapper
+    result = func(*args, **kwargs)
+    ^^^^^^^^^^^^^^^^^
+  File "/Users/natedamstra/PycharmProjects/G88.2024.T06.EG3/src/unittest/python/test_room_reservation_tests.py", line 52, in test_duplicated_reservation_tests
+    mngr.room_reservation(credit_card=credit_card_number,
+    ^^^^^^^^^^^^^^^^^
+  File "/Users/natedamstra/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_manager.py", line 42, in room_reservation
+    raise HotelManagementException("Reservation already exists")
+    ^^^^^^^^^^^^^^^^^
+uc3m_travel.hotel_management_exception.HotelManagementException: Reservation already exists
+
+======================================================================
+ERROR [0.110s]: test_parametrized_cases_tests (test_room_reservation_tests.TestHotelReservation.test_parametrized_cases_tests) [TC1VALID]
+Parametrized cases read from testingCases_RF1.csv
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/unittest/case.py", line 58, in testPartExecutor
+    yield
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/unittest/case.py", line 539, in subTest
+    yield
+  File "/Users/natedamstra/PycharmProjects/G88.2024.T06.EG3/src/unittest/python/test_room_reservation_tests.py", line 163, in test_parametrized_cases_tests
+    valor = mngr.room_reservation(credit_card=credit_card_number,
+    ^^^^^^^^^^^^^^^^^
+  File "/Users/natedamstra/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_manager.py", line 42, in room_reservation
+    raise HotelManagementException("Reservation already exists")
+    ^^^^^^^^^^^^^^^^^
+uc3m_travel.hotel_management_exception.HotelManagementException: Reservation already exists
+
+----------------------------------------------------------------------
+Ran 13 tests in 0.289s
+
+FAILED (errors=12)
 
 Generating XML reports...

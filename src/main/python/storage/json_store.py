@@ -4,8 +4,9 @@ import json
 from uc3m_travel.hotel_management_exception import HotelManagementException
 
 
-class JsonStore():
+class JsonStore:
     """Json Store class"""
+
     _data_list = []
     _file_name = ""
 
@@ -60,3 +61,4 @@ class JsonStore():
     @property
     def data_list(self):
         return self._data_list
+

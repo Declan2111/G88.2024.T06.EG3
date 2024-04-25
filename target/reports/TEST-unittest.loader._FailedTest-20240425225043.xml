@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="unittest.loader._FailedTest-20240425225043" tests="3" file="unittest/loader.py" time="0.013" timestamp="2024-04-25T22:50:44" failures="0" errors="3" skipped="0">
+	<testcase classname="unittest.loader._FailedTest" name="test_checkout_tests" time="0.008" timestamp="2024-04-25T22:50:44">
+		<error type="ImportError" message="Failed to import test module: test_checkout_tests
+Traceback (most recent call last):
+  File &quot;/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/unittest/loader.py&quot;, line 129, in loadTestsFromName
+    module = __import__(module_name)
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;/Users/natedamstra/PycharmProjects/G88.2024.T06.EG3/src/unittest/python/test_checkout_tests.py&quot;, line 7, in &lt;module&gt;
+    from uc3m_travel import HotelManager
+  File &quot;/Users/natedamstra/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/__init__.py&quot;, line 3, in &lt;module&gt;
+    from .hotel_manager import HotelManager
+  File &quot;/Users/natedamstra/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_manager.py&quot;, line 11, in &lt;module&gt;
+    from uc3m_travel.JsonParser import JsonParser
+  File &quot;/Users/natedamstra/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/JsonParser.py&quot;, line 3, in &lt;module&gt;
+    from src.main.python.uc3m_travel import HotelManagementException
+ModuleNotFoundError: No module named 'src'
+"><![CDATA[Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/unittest/case.py", line 58, in testPartExecutor
+    yield
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/unittest/case.py", line 634, in run
+    self._callTestMethod(testMethod)
+    ^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/unittest/case.py", line 589, in _callTestMethod
+    if method() is not None:
+    ^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/unittest/loader.py", line 33, in testFailure
+    raise self._exception
+    ^^^^^^^^^^^^^^^^^
+ImportError: Failed to import test module: test_checkout_tests
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/unittest/loader.py", line 129, in loadTestsFromName
+    module = __import__(module_name)
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/natedamstra/PycharmProjects/G88.2024.T06.EG3/src/unittest/python/test_checkout_tests.py", line 7, in <module>
+    from uc3m_travel import HotelManager
+  File "/Users/natedamstra/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/__init__.py", line 3, in <module>
+    from .hotel_manager import HotelManager
+  File "/Users/natedamstra/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_manager.py", line 11, in <module>
+    from uc3m_travel.JsonParser import JsonParser
+  File "/Users/natedamstra/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/JsonParser.py", line 3, in <module>
+    from src.main.python.uc3m_travel import HotelManagementException
+ModuleNotFoundError: No module named 'src'
+
+]]></error>
+	</testcase>
+	<testcase classname="unittest.loader._FailedTest" name="test_guest_arrival_tests" time="0.003" timestamp="2024-04-25T22:50:44">
+		<error type="ImportError" message="Failed to import test module: test_guest_arrival_tests
+Traceback (most recent call last):
+  File &quot;/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/unittest/loader.py&quot;, line 129, in loadTestsFromName
+    module = __import__(module_name)
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;/Users/natedamstra/PycharmProjects/G88.2024.T06.EG3/src/unittest/python/test_guest_arrival_tests.py&quot;, line 10, in &lt;module&gt;
+    from uc3m_travel import (JSON_FILES_PATH,
+  File &quot;/Users/natedamstra/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/__init__.py&quot;, line 3, in &lt;module&gt;
+    from .hotel_manager import HotelManager
+  File &quot;/Users/natedamstra/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_manager.py&quot;, line 11, in &lt;module&gt;
+    from uc3m_travel.JsonParser import JsonParser
+  File &quot;/Users/natedamstra/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/JsonParser.py&quot;, line 3, in &lt;module&gt;
+    from src.main.python.uc3m_travel import HotelManagementException
+ModuleNotFoundError: No module named 'src'
+"><![CDATA[Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/unittest/case.py", line 58, in testPartExecutor
+    yield
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/unittest/case.py", line 634, in run
+    self._callTestMethod(testMethod)
+    ^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/unittest/case.py", line 589, in _callTestMethod
+    if method() is not None:
+    ^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/unittest/loader.py", line 33, in testFailure
+    raise self._exception
+    ^^^^^^^^^^^^^^^^^
+ImportError: Failed to import test module: test_guest_arrival_tests
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/unittest/loader.py", line 129, in loadTestsFromName
+    module = __import__(module_name)
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/natedamstra/PycharmProjects/G88.2024.T06.EG3/src/unittest/python/test_guest_arrival_tests.py", line 10, in <module>
+    from uc3m_travel import (JSON_FILES_PATH,
+  File "/Users/natedamstra/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/__init__.py", line 3, in <module>
+    from .hotel_manager import HotelManager
+  File "/Users/natedamstra/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_manager.py", line 11, in <module>
+    from uc3m_travel.JsonParser import JsonParser
+  File "/Users/natedamstra/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/JsonParser.py", line 3, in <module>
+    from src.main.python.uc3m_travel import HotelManagementException
+ModuleNotFoundError: No module named 'src'
+
+]]></error>
+	</testcase>
+	<testcase classname="unittest.loader._FailedTest" name="test_room_reservation_tests" time="0.003" timestamp="2024-04-25T22:50:44">
+		<error type="ImportError" message="Failed to import test module: test_room_reservation_tests
+Traceback (most recent call last):
+  File &quot;/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/unittest/loader.py&quot;, line 129, in loadTestsFromName
+    module = __import__(module_name)
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;/Users/natedamstra/PycharmProjects/G88.2024.T06.EG3/src/unittest/python/test_room_reservation_tests.py&quot;, line 9, in &lt;module&gt;
+    from uc3m_travel import (JSON_FILES_PATH,
+  File &quot;/Users/natedamstra/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/__init__.py&quot;, line 3, in &lt;module&gt;
+    from .hotel_manager import HotelManager
+  File &quot;/Users/natedamstra/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_manager.py&quot;, line 11, in &lt;module&gt;
+    from uc3m_travel.JsonParser import JsonParser
+  File &quot;/Users/natedamstra/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/JsonParser.py&quot;, line 3, in &lt;module&gt;
+    from src.main.python.uc3m_travel import HotelManagementException
+ModuleNotFoundError: No module named 'src'
+"><![CDATA[Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/unittest/case.py", line 58, in testPartExecutor
+    yield
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/unittest/case.py", line 634, in run
+    self._callTestMethod(testMethod)
+    ^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/unittest/case.py", line 589, in _callTestMethod
+    if method() is not None:
+    ^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/unittest/loader.py", line 33, in testFailure
+    raise self._exception
+    ^^^^^^^^^^^^^^^^^
+ImportError: Failed to import test module: test_room_reservation_tests
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/unittest/loader.py", line 129, in loadTestsFromName
+    module = __import__(module_name)
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/natedamstra/PycharmProjects/G88.2024.T06.EG3/src/unittest/python/test_room_reservation_tests.py", line 9, in <module>
+    from uc3m_travel import (JSON_FILES_PATH,
+  File "/Users/natedamstra/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/__init__.py", line 3, in <module>
+    from .hotel_manager import HotelManager
+  File "/Users/natedamstra/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_manager.py", line 11, in <module>
+    from uc3m_travel.JsonParser import JsonParser
+  File "/Users/natedamstra/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/JsonParser.py", line 3, in <module>
+    from src.main.python.uc3m_travel import HotelManagementException
+ModuleNotFoundError: No module named 'src'
+
+]]></error>
+	</testcase>
+</testsuite>

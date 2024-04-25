@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="test_guest_arrival_tests.TestHotelReservation-20240425235805" tests="3" file="test_guest_arrival_tests.py" time="0.028" timestamp="2024-04-25T23:58:06" failures="0" errors="3" skipped="0">
+	<testcase classname="test_guest_arrival_tests.TestHotelReservation" name="test_case_valid_reservation_invalid_arrival_date" time="0.010" timestamp="2024-04-25T23:58:06">
+		<error type="AttributeError" message="'NoneType' object has no attribute 'find_item'"><![CDATA[Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/unittest/case.py", line 58, in testPartExecutor
+    yield
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/unittest/case.py", line 630, in run
+    self._callSetUp()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/unittest/case.py", line 586, in _callSetUp
+    self.setUp()
+  File "/Users/natedamstra/PycharmProjects/G88.2024.T06.EG3/src/unittest/python/test_guest_arrival_tests.py", line 37, in setUp
+    localizer = hotel_mngr.room_reservation(credit_card="5105105105105100",
+    ^^^^^^^^^^^^^^^^^
+  File "/Users/natedamstra/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_manager.py", line 41, in room_reservation
+    if json_store_res.find_item("_HotelReservation__localizer", my_reservation.localizer):
+    ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find_item'
+]]></error>
+	</testcase>
+	<testcase classname="test_guest_arrival_tests.TestHotelReservation" name="test_get_reservation_data_manipulated_tests" time="0.009" timestamp="2024-04-25T23:58:06">
+		<error type="AttributeError" message="'NoneType' object has no attribute 'find_item'"><![CDATA[Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/unittest/case.py", line 58, in testPartExecutor
+    yield
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/unittest/case.py", line 630, in run
+    self._callSetUp()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/unittest/case.py", line 586, in _callSetUp
+    self.setUp()
+  File "/Users/natedamstra/PycharmProjects/G88.2024.T06.EG3/src/unittest/python/test_guest_arrival_tests.py", line 37, in setUp
+    localizer = hotel_mngr.room_reservation(credit_card="5105105105105100",
+    ^^^^^^^^^^^^^^^^^
+  File "/Users/natedamstra/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_manager.py", line 41, in room_reservation
+    if json_store_res.find_item("_HotelReservation__localizer", my_reservation.localizer):
+    ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find_item'
+]]></error>
+	</testcase>
+	<testcase classname="test_guest_arrival_tests.TestHotelReservation" name="test_parametrized_cases_tests" time="0.009" timestamp="2024-04-25T23:58:06">
+		<error type="AttributeError" message="'NoneType' object has no attribute 'find_item'"><![CDATA[Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/unittest/case.py", line 58, in testPartExecutor
+    yield
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/unittest/case.py", line 630, in run
+    self._callSetUp()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/unittest/case.py", line 586, in _callSetUp
+    self.setUp()
+  File "/Users/natedamstra/PycharmProjects/G88.2024.T06.EG3/src/unittest/python/test_guest_arrival_tests.py", line 37, in setUp
+    localizer = hotel_mngr.room_reservation(credit_card="5105105105105100",
+    ^^^^^^^^^^^^^^^^^
+  File "/Users/natedamstra/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_manager.py", line 41, in room_reservation
+    if json_store_res.find_item("_HotelReservation__localizer", my_reservation.localizer):
+    ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find_item'
+]]></error>
+	</testcase>
+</testsuite>
