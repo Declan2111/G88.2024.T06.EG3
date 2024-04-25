@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="test_room_reservation_tests.TestHotelReservation-20240425141338" tests="7" file="test_room_reservation_tests.py" time="0.068" timestamp="2024-04-25T14:13:39" failures="0" errors="5" skipped="0">
+	<testcase classname="test_room_reservation_tests.TestHotelReservation" name="test_duplicated_id_reservation_tests" time="0.001" timestamp="2024-04-25T14:13:39"/>
+	<testcase classname="test_room_reservation_tests.TestHotelReservation" name="test_duplicated_reservation_tests" time="0.003" timestamp="2024-04-25T14:13:39"/>
+	<testcase classname="test_room_reservation_tests.TestHotelReservation" name="test_parametrized_cases_tests [TC10INVALID]" time="0.000" timestamp="0001-01-01T00:00:00">
+		<error type="AttributeError" message="'IDNum' object has no attribute '_error_message'"><![CDATA[Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 498, in subTest
+    yield
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/unittest/python/test_room_reservation_tests.py", line 199, in test_parametrized_cases_tests
+    mngr.room_reservation(credit_card=credit_card_number,
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_manager.py", line 69, in room_reservation
+    my_reservation = HotelReservation(id_card=id_card,
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_reservation.py", line 36, in __init__
+    self.__id_card = IDNum(id_card).value
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/main/python/attributes/attribute_id.py", line 11, in __init__
+    self._attr_value = self._validate(attr_value)
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/main/python/attributes/attribute_id.py", line 15, in _validate
+    super()._validate(attr_value)
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/main/python/attributes/attribute.py", line 17, in _validate
+    raise HotelManagementException(self._error_message)
+AttributeError: 'IDNum' object has no attribute '_error_message'
+]]></error>
+	</testcase>
+	<testcase classname="test_room_reservation_tests.TestHotelReservation" name="test_parametrized_cases_tests [TC11INVALID]" time="0.000" timestamp="0001-01-01T00:00:00">
+		<error type="AttributeError" message="'IDNum' object has no attribute '_error_message'"><![CDATA[Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 498, in subTest
+    yield
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/unittest/python/test_room_reservation_tests.py", line 199, in test_parametrized_cases_tests
+    mngr.room_reservation(credit_card=credit_card_number,
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_manager.py", line 69, in room_reservation
+    my_reservation = HotelReservation(id_card=id_card,
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_reservation.py", line 36, in __init__
+    self.__id_card = IDNum(id_card).value
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/main/python/attributes/attribute_id.py", line 11, in __init__
+    self._attr_value = self._validate(attr_value)
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/main/python/attributes/attribute_id.py", line 15, in _validate
+    super()._validate(attr_value)
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/main/python/attributes/attribute.py", line 17, in _validate
+    raise HotelManagementException(self._error_message)
+AttributeError: 'IDNum' object has no attribute '_error_message'
+]]></error>
+	</testcase>
+	<testcase classname="test_room_reservation_tests.TestHotelReservation" name="test_parametrized_cases_tests [TC12INVALID]" time="0.000" timestamp="0001-01-01T00:00:00">
+		<error type="AttributeError" message="'IDNum' object has no attribute '_error_message'"><![CDATA[Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 498, in subTest
+    yield
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/unittest/python/test_room_reservation_tests.py", line 199, in test_parametrized_cases_tests
+    mngr.room_reservation(credit_card=credit_card_number,
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_manager.py", line 69, in room_reservation
+    my_reservation = HotelReservation(id_card=id_card,
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_reservation.py", line 36, in __init__
+    self.__id_card = IDNum(id_card).value
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/main/python/attributes/attribute_id.py", line 11, in __init__
+    self._attr_value = self._validate(attr_value)
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/main/python/attributes/attribute_id.py", line 15, in _validate
+    super()._validate(attr_value)
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/main/python/attributes/attribute.py", line 17, in _validate
+    raise HotelManagementException(self._error_message)
+AttributeError: 'IDNum' object has no attribute '_error_message'
+]]></error>
+	</testcase>
+	<testcase classname="test_room_reservation_tests.TestHotelReservation" name="test_parametrized_cases_tests [TC13INVALID]" time="0.000" timestamp="0001-01-01T00:00:00">
+		<error type="AttributeError" message="'IDNum' object has no attribute '_error_message'"><![CDATA[Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 498, in subTest
+    yield
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/unittest/python/test_room_reservation_tests.py", line 199, in test_parametrized_cases_tests
+    mngr.room_reservation(credit_card=credit_card_number,
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_manager.py", line 69, in room_reservation
+    my_reservation = HotelReservation(id_card=id_card,
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_reservation.py", line 36, in __init__
+    self.__id_card = IDNum(id_card).value
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/main/python/attributes/attribute_id.py", line 11, in __init__
+    self._attr_value = self._validate(attr_value)
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/main/python/attributes/attribute_id.py", line 15, in _validate
+    super()._validate(attr_value)
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/main/python/attributes/attribute.py", line 17, in _validate
+    raise HotelManagementException(self._error_message)
+AttributeError: 'IDNum' object has no attribute '_error_message'
+]]></error>
+	</testcase>
+	<testcase classname="test_room_reservation_tests.TestHotelReservation" name="test_parametrized_cases_tests [TC14INVALID]" time="0.064" timestamp="2024-04-25T14:13:39">
+		<error type="AttributeError" message="'IDNum' object has no attribute '_error_message'"><![CDATA[Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 498, in subTest
+    yield
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/unittest/python/test_room_reservation_tests.py", line 199, in test_parametrized_cases_tests
+    mngr.room_reservation(credit_card=credit_card_number,
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_manager.py", line 69, in room_reservation
+    my_reservation = HotelReservation(id_card=id_card,
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_reservation.py", line 36, in __init__
+    self.__id_card = IDNum(id_card).value
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/main/python/attributes/attribute_id.py", line 11, in __init__
+    self._attr_value = self._validate(attr_value)
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/main/python/attributes/attribute_id.py", line 15, in _validate
+    super()._validate(attr_value)
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/main/python/attributes/attribute.py", line 17, in _validate
+    raise HotelManagementException(self._error_message)
+AttributeError: 'IDNum' object has no attribute '_error_message'
+]]></error>
+	</testcase>
+</testsuite>

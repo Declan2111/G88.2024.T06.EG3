@@ -1,15 +1,12 @@
-import re
-
+"""Contains the child attribute class Localizer"""
+# pylint: disable=import-error
 from attributes.attribute import Attribute
-from uc3m_travel.hotel_management_exception import HotelManagementException
 
-
+# pylint: disable=too-few-public-methods
 class Localizer(Attribute):
+    """Contains the attribute Localizer"""
 
     def __init__(self, attr_value):
         self._validation_pattern = r'^[a-fA-F0-9]{32}$'
         self._error_message = "Invalid localizer"
         self._attr_value = self._validate(attr_value)
-
-    def _validate(self, attr_value):
-        return super()._validate(attr_value)

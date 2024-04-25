@@ -8,6 +8,4 @@ class NameSur(Attribute):
         self._error_message = "Invalid name format"
         self._attr_value = self._validate(attr_value)
 
-    def _validate(self, attr_value):
-        return super()._validate(attr_value)
 

@@ -13,15 +13,13 @@ class JsonStore():
         self._data_list = []
         self._file_name = ""
 
-    # def save_reservation(self, res_data):
-    #
-    # def save_checkin(self, checkin_data):
-    #
-    # def save_checkout(self, checkout_data):
-
     def add_item(self, item):
         """adds an item to a json file"""
-        self.data_list.append(item.__dict__)
+        if isinstance(item, dict):
+            self.data_list.append(item)
+        else:
+            self.data_list.append(item.__dict__)
+        self.save_list_to_file()
 
     def save_list_to_file(self):
         """Saves the data to a file"""

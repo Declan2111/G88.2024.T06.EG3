@@ -1,8 +1,9 @@
 from attributes.attribute import Attribute
 from uc3m_travel.hotel_management_exception import HotelManagementException
 
-
+# pylint: disable=too-few-public-methods
 class RoomType(Attribute):
+    """Definition of attribute room key"""
 
     def __init__(self, attr_value):
         super().__init__()
@@ -10,7 +11,5 @@ class RoomType(Attribute):
         self._error_message = "Invalid roomtype value"
         self._attr_value = self._validate(attr_value)
 
-    def _validate(self, attr_value):
-        return super()._validate(attr_value)
 
 

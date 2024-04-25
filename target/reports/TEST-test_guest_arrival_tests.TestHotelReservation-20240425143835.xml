@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="test_guest_arrival_tests.TestHotelReservation-20240425143835" tests="3" file="test_guest_arrival_tests.py" time="0.009" timestamp="2024-04-25T14:38:35" failures="0" errors="3" skipped="0">
+	<testcase classname="test_guest_arrival_tests.TestHotelReservation" name="test_case_valid_reservation_invalid_arrival_date" time="0.003" timestamp="2024-04-25T14:38:35">
+		<error type="TypeError" message="JsonStore.__init__() takes 1 positional argument but 2 were given"><![CDATA[Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 587, in run
+    self._callSetUp()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 546, in _callSetUp
+    self.setUp()
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/unittest/python/test_guest_arrival_tests.py", line 37, in setUp
+    localizer = hotel_mngr.room_reservation(credit_card="5105105105105100",
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_manager.py", line 37, in room_reservation
+    json_store_res = ReservationJsonStore()
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/main/python/storage/reservation_json_store.py", line 15, in __init__
+    super().__init__(self)
+TypeError: JsonStore.__init__() takes 1 positional argument but 2 were given
+]]></error>
+	</testcase>
+	<testcase classname="test_guest_arrival_tests.TestHotelReservation" name="test_get_reservation_data_manipulated_tests" time="0.003" timestamp="2024-04-25T14:38:35">
+		<error type="TypeError" message="JsonStore.__init__() takes 1 positional argument but 2 were given"><![CDATA[Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 587, in run
+    self._callSetUp()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 546, in _callSetUp
+    self.setUp()
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/unittest/python/test_guest_arrival_tests.py", line 37, in setUp
+    localizer = hotel_mngr.room_reservation(credit_card="5105105105105100",
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_manager.py", line 37, in room_reservation
+    json_store_res = ReservationJsonStore()
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/main/python/storage/reservation_json_store.py", line 15, in __init__
+    super().__init__(self)
+TypeError: JsonStore.__init__() takes 1 positional argument but 2 were given
+]]></error>
+	</testcase>
+	<testcase classname="test_guest_arrival_tests.TestHotelReservation" name="test_parametrized_cases_tests" time="0.003" timestamp="2024-04-25T14:38:35">
+		<error type="TypeError" message="JsonStore.__init__() takes 1 positional argument but 2 were given"><![CDATA[Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 587, in run
+    self._callSetUp()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 546, in _callSetUp
+    self.setUp()
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/unittest/python/test_guest_arrival_tests.py", line 37, in setUp
+    localizer = hotel_mngr.room_reservation(credit_card="5105105105105100",
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_manager.py", line 37, in room_reservation
+    json_store_res = ReservationJsonStore()
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/main/python/storage/reservation_json_store.py", line 15, in __init__
+    super().__init__(self)
+TypeError: JsonStore.__init__() takes 1 positional argument but 2 were given
+]]></error>
+	</testcase>
+</testsuite>

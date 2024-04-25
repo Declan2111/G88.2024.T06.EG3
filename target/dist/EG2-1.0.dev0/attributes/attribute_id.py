@@ -1,15 +1,17 @@
-import re
-
+"""Contains the child attribute class IDNum"""
+# pylint: disable=import-error
 from attributes.attribute import Attribute
 from uc3m_travel.hotel_management_exception import HotelManagementException
 
-
+# pylint: disable=too-few-public-methods
 class IDNum(Attribute):
+    """Class containing the IDNum attribute"""
 
+    # pylint: disable=super-init-not-called
     def __init__(self, attr_value):
         self._validation_pattern = r'\b\d{8}[A-Z]\b'
+        self._error_message = "Invalid IdCard format"
         self._attr_value = self._validate(attr_value)
-        self._error_message = "Invalid ID Number"
 
     def _validate(self, attr_value):
         super()._validate(attr_value)
@@ -21,5 +23,4 @@ class IDNum(Attribute):
         r = str(v % 23)
         if attr_value[8] == valid_chars[r]:
             return attr_value
-
-
+        raise HotelManagementException("Invalid IdCard letter")

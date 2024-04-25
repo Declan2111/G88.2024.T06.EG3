@@ -11,7 +11,5 @@ class PhoneNumber(Attribute):
         """Definition of the attribute PhoneNumber init"""
         self._validation_pattern = r"^(\+)[0-9]{9}"
         self._error_message = "Invalid phone number format"
-        self._attr_value = self.validate(attr_value)
+        self._attr_value = self._validate(attr_value)
 
-    def validate(self, attr_value):
-        return super()._validate(attr_value)

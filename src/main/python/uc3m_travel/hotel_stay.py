@@ -107,12 +107,8 @@ class HotelStay:
             raise HotelManagementException("Error: today is not the departure day")
         return HotelStay
 
-
-    # def check_out(self):
-    #     json_checkout_store = CheckoutJsonStore()
-    #     if json_checkout_store.find_item("room_key", room_key):
-    #         raise HotelManagementException("Guest is already out")
-    #
-    #     room_checkout = {"room_key": room_key, "checkout_time": datetime.timestamp(datetime.utcnow())}
-    #     json_checkout_store.add_item(room_checkout)
-    #     json_checkout_store.save_list_to_file()
+    @classmethod
+    def check_out(cls, room_key: str):
+        json_checkout_store = CheckoutJsonStore()
+        room_checkout = {"room_key": room_key, "checkout_time": datetime.timestamp(datetime.utcnow())}
+        json_checkout_store.add_item(room_checkout)

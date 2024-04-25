@@ -1,8 +1,12 @@
+"""Contains the card num attribute child class"""
+# pylint: disable=import-error
 from attributes.attribute import Attribute
 from uc3m_travel.hotel_management_exception import HotelManagementException
 
 
+# pylint: disable=too-few-public-methods
 class CardNum(Attribute):
+    """Definition of attribute card number"""
 
     def __init__(self, attr_value):
         super().__init__()
@@ -12,6 +16,7 @@ class CardNum(Attribute):
 
     def _validate(self, attr_value):
         super()._validate(attr_value)
+
         def digits_of(n):
             return [int(d) for d in str(n)]
 
@@ -25,5 +30,3 @@ class CardNum(Attribute):
         if not checksum % 10 == 0:
             raise HotelManagementException("Invalid credit card number (not luhn)")
         return attr_value
-
-

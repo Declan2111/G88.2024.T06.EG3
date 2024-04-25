@@ -1,4 +1,5 @@
 """Child class reservation for the JSON store class"""
+#pylint: disable=import-error
 from storage.json_store import JsonStore
 from uc3m_travel.hotel_management_config import JSON_FILES_PATH
 
@@ -16,22 +17,19 @@ class ReservationJsonStore(JsonStore):
         self._file_name = JSON_FILES_PATH + "store_reservation.json"
 
     def add_item(self, item):
+        """finds a reservation based on a localizer and checks it doesn't already exist"""
         reservation_found = self.find_item(
             "_HotelReservation__localizer", item.localizer)
         if reservation_found:
             raise HotelManagementException("Reservation already exists")
         super().add_item(item)
 
-    # def load_list_from_file(self):
-    #     return super().load_list_from_file()
-    #
-    # def save_list_to_file(self):
-    #     return super().save_list_to_file()
-    #
     def find_item(self, key, value):
+        """Loads the data from the file then finds if the item exists"""
         super().load_list_from_file()
         return super().find_item(key, value)
 
     @property
     def data_list(self):
+        """returns the data list"""
         return self._data_list
