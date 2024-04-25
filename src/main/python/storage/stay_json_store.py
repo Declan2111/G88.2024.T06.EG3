@@ -26,11 +26,24 @@ class StayJsonStore(JsonStore):
     #     """Returns save list from file from parent class"""
     #     return super().save_list_to_file()
     #
-    # def find_item(self, key, value):
-    #     """Returns find item from parent class"""
-    #
-    #     return super().find_item(key, value)
+    def find_item(self, key, value):
+        """Returns find item from parent class"""
+        super().load_list_from_file()
+        return super().find_item(key, value)
     #
     # def add_item(self, item):
     #     """Returns add item from parent class"""
     #     super().add_item(item)
+
+    def find_stay_checkout(self, key, value):
+        """Loads the data from a file"""
+        try:
+            with open(self._file_name, "r", encoding="utf-8", newline="") as file:
+                self._data_list = (json.load(file))
+        except FileNotFoundError as ex:
+            raise HotelManagementException("Error: store checkin not found") from ex
+        except json.JSONDecodeError as ex:
+            raise HotelManagementException("JSON Decode Error - Wrong JSON Format") from ex
+        return super().find_item(key, value)
+
+

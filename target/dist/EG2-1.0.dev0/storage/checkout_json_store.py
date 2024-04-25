@@ -26,6 +26,7 @@ class CheckoutJsonStore(JsonStore):
     #     """Returns save list to file from parent class"""
     #     return super().save_list_to_file()
     #
-    # def find_item(self, key, value):
-    #     """Returns find item from parent class"""
-    #     return super().find_item(key, value)
+    def find_item(self, key, value):
+        """Returns find item from parent class"""
+        super().load_list_from_file()
+        return super().find_item(key, value)

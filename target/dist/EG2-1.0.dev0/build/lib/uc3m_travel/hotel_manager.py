@@ -159,32 +159,33 @@ class HotelManager:
 
     def guest_checkout(self, room_key: str) -> bool:
         """manages the checkout of a guest"""
-        self.check_departure_data_valid(room_key)
-        json_checkout_store = CheckoutJsonStore()
-        if json_checkout_store.find_item("room_key", room_key):
-            raise HotelManagementException("Guest is already out")
+        #self.check_departure_data_valid(room_key)
+        # json_checkout_store = CheckoutJsonStore()
+        # if json_checkout_store.find_item("room_key", room_key):
+        #     raise HotelManagementException("Guest is already out")
 
-        #HotelStay.get_stay_from_room_key(room_key)
+        HotelStay.get_stay_from_room_key(room_key)
 
         room_checkout = {"room_key": room_key, "checkout_time": datetime.timestamp(datetime.utcnow())}
+        json_checkout_store = CheckoutJsonStore()
         json_checkout_store.add_item(room_checkout)
         json_checkout_store.save_list_to_file()
         return True
 
-    def check_departure_data_valid(self, room_key):
-        validate_room_key = RoomKey(room_key)
-        validate_room_key._validate(room_key)
-        # check thawt the roomkey is stored in the checkins file
-        file_store = JSON_FILES_PATH + "store_check_in.json"
-        room_key_list = self.load_json(file_store, "Error: store checkin not found")
-        # comprobar que esa room_key es la que me han dado
-        found = False
-        for item in room_key_list:
-            if room_key == item["_HotelStay__room_key"]:
-                departure_date_timestamp = item["_HotelStay__departure"]
-                found = True
-        if not found:
-            raise HotelManagementException("Error: room key not found")
-        today = datetime.utcnow().date()
-        if datetime.fromtimestamp(departure_date_timestamp).date() != today:
-            raise HotelManagementException("Error: today is not the departure day")
+    # def check_departure_data_valid(self, room_key):
+    #     validate_room_key = RoomKey(room_key)
+    #     validate_room_key._validate(room_key)
+    #     # check thawt the roomkey is stored in the checkins file
+    #     file_store = JSON_FILES_PATH + "store_check_in.json"
+    #     room_key_list = self.load_json(file_store, "Error: store checkin not found")
+    #     # comprobar que esa room_key es la que me han dado
+    #     found = False
+    #     for item in room_key_list:
+    #         if room_key == item["_HotelStay__room_key"]:
+    #             departure_date_timestamp = item["_HotelStay__departure"]
+    #             found = True
+    #     if not found:
+    #         raise HotelManagementException("Error: room key not found")
+    #     today = datetime.utcnow().date()
+    #     if datetime.fromtimestamp(departure_date_timestamp).date() != today:
+    #         raise HotelManagementException("Error: today is not the departure day")

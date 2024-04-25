@@ -89,14 +89,19 @@ class HotelStay:
     @classmethod
     def get_stay_from_room_key(cls, room_key: str):
         """Creates an instance of the HotelStay class"""
+
+        json_checkout_store = CheckoutJsonStore()
+        if json_checkout_store.find_item("room_key", room_key):
+            raise HotelManagementException("Guest is already out")
+
         stay = StayJsonStore()
 
-        stay_info = stay.find_item("_HotelStay__room_key", RoomKey(room_key).value)
-        if stay_info:
-            departure_date = datetime.fromtimestamp(
-                stay_info["_HotelStay__departure"])
-        else:
+        stay_info = stay.find_stay_checkout("_HotelStay__room_key", RoomKey(room_key).value)
+        print(stay_info)
+        if not stay_info:
             raise HotelManagementException("Error: room key not found")
+        departure_date = datetime.fromtimestamp(
+        stay_info["_HotelStay__departure"])
         today = datetime.utcnow().date()
         if departure_date.date() != today:
             raise HotelManagementException("Error: today is not the departure day")

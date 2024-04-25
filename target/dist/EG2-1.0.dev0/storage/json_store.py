@@ -46,11 +46,13 @@ class JsonStore():
 
     def find_item(self, key, value):
         """finds an item in the store"""
-        self.load_list_from_file()
+        #self.load_list_from_file()
         for item in self.data_list:
             if item[key] == value:
                 return item
         return None
+
+
 
     @property
     def hash(self):

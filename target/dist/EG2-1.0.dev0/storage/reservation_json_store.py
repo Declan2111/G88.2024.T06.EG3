@@ -28,8 +28,9 @@ class ReservationJsonStore(JsonStore):
     # def save_list_to_file(self):
     #     return super().save_list_to_file()
     #
-    # def find_item(self, key, value):
-    #     return super().find_item(key, value)
+    def find_item(self, key, value):
+        super().load_list_from_file()
+        return super().find_item(key, value)
 
     @property
     def data_list(self):

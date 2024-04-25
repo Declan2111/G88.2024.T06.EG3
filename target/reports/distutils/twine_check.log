@@ -1,8 +1,10 @@
+/Users/a19787/PycharmProjects/G88.2024.T06.EG3/.pybuilder/plugins/cpython-3.9.6.final.0/lib/python3.9/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
 Checking 
-/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/target/dist/EG2-1.0.dev0/dist/EG
-2-1.0.dev0-py3-none-any.whl: [33mPASSED with warnings[0m
+/Users/a19787/PycharmProjects/G88.2024.T06.EG3/target/dist/EG2-1.0.dev0/dist/EG2
+-1.0.dev0-py3-none-any.whl: [33mPASSED with warnings[0m
 [33mWARNING [0m `long_description_content_type` missing. defaulting to `text/x-rst`.   
 Checking 
-/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/target/dist/EG2-1.0.dev0/dist/EG
-2-1.0.dev0.tar.gz: [33mPASSED with warnings[0m
+/Users/a19787/PycharmProjects/G88.2024.T06.EG3/target/dist/EG2-1.0.dev0/dist/EG2
+-1.0.dev0.tar.gz: [33mPASSED with warnings[0m
 [33mWARNING [0m `long_description_content_type` missing. defaulting to `text/x-rst`.   

@@ -15,18 +15,21 @@
         15,
         16,
         18,
-        19
+        19,
+        29,
+        31,
+        32
       ],
       "lines_not_covered": [],
       "module": "storage.checkout_json_store",
-      "sum_lines": 10,
+      "sum_lines": 13,
       "sum_lines_not_covered": 0
     },
     {
-      "branches": 10,
+      "branches": 6,
       "branches_missing": 1,
       "branches_partial": 1,
-      "coverage": 79.48717948717949,
+      "coverage": 78.94736842105263,
       "lines": [
         1,
         2,
@@ -55,18 +58,17 @@
         42,
         43,
         47,
-        49,
         50,
         51,
         52,
         53,
-        55,
-        56,
+        57,
         58,
-        59,
         60,
         61,
-        62
+        62,
+        63,
+        64
       ],
       "lines_not_covered": [
         13,
@@ -75,18 +77,18 @@
         32,
         41,
         42,
-        58,
-        59
+        60,
+        61
       ],
       "module": "storage.json_store",
-      "sum_lines": 39,
+      "sum_lines": 38,
       "sum_lines_not_covered": 8
     },
     {
       "branches": 2,
       "branches_missing": 1,
       "branches_partial": 1,
-      "coverage": 93.75,
+      "coverage": 94.73684210526316,
       "lines": [
         2,
         3,
@@ -101,15 +103,18 @@
         21,
         22,
         23,
-        34,
+        31,
+        32,
+        33,
         35,
-        36
+        36,
+        37
       ],
       "lines_not_covered": [
         22
       ],
       "module": "storage.reservation_json_store",
-      "sum_lines": 16,
+      "sum_lines": 19,
       "sum_lines_not_covered": 1
     },
     {
@@ -124,10 +129,10 @@
       "sum_lines_not_covered": 0
     },
     {
-      "branches": 0,
-      "branches_missing": 0,
-      "branches_partial": 0,
-      "coverage": 100.0,
+      "branches": 2,
+      "branches_missing": 1,
+      "branches_partial": 1,
+      "coverage": 90.47619047619048,
       "lines": [
         2,
         4,
@@ -137,12 +142,27 @@
         14,
         16,
         17,
-        18
+        18,
+        29,
+        31,
+        32,
+        38,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47
       ],
-      "lines_not_covered": [],
+      "lines_not_covered": [
+        45,
+        46
+      ],
       "module": "storage.stay_json_store",
-      "sum_lines": 9,
-      "sum_lines_not_covered": 0
+      "sum_lines": 21,
+      "sum_lines_not_covered": 2
     },
     {
       "branches": 0,
@@ -461,10 +481,10 @@
       "sum_lines_not_covered": 0
     },
     {
-      "branches": 26,
-      "branches_missing": 3,
-      "branches_partial": 1,
-      "coverage": 90.2439024390244,
+      "branches": 14,
+      "branches_missing": 4,
+      "branches_partial": 2,
+      "coverage": 87.73584905660377,
       "lines": [
         2,
         3,
@@ -566,29 +586,12 @@
         157,
         158,
         160,
-        162,
-        163,
-        164,
-        165,
+        167,
         169,
         170,
         171,
         172,
-        174,
-        175,
-        176,
-        178,
-        179,
-        181,
-        182,
-        183,
-        184,
-        185,
-        186,
-        187,
-        188,
-        189,
-        190
+        173
       ],
       "lines_not_covered": [
         37,
@@ -602,17 +605,18 @@
         51,
         52,
         54,
-        129
+        129,
+        155
       ],
       "module": "uc3m_travel.hotel_manager",
-      "sum_lines": 123,
-      "sum_lines_not_covered": 12
+      "sum_lines": 106,
+      "sum_lines_not_covered": 13
     },
     {
-      "branches": 8,
-      "branches_missing": 4,
+      "branches": 10,
+      "branches_missing": 0,
       "branches_partial": 0,
-      "coverage": 76.19047619047619,
+      "coverage": 91.04477611940298,
       "lines": [
         2,
         3,
@@ -668,15 +672,19 @@
         87,
         89,
         90,
-        92,
+        93,
         94,
         95,
-        96,
+        97,
         99,
         100,
         101,
         102,
-        103
+        103,
+        105,
+        106,
+        107,
+        108
       ],
       "lines_not_covered": [
         54,
@@ -684,23 +692,14 @@
         67,
         72,
         82,
-        87,
-        92,
-        94,
-        95,
-        96,
-        99,
-        100,
-        101,
-        102,
-        103
+        87
       ],
       "module": "uc3m_travel.hotel_stay",
-      "sum_lines": 63,
-      "sum_lines_not_covered": 15
+      "sum_lines": 67,
+      "sum_lines_not_covered": 6
     },
     {
-      "branches": 6,
+      "branches": 4,
       "branches_missing": 0,
       "branches_partial": 0,
       "coverage": 95.3125,
@@ -780,7 +779,7 @@
       "sum_lines_not_covered": 3
     }
   ],
-  "overall_branch_coverage": 85.9375,
-  "overall_branch_partial_coverage": 95.3125,
-  "overall_coverage": 91.25799573560768
+  "overall_branch_coverage": 86.0,
+  "overall_branch_partial_coverage": 90.0,
+  "overall_coverage": 92.60042283298097
 }

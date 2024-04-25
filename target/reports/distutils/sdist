@@ -1,8 +1,8 @@
 running clean
-'build/temp.macosx-10.9-universal2-cpython-310' does not exist -- can't clean it
+'build/temp.macosx-10.9-universal2-cpython-39' does not exist -- can't clean it
 'build/lib' does not exist -- can't clean it
 'build/bdist.macosx-10.9-universal2' does not exist -- can't clean it
-'build/scripts-3.10' does not exist -- can't clean it
+'build/scripts-3.9' does not exist -- can't clean it
 running sdist
 running egg_info
 creating EG2.egg-info
