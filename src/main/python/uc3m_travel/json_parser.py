@@ -1,13 +1,16 @@
+"""Contains JSON Parser class"""
+# pylint: disable=import-error
 import json
-
 from uc3m_travel.hotel_management_exception import HotelManagementException
 
-
+# pylint: disable=too-few-public-methods
 class JsonParser:
+    """Class to parse JSON files"""
     def __init__(self, file_input):
         self.file_input = file_input
 
     def parse(self, message):
+        """opens and loads a json file"""
         try:
             with open(self.file_input, "r", encoding="utf-8", newline="") as file:
                 input_list = json.load(file)

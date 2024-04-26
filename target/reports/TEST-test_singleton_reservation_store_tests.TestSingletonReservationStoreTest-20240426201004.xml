@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="test_singleton_reservation_store_tests.TestSingletonReservationStoreTest-20240426201004" tests="1" file="test_singleton_reservation_store_tests.py" time="0.005" timestamp="2024-04-26T20:10:05" failures="1" errors="0" skipped="0">
+	<testcase classname="test_singleton_reservation_store_tests.TestSingletonReservationStoreTest" name="test_singleton_hotel_manager" time="0.005" timestamp="2024-04-26T20:10:05">
+		<failure type="AssertionError" message="&lt;storage.reservation_json_store.ReservationJsonStore object at 0x101c0bd90&gt; != &lt;storage.reservation_json_store.ReservationJsonStore object at 0x101c0bcd0&gt;"><![CDATA[Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 591, in run
+    self._callTestMethod(testMethod)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 549, in _callTestMethod
+    method()
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/unittest/python/test_singleton_reservation_store_tests.py", line 17, in test_singleton_hotel_manager
+    self.assertEqual(hm_1, hm_2)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 845, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 838, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: <storage.reservation_json_store.ReservationJsonStore object at 0x101c0bd90> != <storage.reservation_json_store.ReservationJsonStore object at 0x101c0bcd0>
+]]></failure>
+	</testcase>
+</testsuite>

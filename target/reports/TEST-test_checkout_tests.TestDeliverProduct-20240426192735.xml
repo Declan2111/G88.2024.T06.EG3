@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="test_checkout_tests.TestDeliverProduct-20240426192735" tests="7" file="test_checkout_tests.py" time="0.047" timestamp="2024-04-26T19:27:35" failures="0" errors="7" skipped="0">
+	<testcase classname="test_checkout_tests.TestDeliverProduct" name="test_already_checkout" time="0.016" timestamp="2024-04-26T19:27:35">
+		<error type="AttributeError" message="'__CheckoutJsonStore' object has no attribute '_data_list'"><![CDATA[Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 591, in run
+    self._callTestMethod(testMethod)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 549, in _callTestMethod
+    method()
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/venv/lib/python3.10/site-packages/freezegun/api.py", line 827, in wrapper
+    result = func(*args, **kwargs)
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/unittest/python/test_checkout_tests.py", line 75, in test_already_checkout
+    value = my_manager.guest_checkout(
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_manager.py", line 58, in guest_checkout
+    HotelStay.get_stay_from_room_key(room_key)
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_stay.py", line 91, in get_stay_from_room_key
+    if json_checkout_store.find_item("room_key", room_key):
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/main/python/storage/checkout_json_store.py", line 22, in find_item
+    super().load_list_from_file()
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/main/python/storage/json_store.py", line 41, in load_list_from_file
+    return self._data_list
+AttributeError: '__CheckoutJsonStore' object has no attribute '_data_list'
+]]></error>
+	</testcase>
+	<testcase classname="test_checkout_tests.TestDeliverProduct" name="test_checkin_code_not_found_date_signature" time="0.005" timestamp="2024-04-26T19:27:35">
+		<error type="AttributeError" message="'__CheckoutJsonStore' object has no attribute '_data_list'"><![CDATA[Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 591, in run
+    self._callTestMethod(testMethod)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 549, in _callTestMethod
+    method()
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/venv/lib/python3.10/site-packages/freezegun/api.py", line 827, in wrapper
+    result = func(*args, **kwargs)
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/unittest/python/test_checkout_tests.py", line 170, in test_checkin_code_not_found_date_signature
+    my_manager.guest_checkout(
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_manager.py", line 58, in guest_checkout
+    HotelStay.get_stay_from_room_key(room_key)
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_stay.py", line 91, in get_stay_from_room_key
+    if json_checkout_store.find_item("room_key", room_key):
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/main/python/storage/checkout_json_store.py", line 22, in find_item
+    super().load_list_from_file()
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/main/python/storage/json_store.py", line 41, in load_list_from_file
+    return self._data_list
+AttributeError: '__CheckoutJsonStore' object has no attribute '_data_list'
+]]></error>
+	</testcase>
+	<testcase classname="test_checkout_tests.TestDeliverProduct" name="test_checkout_ok" time="0.005" timestamp="2024-04-26T19:27:35">
+		<error type="AttributeError" message="'__CheckoutJsonStore' object has no attribute '_data_list'"><![CDATA[Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 591, in run
+    self._callTestMethod(testMethod)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 549, in _callTestMethod
+    method()
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/venv/lib/python3.10/site-packages/freezegun/api.py", line 827, in wrapper
+    result = func(*args, **kwargs)
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/unittest/python/test_checkout_tests.py", line 55, in test_checkout_ok
+    value = my_manager.guest_checkout(
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_manager.py", line 58, in guest_checkout
+    HotelStay.get_stay_from_room_key(room_key)
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_stay.py", line 91, in get_stay_from_room_key
+    if json_checkout_store.find_item("room_key", room_key):
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/main/python/storage/checkout_json_store.py", line 22, in find_item
+    super().load_list_from_file()
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/main/python/storage/json_store.py", line 41, in load_list_from_file
+    return self._data_list
+AttributeError: '__CheckoutJsonStore' object has no attribute '_data_list'
+]]></error>
+	</testcase>
+	<testcase classname="test_checkout_tests.TestDeliverProduct" name="test_guest_checkout_bad_date_signature" time="0.005" timestamp="2024-04-26T19:27:35">
+		<error type="AttributeError" message="'__CheckoutJsonStore' object has no attribute '_data_list'"><![CDATA[Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 591, in run
+    self._callTestMethod(testMethod)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 549, in _callTestMethod
+    method()
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/venv/lib/python3.10/site-packages/freezegun/api.py", line 827, in wrapper
+    result = func(*args, **kwargs)
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/unittest/python/test_checkout_tests.py", line 143, in test_guest_checkout_bad_date_signature
+    my_manager.guest_checkout(
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_manager.py", line 58, in guest_checkout
+    HotelStay.get_stay_from_room_key(room_key)
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_stay.py", line 91, in get_stay_from_room_key
+    if json_checkout_store.find_item("room_key", room_key):
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/main/python/storage/checkout_json_store.py", line 22, in find_item
+    super().load_list_from_file()
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/main/python/storage/json_store.py", line 41, in load_list_from_file
+    return self._data_list
+AttributeError: '__CheckoutJsonStore' object has no attribute '_data_list'
+]]></error>
+	</testcase>
+	<testcase classname="test_checkout_tests.TestDeliverProduct" name="test_guest_checkout_no_date" time="0.005" timestamp="2024-04-26T19:27:35">
+		<error type="AttributeError" message="'__CheckoutJsonStore' object has no attribute '_data_list'"><![CDATA[Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 591, in run
+    self._callTestMethod(testMethod)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 549, in _callTestMethod
+    method()
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/venv/lib/python3.10/site-packages/freezegun/api.py", line 827, in wrapper
+    result = func(*args, **kwargs)
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/unittest/python/test_checkout_tests.py", line 116, in test_guest_checkout_no_date
+    my_manager.guest_checkout(
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_manager.py", line 58, in guest_checkout
+    HotelStay.get_stay_from_room_key(room_key)
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_stay.py", line 91, in get_stay_from_room_key
+    if json_checkout_store.find_item("room_key", room_key):
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/main/python/storage/checkout_json_store.py", line 22, in find_item
+    super().load_list_from_file()
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/main/python/storage/json_store.py", line 41, in load_list_from_file
+    return self._data_list
+AttributeError: '__CheckoutJsonStore' object has no attribute '_data_list'
+]]></error>
+	</testcase>
+	<testcase classname="test_checkout_tests.TestDeliverProduct" name="test_guest_checkout_no_store_check_in" time="0.005" timestamp="2024-04-26T19:27:35">
+		<error type="AttributeError" message="'__CheckoutJsonStore' object has no attribute '_data_list'"><![CDATA[Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 591, in run
+    self._callTestMethod(testMethod)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 549, in _callTestMethod
+    method()
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/venv/lib/python3.10/site-packages/freezegun/api.py", line 827, in wrapper
+    result = func(*args, **kwargs)
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/unittest/python/test_checkout_tests.py", line 192, in test_guest_checkout_no_store_check_in
+    my_manager.guest_checkout(
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_manager.py", line 58, in guest_checkout
+    HotelStay.get_stay_from_room_key(room_key)
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_stay.py", line 91, in get_stay_from_room_key
+    if json_checkout_store.find_item("room_key", room_key):
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/main/python/storage/checkout_json_store.py", line 22, in find_item
+    super().load_list_from_file()
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/main/python/storage/json_store.py", line 41, in load_list_from_file
+    return self._data_list
+AttributeError: '__CheckoutJsonStore' object has no attribute '_data_list'
+]]></error>
+	</testcase>
+	<testcase classname="test_checkout_tests.TestDeliverProduct" name="test_guest_checkout_store_check_in_is_empty" time="0.005" timestamp="2024-04-26T19:27:35">
+		<error type="AttributeError" message="'__CheckoutJsonStore' object has no attribute '_data_list'"><![CDATA[Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 591, in run
+    self._callTestMethod(testMethod)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 549, in _callTestMethod
+    method()
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/venv/lib/python3.10/site-packages/freezegun/api.py", line 827, in wrapper
+    result = func(*args, **kwargs)
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/unittest/python/test_checkout_tests.py", line 207, in test_guest_checkout_store_check_in_is_empty
+    my_manager.guest_checkout(
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_manager.py", line 58, in guest_checkout
+    HotelStay.get_stay_from_room_key(room_key)
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_stay.py", line 91, in get_stay_from_room_key
+    if json_checkout_store.find_item("room_key", room_key):
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/main/python/storage/checkout_json_store.py", line 22, in find_item
+    super().load_list_from_file()
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/main/python/storage/json_store.py", line 41, in load_list_from_file
+    return self._data_list
+AttributeError: '__CheckoutJsonStore' object has no attribute '_data_list'
+]]></error>
+	</testcase>
+</testsuite>

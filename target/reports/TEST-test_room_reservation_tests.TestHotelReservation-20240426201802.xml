@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="test_room_reservation_tests.TestHotelReservation-20240426201802" tests="3" file="test_room_reservation_tests.py" time="0.089" timestamp="2024-04-26T20:18:03" failures="0" errors="3" skipped="0">
+	<testcase classname="test_room_reservation_tests.TestHotelReservation" name="test_duplicated_id_reservation_tests" time="0.002" timestamp="2024-04-26T20:18:03">
+		<error type="HotelManagementException" message="This ID card has another reservation"><![CDATA[Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 591, in run
+    self._callTestMethod(testMethod)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 549, in _callTestMethod
+    method()
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/unittest/python/test_room_reservation_tests.py", line 98, in test_duplicated_id_reservation_tests
+    mngr.room_reservation(credit_card=credit_card_number,
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_manager.py", line 41, in room_reservation
+    raise HotelManagementException("This ID card has another reservation")
+uc3m_travel.hotel_management_exception.HotelManagementException: This ID card has another reservation
+]]></error>
+	</testcase>
+	<testcase classname="test_room_reservation_tests.TestHotelReservation" name="test_duplicated_reservation_tests" time="0.004" timestamp="2024-04-26T20:18:03">
+		<error type="HotelManagementException" message="Reservation already exists"><![CDATA[Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 591, in run
+    self._callTestMethod(testMethod)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 549, in _callTestMethod
+    method()
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/venv/lib/python3.10/site-packages/freezegun/api.py", line 827, in wrapper
+    result = func(*args, **kwargs)
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/unittest/python/test_room_reservation_tests.py", line 52, in test_duplicated_reservation_tests
+    mngr.room_reservation(credit_card=credit_card_number,
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_manager.py", line 38, in room_reservation
+    raise HotelManagementException("Reservation already exists")
+uc3m_travel.hotel_management_exception.HotelManagementException: Reservation already exists
+]]></error>
+	</testcase>
+	<testcase classname="test_room_reservation_tests.TestHotelReservation" name="test_parametrized_cases_tests [TC1VALID]" time="0.082" timestamp="2024-04-26T20:18:03">
+		<error type="HotelManagementException" message="Reservation already exists"><![CDATA[Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 498, in subTest
+    yield
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/unittest/python/test_room_reservation_tests.py", line 163, in test_parametrized_cases_tests
+    valor = mngr.room_reservation(credit_card=credit_card_number,
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_manager.py", line 38, in room_reservation
+    raise HotelManagementException("Reservation already exists")
+uc3m_travel.hotel_management_exception.HotelManagementException: Reservation already exists
+]]></error>
+	</testcase>
+</testsuite>

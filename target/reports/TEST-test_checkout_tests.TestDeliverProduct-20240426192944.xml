@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="test_checkout_tests.TestDeliverProduct-20240426192944" tests="7" file="test_checkout_tests.py" time="0.060" timestamp="2024-04-26T19:29:44" failures="2" errors="1" skipped="0">
+	<testcase classname="test_checkout_tests.TestDeliverProduct" name="test_already_checkout" time="0.016" timestamp="2024-04-26T19:29:44"/>
+	<testcase classname="test_checkout_tests.TestDeliverProduct" name="test_checkin_code_not_found_date_signature" time="0.005" timestamp="2024-04-26T19:29:44"/>
+	<testcase classname="test_checkout_tests.TestDeliverProduct" name="test_guest_checkout_bad_date_signature" time="0.010" timestamp="2024-04-26T19:29:44"/>
+	<testcase classname="test_checkout_tests.TestDeliverProduct" name="test_guest_checkout_store_check_in_is_empty" time="0.005" timestamp="2024-04-26T19:29:44"/>
+	<testcase classname="test_checkout_tests.TestDeliverProduct" name="test_guest_checkout_no_date" time="0.010" timestamp="2024-04-26T19:29:44">
+		<failure type="AssertionError" message="'Guest is already out' != 'Error: today is not the departure day'
+- Guest is already out
++ Error: today is not the departure day
+"><![CDATA[Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 591, in run
+    self._callTestMethod(testMethod)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 549, in _callTestMethod
+    method()
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/venv/lib/python3.10/site-packages/freezegun/api.py", line 827, in wrapper
+    result = func(*args, **kwargs)
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/unittest/python/test_checkout_tests.py", line 118, in test_guest_checkout_no_date
+    self.assertEqual(context_manager.exception.message, "Error: today is not the departure day")
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 845, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 1226, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 675, in fail
+    raise self.failureException(msg)
+AssertionError: 'Guest is already out' != 'Error: today is not the departure day'
+- Guest is already out
++ Error: today is not the departure day
+
+]]></failure>
+	</testcase>
+	<testcase classname="test_checkout_tests.TestDeliverProduct" name="test_guest_checkout_no_store_check_in" time="0.006" timestamp="2024-04-26T19:29:44">
+		<failure type="AssertionError" message="'Guest is already out' != 'Error: store checkin not found'
+- Guest is already out
++ Error: store checkin not found
+"><![CDATA[Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 591, in run
+    self._callTestMethod(testMethod)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 549, in _callTestMethod
+    method()
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/venv/lib/python3.10/site-packages/freezegun/api.py", line 827, in wrapper
+    result = func(*args, **kwargs)
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/unittest/python/test_checkout_tests.py", line 194, in test_guest_checkout_no_store_check_in
+    self.assertEqual(context_manager.exception.message, "Error: store checkin not found")
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 845, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 1226, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 675, in fail
+    raise self.failureException(msg)
+AssertionError: 'Guest is already out' != 'Error: store checkin not found'
+- Guest is already out
++ Error: store checkin not found
+
+]]></failure>
+	</testcase>
+	<testcase classname="test_checkout_tests.TestDeliverProduct" name="test_checkout_ok" time="0.008" timestamp="2024-04-26T19:29:44">
+		<error type="HotelManagementException" message="Guest is already out"><![CDATA[Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 591, in run
+    self._callTestMethod(testMethod)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 549, in _callTestMethod
+    method()
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/venv/lib/python3.10/site-packages/freezegun/api.py", line 827, in wrapper
+    result = func(*args, **kwargs)
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/unittest/python/test_checkout_tests.py", line 55, in test_checkout_ok
+    value = my_manager.guest_checkout(
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_manager.py", line 58, in guest_checkout
+    HotelStay.get_stay_from_room_key(room_key)
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_stay.py", line 92, in get_stay_from_room_key
+    raise HotelManagementException("Guest is already out")
+uc3m_travel.hotel_management_exception.HotelManagementException: Guest is already out
+]]></error>
+	</testcase>
+</testsuite>

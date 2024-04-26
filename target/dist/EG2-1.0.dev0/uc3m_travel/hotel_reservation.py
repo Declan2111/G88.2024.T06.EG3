@@ -1,21 +1,18 @@
 """Hotel reservation class"""
+# pylint: disable=import-error
 import hashlib
 from datetime import datetime
-
 from attributes.attribute_num_days import NumDays
-
 from attributes.attribute_room_type import RoomType
-
 from attributes.attribute_arrival_date import ArrivalDate
 from attributes.attribute_id import IDNum
 from attributes.attribute_phone_num import PhoneNumber
-
 from attributes.attribute_name import NameSur
-
+from attributes.attribute_localizer import Localizer
 from attributes.attribute_card_num import CardNum
 from storage.reservation_json_store import ReservationJsonStore
 
-from attributes.attribute_localizer import Localizer
+
 
 from uc3m_travel.hotel_management_exception import HotelManagementException
 from freezegun import freeze_time
@@ -69,8 +66,8 @@ class HotelReservation:
         """property for getting and setting the id_card"""
         return self.__id_card
     @id_card.setter
-    def id_card(self, id):
-        self.__id_card = id
+    def id_card(self, id_c):
+        self.__id_card = id_c
 
 
     @property
@@ -95,9 +92,10 @@ class HotelReservation:
 
     @classmethod
     def load_reservation_from_localizer(cls, localizer: str):
+        """loads the reservation information from a given localizer"""
         reservation = ReservationJsonStore()
-        #reservation.load_list_from_file()
-        reservation_info = reservation.find_item("_HotelReservation__localizer", Localizer(localizer).value)
+        reservation_info = reservation.find_item("_HotelReservation__localizer",
+                                                 Localizer(localizer).value)
         if reservation_info:
             reservation_date = datetime.fromtimestamp(
                 reservation_info["_HotelReservation__reservation_date"])

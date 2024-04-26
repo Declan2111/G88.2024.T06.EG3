@@ -3,6 +3,7 @@
 from attributes.attribute import Attribute
 from uc3m_travel.hotel_management_exception import HotelManagementException
 
+
 # pylint: disable=too-few-public-methods
 class IDNum(Attribute):
     """Class containing the IDNum attribute"""

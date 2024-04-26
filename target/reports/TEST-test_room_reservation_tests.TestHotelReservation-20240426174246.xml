@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="test_room_reservation_tests.TestHotelReservation-20240426174246" tests="6" file="test_room_reservation_tests.py" time="0.069" timestamp="2024-04-26T17:42:47" failures="0" errors="6" skipped="0">
+	<testcase classname="test_room_reservation_tests.TestHotelReservation" name="test_duplicated_id_reservation_tests" time="0.002" timestamp="2024-04-26T17:42:47">
+		<error type="HotelManagementException" message="This ID card has another reservation"><![CDATA[Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 591, in run
+    self._callTestMethod(testMethod)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 549, in _callTestMethod
+    method()
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/unittest/python/test_room_reservation_tests.py", line 98, in test_duplicated_id_reservation_tests
+    mngr.room_reservation(credit_card=credit_card_number,
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_manager.py", line 45, in room_reservation
+    raise HotelManagementException("This ID card has another reservation")
+uc3m_travel.hotel_management_exception.HotelManagementException: This ID card has another reservation
+]]></error>
+	</testcase>
+	<testcase classname="test_room_reservation_tests.TestHotelReservation" name="test_duplicated_reservation_tests" time="0.003" timestamp="2024-04-26T17:42:47">
+		<error type="HotelManagementException" message="Reservation already exists"><![CDATA[Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 591, in run
+    self._callTestMethod(testMethod)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 549, in _callTestMethod
+    method()
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/venv/lib/python3.10/site-packages/freezegun/api.py", line 827, in wrapper
+    result = func(*args, **kwargs)
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/unittest/python/test_room_reservation_tests.py", line 52, in test_duplicated_reservation_tests
+    mngr.room_reservation(credit_card=credit_card_number,
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_manager.py", line 42, in room_reservation
+    raise HotelManagementException("Reservation already exists")
+uc3m_travel.hotel_management_exception.HotelManagementException: Reservation already exists
+]]></error>
+	</testcase>
+	<testcase classname="test_room_reservation_tests.TestHotelReservation" name="test_parametrized_cases_tests [TC1VALID]" time="0.000" timestamp="0001-01-01T00:00:00">
+		<error type="HotelManagementException" message="Reservation already exists"><![CDATA[Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 498, in subTest
+    yield
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/unittest/python/test_room_reservation_tests.py", line 163, in test_parametrized_cases_tests
+    valor = mngr.room_reservation(credit_card=credit_card_number,
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_manager.py", line 42, in room_reservation
+    raise HotelManagementException("Reservation already exists")
+uc3m_travel.hotel_management_exception.HotelManagementException: Reservation already exists
+]]></error>
+	</testcase>
+	<testcase classname="test_room_reservation_tests.TestHotelReservation" name="test_parametrized_cases_tests [TC2VALID]" time="0.000" timestamp="0001-01-01T00:00:00">
+		<error type="HotelManagementException" message="Wrong file  or file path"><![CDATA[Traceback (most recent call last):
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/main/python/storage/json_store.py", line 31, in save_list_to_file
+    with open(self._file_name, "w", encoding="utf-8", newline="") as file:
+FileNotFoundError: [Errno 2] No such file or directory: ''
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 498, in subTest
+    yield
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/unittest/python/test_room_reservation_tests.py", line 163, in test_parametrized_cases_tests
+    valor = mngr.room_reservation(credit_card=credit_card_number,
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_manager.py", line 47, in room_reservation
+    json_store_res.add_item(my_reservation)
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/main/python/storage/json_store.py", line 26, in add_item
+    self.save_list_to_file()
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/main/python/storage/json_store.py", line 34, in save_list_to_file
+    raise HotelManagementException("Wrong file  or file path") from ex
+uc3m_travel.hotel_management_exception.HotelManagementException: Wrong file  or file path
+]]></error>
+	</testcase>
+	<testcase classname="test_room_reservation_tests.TestHotelReservation" name="test_parametrized_cases_tests [TC3VALID]" time="0.000" timestamp="0001-01-01T00:00:00">
+		<error type="HotelManagementException" message="Wrong file  or file path"><![CDATA[Traceback (most recent call last):
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/main/python/storage/json_store.py", line 31, in save_list_to_file
+    with open(self._file_name, "w", encoding="utf-8", newline="") as file:
+FileNotFoundError: [Errno 2] No such file or directory: ''
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 498, in subTest
+    yield
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/unittest/python/test_room_reservation_tests.py", line 163, in test_parametrized_cases_tests
+    valor = mngr.room_reservation(credit_card=credit_card_number,
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_manager.py", line 47, in room_reservation
+    json_store_res.add_item(my_reservation)
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/main/python/storage/json_store.py", line 26, in add_item
+    self.save_list_to_file()
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/main/python/storage/json_store.py", line 34, in save_list_to_file
+    raise HotelManagementException("Wrong file  or file path") from ex
+uc3m_travel.hotel_management_exception.HotelManagementException: Wrong file  or file path
+]]></error>
+	</testcase>
+	<testcase classname="test_room_reservation_tests.TestHotelReservation" name="test_parametrized_cases_tests [TC4VALID]" time="0.064" timestamp="2024-04-26T17:42:47">
+		<error type="HotelManagementException" message="Wrong file  or file path"><![CDATA[Traceback (most recent call last):
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/main/python/storage/json_store.py", line 31, in save_list_to_file
+    with open(self._file_name, "w", encoding="utf-8", newline="") as file:
+FileNotFoundError: [Errno 2] No such file or directory: ''
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py", line 498, in subTest
+    yield
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/unittest/python/test_room_reservation_tests.py", line 163, in test_parametrized_cases_tests
+    valor = mngr.room_reservation(credit_card=credit_card_number,
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/main/python/uc3m_travel/hotel_manager.py", line 47, in room_reservation
+    json_store_res.add_item(my_reservation)
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/main/python/storage/json_store.py", line 26, in add_item
+    self.save_list_to_file()
+  File "/Users/ellaz-j/PycharmProjects/G88.2024.T06.EG3/src/main/python/storage/json_store.py", line 34, in save_list_to_file
+    raise HotelManagementException("Wrong file  or file path") from ex
+uc3m_travel.hotel_management_exception.HotelManagementException: Wrong file  or file path
+]]></error>
+	</testcase>
+</testsuite>
